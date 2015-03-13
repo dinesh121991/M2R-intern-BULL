@@ -1,4 +1,10 @@
 p4merge
 starUML
 scitool
+frama-c,clang,cbmc,splint,SonarQube 5.0.1 ,
+
+http://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis#C.2FC.2B.2B
+
+CodStruction – 3D Software Visualization Tool
+
 
