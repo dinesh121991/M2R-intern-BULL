@@ -1,0 +1,413 @@
+[2015-03-24T10:22:43.833] debug3: Trying to load plugin /usr/local/lib/slurm/route_default.so
+[2015-03-24T10:22:43.833] route default plugin loaded
+[2015-03-24T10:22:43.833] debug3: Success.
+[2015-03-24T10:22:43.833] error: ################################################
+[2015-03-24T10:22:43.833] error: ###       SEVERE SECURITY VULERABILTY        ###
+[2015-03-24T10:22:43.833] error: ### StateSaveLocation DIRECTORY IS WORLD WRITABLE ###
+[2015-03-24T10:22:43.833] error: ###         CORRECT FILE PERMISSIONS         ###
+[2015-03-24T10:22:43.833] error: ################################################
+[2015-03-24T10:22:43.833] layouts: loading entities/relations information
+[2015-03-24T10:22:43.833] debug3: layouts: loading node dinesh-HP-ProDesk-600-G1-TWR
+[2015-03-24T10:22:43.833] debug:  layouts: 1/1 nodes in hash table, rc=0
+[2015-03-24T10:22:43.833] debug:  layouts: loading stage 1
+[2015-03-24T10:22:43.833] debug3: layouts: reading config for cons_res_partition
+[2015-03-24T10:22:43.834] error: Parsing error at unrecognized key: NumPartition
+[2015-03-24T10:22:43.834] error: Unable to parse line  NumPartition=2 FreeCores=40 AllocatedCores=0 NumCores=40 Enclosed=debug,partition1
+
+[2015-03-24T10:22:43.834] error: Parse error in file /usr/local/etc/layouts.d/cons_res_partition.conf line 6: " NumPartition=2 FreeCores=40 AllocatedCores=0 NumCores=40 Enclosed=debug,partition1"
+[2015-03-24T10:22:43.834] error: Parsing error at unrecognized key: AllocatedSockets
+[2015-03-24T10:22:43.834] error: Unable to parse line  AllocatedSockets=0 NumSockets=2 FreeMemory=7897MB AllocatedMemory=0 Selected=0 Allocated=0  Enclosed=so00
+
+[2015-03-24T10:22:43.834] error: Parse error in file /usr/local/etc/layouts.d/cons_res_partition.conf line 15: " AllocatedSockets=0 NumSockets=2 FreeMemory=7897MB AllocatedMemory=0 Selected=0 Allocated=0  Enclosed=so00"
+[2015-03-24T10:22:43.834] error: Parsing error at unrecognized key: JobId
+[2015-03-24T10:22:43.834] error: Unable to parse line  JobId=-1 NumJobs=0 FreeCores=4 AllocatedCores=0 NumCores=4 ForWhatPurposePriority=0 Position=0 Selected=0 Allocated=0  Enclosed=co[00-01]
+
+[2015-03-24T10:22:43.834] error: Parse error in file /usr/local/etc/layouts.d/cons_res_partition.conf line 18: " JobId=-1 NumJobs=0 FreeCores=4 AllocatedCores=0 NumCores=4 ForWhatPurposePriority=0 Position=0 Selected=0 Allocated=0  Enclosed=co[00-01]"
+[2015-03-24T10:22:43.834] error: Parsing error at unrecognized key: JobId
+[2015-03-24T10:22:43.834] error: Unable to parse line  JobId=-1 NumJobs=0 ThreadsPerCore=1 ForWhatPurposePriority=0 Position=0 Selected=0 Allocated=0 
+
+[2015-03-24T10:22:43.834] error: Parse error in file /usr/local/etc/layouts.d/cons_res_partition.conf line 22: " JobId=-1 NumJobs=0 ThreadsPerCore=1 ForWhatPurposePriority=0 Position=0 Selected=0 Allocated=0 "
+[2015-03-24T10:22:43.834] error: Parsing error at unrecognized key: JobId
+[2015-03-24T10:22:43.834] error: Unable to parse line  JobId=-1 NumJobs=0 ThreadsPerCore=1 ForWhatPurposePriority=0 Position=0 Selected=0 Allocated=0
+
+[2015-03-24T10:22:43.834] error: Parse error in file /usr/local/etc/layouts.d/cons_res_partition.conf line 23: " JobId=-1 NumJobs=0 ThreadsPerCore=1 ForWhatPurposePriority=0 Position=0 Selected=0 Allocated=0"
+[2015-03-24T10:22:43.834] error: Parsing error at unrecognized key: JobId
+[2015-03-24T10:22:43.834] error: Unable to parse line  JobId=-1 NumJobs=0 ThreadsPerCore=1 ForWhatPurposePriority=0 Position=0 Selected=0 Allocated=0
+
+[2015-03-24T10:22:43.834] error: Parse error in file /usr/local/etc/layouts.d/cons_res_partition.conf line 24: " JobId=-1 NumJobs=0 ThreadsPerCore=1 ForWhatPurposePriority=0 Position=0 Selected=0 Allocated=0"
+[2015-03-24T10:22:43.834] error: Parsing error at unrecognized key: JobId
+[2015-03-24T10:22:43.834] error: Unable to parse line  JobId=-1 NumJobs=0 ThreadsPerCore=1 ForWhatPurposePriority=0 Position=0 Selected=0 Allocated=0
+
+[2015-03-24T10:22:43.834] error: Parse error in file /usr/local/etc/layouts.d/cons_res_partition.conf line 25: " JobId=-1 NumJobs=0 ThreadsPerCore=1 ForWhatPurposePriority=0 Position=0 Selected=0 Allocated=0"
+[2015-03-24T10:22:43.834] fatal: layouts: something went wrong when opening/reading '/usr/local/etc/layouts.d/cons_res_partition.conf': No error
+[2015-03-24T11:42:27.350] pidfile not locked, assuming no running daemon
+[2015-03-24T11:42:27.350] debug3: Version in last_conf_lite header is 7424
+[2015-03-24T11:42:27.405] error: Configured MailProg is invalid
+[2015-03-24T11:42:27.406] slurmctld version 15.08.0-0pre2 started on cluster linux
+[2015-03-24T11:42:27.406] debug3: Trying to load plugin /usr/local/lib/slurm/crypto_munge.so
+[2015-03-24T11:42:27.406] Munge cryptographic signature plugin loaded
+[2015-03-24T11:42:27.406] debug3: Success.
+[2015-03-24T11:42:27.406] debug3: Trying to load plugin /usr/local/lib/slurm/select_cons_res_layout.so
+[2015-03-24T11:42:27.406] Consumable Resources Layout (CRL) Node Selection plugin loaded with argument 20
+[2015-03-24T11:42:27.406] debug3: Success.
+[2015-03-24T11:42:27.406] debug3: Trying to load plugin /usr/local/lib/slurm/preempt_none.so
+[2015-03-24T11:42:27.406] preempt/none loaded
+[2015-03-24T11:42:27.406] debug3: Success.
+[2015-03-24T11:42:27.406] debug3: Trying to load plugin /usr/local/lib/slurm/checkpoint_none.so
+[2015-03-24T11:42:27.406] debug3: Success.
+[2015-03-24T11:42:27.406] debug:  Checkpoint plugin loaded: checkpoint/none
+[2015-03-24T11:42:27.406] debug3: Trying to load plugin /usr/local/lib/slurm/acct_gather_energy_none.so
+[2015-03-24T11:42:27.406] debug:  AcctGatherEnergy NONE plugin loaded
+[2015-03-24T11:42:27.406] debug3: Success.
+[2015-03-24T11:42:27.406] debug3: Trying to load plugin /usr/local/lib/slurm/acct_gather_profile_none.so
+[2015-03-24T11:42:27.406] debug:  AcctGatherProfile NONE plugin loaded
+[2015-03-24T11:42:27.406] debug3: Success.
+[2015-03-24T11:42:27.406] debug3: Trying to load plugin /usr/local/lib/slurm/acct_gather_infiniband_none.so
+[2015-03-24T11:42:27.407] debug:  AcctGatherInfiniband NONE plugin loaded
+[2015-03-24T11:42:27.407] debug3: Success.
+[2015-03-24T11:42:27.407] debug3: Trying to load plugin /usr/local/lib/slurm/acct_gather_filesystem_none.so
+[2015-03-24T11:42:27.407] debug:  AcctGatherFilesystem NONE plugin loaded
+[2015-03-24T11:42:27.407] debug3: Success.
+[2015-03-24T11:42:27.407] debug2: No acct_gather.conf file (/usr/local/etc/acct_gather.conf)
+[2015-03-24T11:42:27.407] debug3: Trying to load plugin /usr/local/lib/slurm/jobacct_gather_none.so
+[2015-03-24T11:42:27.407] debug:  Job accounting gather NOT_INVOKED plugin loaded
+[2015-03-24T11:42:27.407] debug3: Success.
+[2015-03-24T11:42:27.407] debug3: Trying to load plugin /usr/local/lib/slurm/ext_sensors_none.so
+[2015-03-24T11:42:27.407] ExtSensors NONE plugin loaded
+[2015-03-24T11:42:27.407] debug3: Success.
+[2015-03-24T11:42:27.407] debug3: Trying to load plugin /usr/local/lib/slurm/switch_none.so
+[2015-03-24T11:42:27.407] debug:  switch NONE plugin loaded
+[2015-03-24T11:42:27.407] debug3: Success.
+[2015-03-24T11:42:27.407] debug:  No backup controller to shutdown
+[2015-03-24T11:42:27.407] debug3: Trying to load plugin /usr/local/lib/slurm/accounting_storage_none.so
+[2015-03-24T11:42:27.407] Accounting storage NOT INVOKED plugin loaded
+[2015-03-24T11:42:27.407] debug3: Success.
+[2015-03-24T11:42:27.407] debug3: not enforcing associations and no list was given so we are giving a blank list
+[2015-03-24T11:42:27.407] debug2: No Assoc usage file (/tmp/assoc_usage) to recover
+[2015-03-24T11:42:27.407] debug:  Reading slurm.conf file: /usr/local/etc/slurm.conf
+[2015-03-24T11:42:27.408] debug3: layouts: layouts_init()...
+[2015-03-24T11:42:27.409] layouts: 1 layout(s) to initialize
+[2015-03-24T11:42:27.409] debug2: layouts: loading cons_res_partition...
+[2015-03-24T11:42:27.409] debug3: Trying to load plugin /usr/local/lib/slurm/layouts_cons_res_partition_default.so
+[2015-03-24T11:42:27.409] debug3: Success.
+[2015-03-24T11:42:27.409] layouts: layouts_init done : 1 layout(s) initialized
+[2015-03-24T11:42:27.409] debug3: Trying to load plugin /usr/local/lib/slurm/topology_none.so
+[2015-03-24T11:42:27.409] topology NONE plugin loaded
+[2015-03-24T11:42:27.409] debug3: Success.
+[2015-03-24T11:42:27.409] debug:  No DownNodes
+[2015-03-24T11:42:27.409] debug3: Trying to load plugin /usr/local/lib/slurm/jobcomp_none.so
+[2015-03-24T11:42:27.409] debug3: Success.
+[2015-03-24T11:42:27.409] debug3: Trying to load plugin /usr/local/lib/slurm/sched_backfill.so
+[2015-03-24T11:42:27.409] sched: Backfill scheduler plugin loaded
+[2015-03-24T11:42:27.410] debug3: Success.
+[2015-03-24T11:42:27.410] debug3: Trying to load plugin /usr/local/lib/slurm/route_default.so
+[2015-03-24T11:42:27.410] route default plugin loaded
+[2015-03-24T11:42:27.410] debug3: Success.
+[2015-03-24T11:42:27.410] error: ################################################
+[2015-03-24T11:42:27.410] error: ###       SEVERE SECURITY VULERABILTY        ###
+[2015-03-24T11:42:27.410] error: ### StateSaveLocation DIRECTORY IS WORLD WRITABLE ###
+[2015-03-24T11:42:27.410] error: ###         CORRECT FILE PERMISSIONS         ###
+[2015-03-24T11:42:27.410] error: ################################################
+[2015-03-24T11:42:27.410] layouts: loading entities/relations information
+[2015-03-24T11:42:27.410] debug3: layouts: loading node dinesh-HP-ProDesk-600-G1-TWR
+[2015-03-24T11:42:27.410] debug:  layouts: 1/1 nodes in hash table, rc=0
+[2015-03-24T11:42:27.410] debug:  layouts: loading stage 1
+[2015-03-24T11:42:27.410] debug3: layouts: reading config for cons_res_partition
+[2015-03-24T11:42:27.411] error: Parsing error at unrecognized key: NumPartition
+[2015-03-24T11:42:27.411] error: Unable to parse line  NumPartition=2 FreeCores=40 AllocatedCores=0 NumCores=40 Enclosed=debug,partition1
+
+[2015-03-24T11:42:27.411] error: Parse error in file /usr/local/etc/layouts.d/cons_res_partition.conf line 6: " NumPartition=2 FreeCores=40 AllocatedCores=0 NumCores=40 Enclosed=debug,partition1"
+[2015-03-24T11:42:27.411] error: FreeMemory value (7897MB) is not a valid number
+[2015-03-24T11:42:27.412] error: AllocatedJobID value (-1) is less than zero
+[2015-03-24T11:42:27.412] error: AllocatedJobID value (-1) is less than zero
+[2015-03-24T11:42:27.412] error: AllocatedJobID value (-1) is less than zero
+[2015-03-24T11:42:27.412] error: AllocatedJobID value (-1) is less than zero
+[2015-03-24T11:42:27.413] error: AllocatedJobID value (-1) is less than zero
+[2015-03-24T11:42:27.413] fatal: layouts: something went wrong when opening/reading '/usr/local/etc/layouts.d/cons_res_partition.conf': No error
+[2015-03-24T11:43:44.781] pidfile not locked, assuming no running daemon
+[2015-03-24T11:43:44.782] debug3: Version in last_conf_lite header is 7424
+[2015-03-24T11:43:44.830] error: Configured MailProg is invalid
+[2015-03-24T11:43:44.830] slurmctld version 15.08.0-0pre2 started on cluster linux
+[2015-03-24T11:43:44.830] debug3: Trying to load plugin /usr/local/lib/slurm/crypto_munge.so
+[2015-03-24T11:43:44.830] Munge cryptographic signature plugin loaded
+[2015-03-24T11:43:44.830] debug3: Success.
+[2015-03-24T11:43:44.830] debug3: Trying to load plugin /usr/local/lib/slurm/select_cons_res_layout.so
+[2015-03-24T11:43:44.830] Consumable Resources Layout (CRL) Node Selection plugin loaded with argument 20
+[2015-03-24T11:43:44.830] debug3: Success.
+[2015-03-24T11:43:44.830] debug3: Trying to load plugin /usr/local/lib/slurm/preempt_none.so
+[2015-03-24T11:43:44.830] preempt/none loaded
+[2015-03-24T11:43:44.830] debug3: Success.
+[2015-03-24T11:43:44.830] debug3: Trying to load plugin /usr/local/lib/slurm/checkpoint_none.so
+[2015-03-24T11:43:44.830] debug3: Success.
+[2015-03-24T11:43:44.830] debug:  Checkpoint plugin loaded: checkpoint/none
+[2015-03-24T11:43:44.830] debug3: Trying to load plugin /usr/local/lib/slurm/acct_gather_energy_none.so
+[2015-03-24T11:43:44.830] debug:  AcctGatherEnergy NONE plugin loaded
+[2015-03-24T11:43:44.830] debug3: Success.
+[2015-03-24T11:43:44.830] debug3: Trying to load plugin /usr/local/lib/slurm/acct_gather_profile_none.so
+[2015-03-24T11:43:44.830] debug:  AcctGatherProfile NONE plugin loaded
+[2015-03-24T11:43:44.830] debug3: Success.
+[2015-03-24T11:43:44.830] debug3: Trying to load plugin /usr/local/lib/slurm/acct_gather_infiniband_none.so
+[2015-03-24T11:43:44.830] debug:  AcctGatherInfiniband NONE plugin loaded
+[2015-03-24T11:43:44.830] debug3: Success.
+[2015-03-24T11:43:44.830] debug3: Trying to load plugin /usr/local/lib/slurm/acct_gather_filesystem_none.so
+[2015-03-24T11:43:44.830] debug:  AcctGatherFilesystem NONE plugin loaded
+[2015-03-24T11:43:44.830] debug3: Success.
+[2015-03-24T11:43:44.830] debug2: No acct_gather.conf file (/usr/local/etc/acct_gather.conf)
+[2015-03-24T11:43:44.830] debug3: Trying to load plugin /usr/local/lib/slurm/jobacct_gather_none.so
+[2015-03-24T11:43:44.831] debug:  Job accounting gather NOT_INVOKED plugin loaded
+[2015-03-24T11:43:44.831] debug3: Success.
+[2015-03-24T11:43:44.831] debug3: Trying to load plugin /usr/local/lib/slurm/ext_sensors_none.so
+[2015-03-24T11:43:44.831] ExtSensors NONE plugin loaded
+[2015-03-24T11:43:44.831] debug3: Success.
+[2015-03-24T11:43:44.831] debug3: Trying to load plugin /usr/local/lib/slurm/switch_none.so
+[2015-03-24T11:43:44.831] debug:  switch NONE plugin loaded
+[2015-03-24T11:43:44.831] debug3: Success.
+[2015-03-24T11:43:44.831] debug:  No backup controller to shutdown
+[2015-03-24T11:43:44.831] debug3: Trying to load plugin /usr/local/lib/slurm/accounting_storage_none.so
+[2015-03-24T11:43:44.831] Accounting storage NOT INVOKED plugin loaded
+[2015-03-24T11:43:44.831] debug3: Success.
+[2015-03-24T11:43:44.831] debug3: not enforcing associations and no list was given so we are giving a blank list
+[2015-03-24T11:43:44.831] debug2: No Assoc usage file (/tmp/assoc_usage) to recover
+[2015-03-24T11:43:44.831] debug:  Reading slurm.conf file: /usr/local/etc/slurm.conf
+[2015-03-24T11:43:44.831] debug3: layouts: layouts_init()...
+[2015-03-24T11:43:44.831] layouts: 1 layout(s) to initialize
+[2015-03-24T11:43:44.831] debug2: layouts: loading cons_res_partition...
+[2015-03-24T11:43:44.831] debug3: Trying to load plugin /usr/local/lib/slurm/layouts_cons_res_partition_default.so
+[2015-03-24T11:43:44.831] debug3: Success.
+[2015-03-24T11:43:44.831] layouts: layouts_init done : 1 layout(s) initialized
+[2015-03-24T11:43:44.831] debug3: Trying to load plugin /usr/local/lib/slurm/topology_none.so
+[2015-03-24T11:43:44.831] topology NONE plugin loaded
+[2015-03-24T11:43:44.831] debug3: Success.
+[2015-03-24T11:43:44.832] debug:  No DownNodes
+[2015-03-24T11:43:44.832] debug3: Trying to load plugin /usr/local/lib/slurm/jobcomp_none.so
+[2015-03-24T11:43:44.832] debug3: Success.
+[2015-03-24T11:43:44.832] debug3: Trying to load plugin /usr/local/lib/slurm/sched_backfill.so
+[2015-03-24T11:43:44.832] sched: Backfill scheduler plugin loaded
+[2015-03-24T11:43:44.832] debug3: Success.
+[2015-03-24T11:43:44.832] debug3: Trying to load plugin /usr/local/lib/slurm/route_default.so
+[2015-03-24T11:43:44.832] route default plugin loaded
+[2015-03-24T11:43:44.832] debug3: Success.
+[2015-03-24T11:43:44.832] error: ################################################
+[2015-03-24T11:43:44.832] error: ###       SEVERE SECURITY VULERABILTY        ###
+[2015-03-24T11:43:44.832] error: ### StateSaveLocation DIRECTORY IS WORLD WRITABLE ###
+[2015-03-24T11:43:44.832] error: ###         CORRECT FILE PERMISSIONS         ###
+[2015-03-24T11:43:44.832] error: ################################################
+[2015-03-24T11:43:44.832] layouts: loading entities/relations information
+[2015-03-24T11:43:44.832] debug3: layouts: loading node dinesh-HP-ProDesk-600-G1-TWR
+[2015-03-24T11:43:44.832] debug:  layouts: 1/1 nodes in hash table, rc=0
+[2015-03-24T11:43:44.832] debug:  layouts: loading stage 1
+[2015-03-24T11:43:44.832] debug3: layouts: reading config for cons_res_partition
+[2015-03-24T11:43:44.832] error: FreeMemory value (7897MB) is not a valid number
+[2015-03-24T11:43:44.833] debug3: layouts: configuration file '/usr/local/etc/layouts.d/cons_res_partition.conf' is loaded
+[2015-03-24T11:43:44.833] error: layouts: entity 'linux' type (cluster) is invalid, skipping
+[2015-03-24T11:43:44.833] error: layouts: entity 'dinesh-HP-ProDesk-600-G1-TWR' type (node) differs from already registered entity type (Node) skipping
+[2015-03-24T11:43:44.833] error: layouts: unable to find specified root entity `linux'
+[2015-03-24T11:43:44.833] debug:  layouts: loading stage 1.1 (restore state)
+[2015-03-24T11:43:44.833] debug3: layouts: reading state of cons_res_partition
+[2015-03-24T11:43:44.833] debug:  layouts: skipping non existent state file for 'cons_res_partition/default'
+[2015-03-24T11:43:44.833] debug:  layouts: loading stage 2
+[2015-03-24T11:43:44.833] debug3: layouts: creating relations for cons_res_partition
+[2015-03-24T11:43:44.833] debug:  layouts: loading stage 3
+[2015-03-24T11:43:44.833] debug3: layouts: autoupdating cons_res_partition
+[2015-03-24T11:43:44.833] fatal: Failed to load the layouts framework configuration
+[2015-03-24T11:49:43.964] pidfile not locked, assuming no running daemon
+[2015-03-24T11:49:43.964] debug3: Version in last_conf_lite header is 7424
+[2015-03-24T11:49:43.989] error: Configured MailProg is invalid
+[2015-03-24T11:49:43.989] slurmctld version 15.08.0-0pre2 started on cluster linux
+[2015-03-24T11:49:43.989] debug3: Trying to load plugin /usr/local/lib/slurm/crypto_munge.so
+[2015-03-24T11:49:43.989] Munge cryptographic signature plugin loaded
+[2015-03-24T11:49:43.989] debug3: Success.
+[2015-03-24T11:49:43.989] debug3: Trying to load plugin /usr/local/lib/slurm/select_cons_res_layout.so
+[2015-03-24T11:49:43.989] Consumable Resources Layout (CRL) Node Selection plugin loaded with argument 20
+[2015-03-24T11:49:43.989] debug3: Success.
+[2015-03-24T11:49:43.989] debug3: Trying to load plugin /usr/local/lib/slurm/preempt_none.so
+[2015-03-24T11:49:43.989] preempt/none loaded
+[2015-03-24T11:49:43.989] debug3: Success.
+[2015-03-24T11:49:43.989] debug3: Trying to load plugin /usr/local/lib/slurm/checkpoint_none.so
+[2015-03-24T11:49:43.989] debug3: Success.
+[2015-03-24T11:49:43.989] debug:  Checkpoint plugin loaded: checkpoint/none
+[2015-03-24T11:49:43.990] debug3: Trying to load plugin /usr/local/lib/slurm/acct_gather_energy_none.so
+[2015-03-24T11:49:43.990] debug:  AcctGatherEnergy NONE plugin loaded
+[2015-03-24T11:49:43.990] debug3: Success.
+[2015-03-24T11:49:43.990] debug3: Trying to load plugin /usr/local/lib/slurm/acct_gather_profile_none.so
+[2015-03-24T11:49:43.990] debug:  AcctGatherProfile NONE plugin loaded
+[2015-03-24T11:49:43.990] debug3: Success.
+[2015-03-24T11:49:43.990] debug3: Trying to load plugin /usr/local/lib/slurm/acct_gather_infiniband_none.so
+[2015-03-24T11:49:43.990] debug:  AcctGatherInfiniband NONE plugin loaded
+[2015-03-24T11:49:43.990] debug3: Success.
+[2015-03-24T11:49:43.990] debug3: Trying to load plugin /usr/local/lib/slurm/acct_gather_filesystem_none.so
+[2015-03-24T11:49:43.990] debug:  AcctGatherFilesystem NONE plugin loaded
+[2015-03-24T11:49:43.990] debug3: Success.
+[2015-03-24T11:49:43.990] debug2: No acct_gather.conf file (/usr/local/etc/acct_gather.conf)
+[2015-03-24T11:49:43.990] debug3: Trying to load plugin /usr/local/lib/slurm/jobacct_gather_none.so
+[2015-03-24T11:49:43.990] debug:  Job accounting gather NOT_INVOKED plugin loaded
+[2015-03-24T11:49:43.990] debug3: Success.
+[2015-03-24T11:49:43.990] debug3: Trying to load plugin /usr/local/lib/slurm/ext_sensors_none.so
+[2015-03-24T11:49:43.990] ExtSensors NONE plugin loaded
+[2015-03-24T11:49:43.990] debug3: Success.
+[2015-03-24T11:49:43.990] debug3: Trying to load plugin /usr/local/lib/slurm/switch_none.so
+[2015-03-24T11:49:43.990] debug:  switch NONE plugin loaded
+[2015-03-24T11:49:43.990] debug3: Success.
+[2015-03-24T11:49:43.990] debug:  No backup controller to shutdown
+[2015-03-24T11:49:43.990] debug3: Trying to load plugin /usr/local/lib/slurm/accounting_storage_none.so
+[2015-03-24T11:49:43.990] Accounting storage NOT INVOKED plugin loaded
+[2015-03-24T11:49:43.990] debug3: Success.
+[2015-03-24T11:49:43.990] debug3: not enforcing associations and no list was given so we are giving a blank list
+[2015-03-24T11:49:43.990] debug2: No Assoc usage file (/tmp/assoc_usage) to recover
+[2015-03-24T11:49:43.990] debug:  Reading slurm.conf file: /usr/local/etc/slurm.conf
+[2015-03-24T11:49:43.991] debug3: layouts: layouts_init()...
+[2015-03-24T11:49:43.991] layouts: 1 layout(s) to initialize
+[2015-03-24T11:49:43.991] debug2: layouts: loading cons_res_partition...
+[2015-03-24T11:49:43.991] debug3: Trying to load plugin /usr/local/lib/slurm/layouts_cons_res_partition_default.so
+[2015-03-24T11:49:43.991] debug3: Success.
+[2015-03-24T11:49:43.991] layouts: layouts_init done : 1 layout(s) initialized
+[2015-03-24T11:49:43.991] debug3: Trying to load plugin /usr/local/lib/slurm/topology_none.so
+[2015-03-24T11:49:43.991] topology NONE plugin loaded
+[2015-03-24T11:49:43.991] debug3: Success.
+[2015-03-24T11:49:43.991] debug:  No DownNodes
+[2015-03-24T11:49:43.991] debug3: Trying to load plugin /usr/local/lib/slurm/jobcomp_none.so
+[2015-03-24T11:49:43.991] debug3: Success.
+[2015-03-24T11:49:43.991] debug3: Trying to load plugin /usr/local/lib/slurm/sched_backfill.so
+[2015-03-24T11:49:43.991] sched: Backfill scheduler plugin loaded
+[2015-03-24T11:49:43.991] debug3: Success.
+[2015-03-24T11:49:43.991] debug3: Trying to load plugin /usr/local/lib/slurm/route_default.so
+[2015-03-24T11:49:43.991] route default plugin loaded
+[2015-03-24T11:49:43.991] debug3: Success.
+[2015-03-24T11:49:43.991] error: ################################################
+[2015-03-24T11:49:43.991] error: ###       SEVERE SECURITY VULERABILTY        ###
+[2015-03-24T11:49:43.992] error: ### StateSaveLocation DIRECTORY IS WORLD WRITABLE ###
+[2015-03-24T11:49:43.992] error: ###         CORRECT FILE PERMISSIONS         ###
+[2015-03-24T11:49:43.992] error: ################################################
+[2015-03-24T11:49:43.992] layouts: loading entities/relations information
+[2015-03-24T11:49:43.992] debug3: layouts: loading node dinesh-HP-ProDesk-600-G1-TWR
+[2015-03-24T11:49:43.992] debug:  layouts: 1/1 nodes in hash table, rc=0
+[2015-03-24T11:49:43.992] debug:  layouts: loading stage 1
+[2015-03-24T11:49:43.992] debug3: layouts: reading config for cons_res_partition
+[2015-03-24T11:49:43.992] debug3: layouts: configuration file '/usr/local/etc/layouts.d/cons_res_partition.conf' is loaded
+[2015-03-24T11:49:43.992] debug:  layouts: loading stage 1.1 (restore state)
+[2015-03-24T11:49:43.992] debug3: layouts: reading state of cons_res_partition
+[2015-03-24T11:49:43.992] debug:  layouts: skipping non existent state file for 'cons_res_partition/default'
+[2015-03-24T11:49:43.993] debug:  layouts: loading stage 2
+[2015-03-24T11:49:43.993] debug3: layouts: creating relations for cons_res_partition
+[2015-03-24T11:49:43.993] debug:  layouts: loading stage 3
+[2015-03-24T11:49:43.993] debug3: layouts: autoupdating cons_res_partition
+[2015-03-24T11:49:43.993] error: Could not open node state file /tmp/node_state: No such file or directory
+[2015-03-24T11:49:43.993] error: NOTE: Trying backup state save file. Information may be lost!
+[2015-03-24T11:49:43.993] No node state file (/tmp/node_state.old) to recover
+[2015-03-24T11:49:43.993] error: Incomplete node data checkpoint file
+[2015-03-24T11:49:43.993] Recovered state of 0 nodes
+[2015-03-24T11:49:43.993] error: Could not open job state file /tmp/job_state: No such file or directory
+[2015-03-24T11:49:43.993] error: NOTE: Trying backup state save file. Jobs may be lost!
+[2015-03-24T11:49:43.993] No job state file (/tmp/job_state.old) to recover
+[2015-03-24T11:49:43.993] cons_res: select_p_node_init
+[2015-03-24T11:49:43.993] cons_res: preparing for 1 partitions
+[2015-03-24T11:49:43.993] layouts: loading entities/relations information
+[2015-03-24T11:49:43.993] init_requeue_policy: kill_invalid_depend is set to 0
+[2015-03-24T11:49:43.993] debug:  Updating partition uid access list
+[2015-03-24T11:49:43.993] error: Could not open reservation state file /tmp/resv_state: No such file or directory
+[2015-03-24T11:49:43.993] error: NOTE: Trying backup state save file. Reservations may be lost
+[2015-03-24T11:49:43.993] No reservation state file (/tmp/resv_state.old) to recover
+[2015-03-24T11:49:43.993] Recovered state of 0 reservations
+[2015-03-24T11:49:43.993] error: Could not open trigger state file /tmp/trigger_state: No such file or directory
+[2015-03-24T11:49:43.993] error: NOTE: Trying backup state save file. Triggers may be lost!
+[2015-03-24T11:49:43.993] No trigger state file (/tmp/trigger_state.old) to recover
+[2015-03-24T11:49:43.993] error: Incomplete trigger data checkpoint file
+[2015-03-24T11:49:43.993] State of 0 triggers recovered
+[2015-03-24T11:49:43.993] read_slurm_conf: backup_controller not specified.
+[2015-03-24T11:49:43.993] Reinitializing job accounting state
+[2015-03-24T11:49:43.993] cons_res: select_p_reconfigure
+[2015-03-24T11:49:43.993] cons_res: select_p_node_init
+[2015-03-24T11:49:43.993] cons_res: preparing for 1 partitions
+[2015-03-24T11:49:43.993] Running as primary controller
+[2015-03-24T11:49:43.993] debug3: Trying to load plugin /usr/local/lib/slurm/priority_basic.so
+[2015-03-24T11:49:43.993] debug:  Priority BASIC plugin loaded
+[2015-03-24T11:49:43.993] debug3: Success.
+[2015-03-24T11:49:43.993] error: Could not open job state file /tmp/sicp_state: No such file or directory
+[2015-03-24T11:49:43.993] debug3: _slurmctld_rpc_mgr pid = 21905
+[2015-03-24T11:49:43.993] debug3: _slurmctld_background pid = 21905
+[2015-03-24T11:49:43.993] debug:  power_save module disabled, SuspendTime < 0
+[2015-03-24T11:49:43.993] debug2: slurmctld listening on 0.0.0.0:6817
+[2015-03-24T11:49:44.994] debug3: Trying to load plugin /usr/local/lib/slurm/auth_munge.so
+[2015-03-24T11:49:44.994] debug:  auth plugin for Munge (http://code.google.com/p/munge/) loaded
+[2015-03-24T11:49:44.994] debug3: Success.
+[2015-03-24T11:49:44.994] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:45.094] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:45.195] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:45.295] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:45.395] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:45.495] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:45.596] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:45.696] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:45.796] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:45.896] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:45.997] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:46.097] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:46.197] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:46.297] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:46.398] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:46.498] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:46.598] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:46.698] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:46.798] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:46.899] debug:  Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory (retrying ...)
+[2015-03-24T11:49:46.997] debug:  Spawning registration agent for dinesh-HP-ProDesk-600-G1-TWR 1 hosts
+[2015-03-24T11:49:46.997] debug2: Spawning RPC agent for msg_type REQUEST_NODE_REGISTRATION_STATUS
+[2015-03-24T11:49:46.997] debug2: got 1 threads to send out
+[2015-03-24T11:49:46.997] debug2: Tree head got back 0 looking for 1
+[2015-03-24T11:49:46.997] debug3: Tree sending to dinesh-HP-ProDesk-600-G1-TWR
+[2015-03-24T11:49:46.997] debug2: slurm_connect failed: Connection refused
+[2015-03-24T11:49:46.997] debug2: Error connecting slurm stream socket at 127.0.1.1:6818: Connection refused
+[2015-03-24T11:49:46.998] debug3: connect refused, retrying
+[2015-03-24T11:49:46.999] error: If munged is up, restart with --num-threads=10
+[2015-03-24T11:49:46.999] error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+[2015-03-24T11:49:46.999] error: authentication: Socket communication error
+[2015-03-24T11:49:46.999] error: slurm_load_sicp(HOSTNAME) error: Unspecified error
+[2015-03-24T11:49:46.999] debug:  _slurm_recv_timeout at 0 of 4, recv zero bytes
+[2015-03-24T11:49:46.999] error: slurm_receive_msg: Zero Bytes were transmitted or received
+[2015-03-24T11:49:47.009] error: slurm_receive_msg: Zero Bytes were transmitted or received
+[2015-03-24T11:49:47.079] debug4: unable to create link for /tmp/sicp_state -> /tmp/sicp_state.old: No such file or directory
+[2015-03-24T11:49:47.998] debug2: slurm_connect failed: Connection refused
+[2015-03-24T11:49:47.998] debug2: Error connecting slurm stream socket at 127.0.1.1:6818: Connection refused
+[2015-03-24T11:49:48.998] debug2: slurm_connect failed: Connection refused
+[2015-03-24T11:49:48.998] debug2: Error connecting slurm stream socket at 127.0.1.1:6818: Connection refused
+[2015-03-24T11:49:49.999] debug2: slurm_connect failed: Connection refused
+[2015-03-24T11:49:49.999] debug2: Error connecting slurm stream socket at 127.0.1.1:6818: Connection refused
+[2015-03-24T11:49:50.999] debug2: slurm_connect failed: Connection refused
+[2015-03-24T11:49:50.999] debug2: Error connecting slurm stream socket at 127.0.1.1:6818: Connection refused
+[2015-03-24T11:49:51.999] debug2: slurm_connect failed: Connection refused
+[2015-03-24T11:49:51.999] debug2: Error connecting slurm stream socket at 127.0.1.1:6818: Connection refused
+[2015-03-24T11:49:52.451] Terminate signal (SIGINT or SIGTERM) received
+[2015-03-24T11:49:52.451] debug:  sched: slurmctld terminating
+[2015-03-24T11:49:52.451] debug3: _slurmctld_rpc_mgr shutting down
+[2015-03-24T11:49:52.504] Saving all slurm state
+[2015-03-24T11:49:52.504] error: unable to get layout of type 'layouts/cons_res_partition'
+[2015-03-24T11:49:52.504] error: unable to save layout[layouts/cons_res_partition] state
+[2015-03-24T11:49:52.505] error: Could not open job state file /tmp/job_state: No such file or directory
+[2015-03-24T11:49:52.505] error: NOTE: Trying backup state save file. Jobs may be lost!
+[2015-03-24T11:49:52.505] No job state file (/tmp/job_state.old) found
+[2015-03-24T11:49:52.505] debug3: Writing job id 1 to header record of job_state file
+[2015-03-24T11:49:52.534] debug4: unable to create link for /tmp/job_state -> /tmp/job_state.old: No such file or directory
+[2015-03-24T11:49:52.534] debug4: unable to create link for /tmp/assoc_mgr_state -> /tmp/assoc_mgr_state.old: No such file or directory
+[2015-03-24T11:49:52.560] debug4: unable to create link for /tmp/assoc_usage -> /tmp/assoc_usage.old: No such file or directory
+[2015-03-24T11:49:52.560] debug4: unable to create link for /tmp/node_state -> /tmp/node_state.old: No such file or directory
+[2015-03-24T11:49:52.586] debug4: unable to create link for /tmp/part_state -> /tmp/part_state.old: No such file or directory
+[2015-03-24T11:49:52.586] debug4: unable to create link for /tmp/qos_usage -> /tmp/qos_usage.old: No such file or directory
+[2015-03-24T11:49:52.586] debug3: _slurmctld_background shutting down
+[2015-03-24T11:49:52.612] debug4: unable to create link for /tmp/resv_state -> /tmp/resv_state.old: No such file or directory
+[2015-03-24T11:49:52.638] debug4: unable to create link for /tmp/trigger_state -> /tmp/trigger_state.old: No such file or directory
+[2015-03-24T11:49:52.639] debug3: layouts: layouts_fini()...
+[2015-03-24T11:49:53.000] debug2: slurm_connect failed: Connection refused
+[2015-03-24T11:49:53.000] debug2: Error connecting slurm stream socket at 127.0.1.1:6818: Connection refused
+[2015-03-24T11:49:54.000] debug2: slurm_connect failed: Connection refused
+[2015-03-24T11:49:54.000] debug2: Error connecting slurm stream socket at 127.0.1.1:6818: Connection refused
+[2015-03-24T11:49:55.000] debug2: slurm_connect failed: Connection refused
+[2015-03-24T11:49:55.000] debug2: Error connecting slurm stream socket at 127.0.1.1:6818: Connection refused
+[2015-03-24T11:49:56.001] debug2: slurm_connect failed: Connection refused
+[2015-03-24T11:49:56.001] debug2: Error connecting slurm stream socket at 127.0.1.1:6818: Connection refused
+[2015-03-24T11:49:57.001] debug2: slurm_connect failed: Connection refused
+[2015-03-24T11:49:57.001] debug2: Error connecting slurm stream socket at 127.0.1.1:6818: Connection refused
+[2015-03-24T11:49:57.001] debug3: problems with dinesh-HP-ProDesk-600-G1-TWR
+[2015-03-24T11:49:57.001] debug2: Tree head got back 1
+[2015-03-24T11:49:57.002] agent/is_node_resp: node:dinesh-HP-ProDesk-600-G1-TWR rpc:1001 : Communication connection failure
+[2015-03-24T11:50:13.991] debug:  backfill: beginning
+[2015-03-24T11:50:13.992] debug:  backfill: no jobs to backfill

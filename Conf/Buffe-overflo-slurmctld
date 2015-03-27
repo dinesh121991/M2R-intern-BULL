@@ -1,0 +1,148 @@
+slurmctld: cons_res: select_p_node_init
+*** buffer overflow detected ***: slurmctld terminated
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x7338f)[0x7f236788438f]
+/lib/x86_64-linux-gnu/libc.so.6(__fortify_fail+0x5c)[0x7f236791bc9c]
+/lib/x86_64-linux-gnu/libc.so.6(+0x109b60)[0x7f236791ab60]
+/lib/x86_64-linux-gnu/libc.so.6(+0x109069)[0x7f236791a069]
+/lib/x86_64-linux-gnu/libc.so.6(_IO_default_xsputn+0xbc)[0x7f236788c70c]
+/lib/x86_64-linux-gnu/libc.so.6(_IO_vfprintf+0xaef)[0x7f236785b7df]
+/lib/x86_64-linux-gnu/libc.so.6(__vsprintf_chk+0x84)[0x7f236791a0f4]
+/lib/x86_64-linux-gnu/libc.so.6(__sprintf_chk+0x7d)[0x7f236791a04d]
+/usr/local/lib/slurm/select_cons_res_layout.so(select_p_node_init+0x297)[0x7f23669b7447]
+slurmctld(read_slurm_conf+0x153d)[0x48309d]
+slurmctld(main+0x80c)[0x42bb6c]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf5)[0x7f2367832ec5]
+slurmctld[0x42dd24]
+======= Memory map: ========
+00400000-005e0000 r-xp 00000000 fc:00 2233471                            /usr/local/sbin/slurmctld
+007e0000-007e1000 r--p 001e0000 fc:00 2233471                            /usr/local/sbin/slurmctld
+007e1000-007e6000 rw-p 001e1000 fc:00 2233471                            /usr/local/sbin/slurmctld
+007e6000-007ec000 rw-p 00000000 00:00 0 
+0240c000-026ea000 rw-p 00000000 00:00 0                                  [heap]
+7f23640d1000-7f23640e7000 r-xp 00000000 fc:00 24776524                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f23640e7000-7f23642e6000 ---p 00016000 fc:00 24776524                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f23642e6000-7f23642e7000 rw-p 00015000 fc:00 24776524                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f23642e7000-7f236477c000 rw-p 00000000 00:00 0 
+7f236477c000-7f236477d000 r-xp 00000000 fc:00 2233383                    /usr/local/lib/slurm/route_default.so
+7f236477d000-7f236497c000 ---p 00001000 fc:00 2233383                    /usr/local/lib/slurm/route_default.so
+7f236497c000-7f236497d000 r--p 00000000 fc:00 2233383                    /usr/local/lib/slurm/route_default.so
+7f236497d000-7f236497e000 rw-p 00001000 fc:00 2233383                    /usr/local/lib/slurm/route_default.so
+7f236497e000-7f2364986000 r-xp 00000000 fc:00 2233388                    /usr/local/lib/slurm/sched_backfill.so
+7f2364986000-7f2364b85000 ---p 00008000 fc:00 2233388                    /usr/local/lib/slurm/sched_backfill.so
+7f2364b85000-7f2364b86000 r--p 00007000 fc:00 2233388                    /usr/local/lib/slurm/sched_backfill.so
+7f2364b86000-7f2364b87000 rw-p 00008000 fc:00 2233388                    /usr/local/lib/slurm/sched_backfill.so
+7f2364b87000-7f2364b88000 r-xp 00000000 fc:00 2233436                    /usr/local/lib/slurm/jobcomp_none.so
+7f2364b88000-7f2364d87000 ---p 00001000 fc:00 2233436                    /usr/local/lib/slurm/jobcomp_none.so
+7f2364d87000-7f2364d88000 r--p 00000000 fc:00 2233436                    /usr/local/lib/slurm/jobcomp_none.so
+7f2364d88000-7f2364d89000 rw-p 00001000 fc:00 2233436                    /usr/local/lib/slurm/jobcomp_none.so
+7f2364d89000-7f2364d8a000 r-xp 00000000 fc:00 2233456                    /usr/local/lib/slurm/topology_none.so
+7f2364d8a000-7f2364f89000 ---p 00001000 fc:00 2233456                    /usr/local/lib/slurm/topology_none.so
+7f2364f89000-7f2364f8a000 r--p 00000000 fc:00 2233456                    /usr/local/lib/slurm/topology_none.so
+7f2364f8a000-7f2364f8b000 rw-p 00001000 fc:00 2233456                    /usr/local/lib/slurm/topology_none.so
+7f2364f8b000-7f2364f8d000 r-xp 00000000 fc:00 2233308                    /usr/local/lib/slurm/layouts_power_default.so
+7f2364f8d000-7f236518c000 ---p 00002000 fc:00 2233308                    /usr/local/lib/slurm/layouts_power_default.so
+7f236518c000-7f236518d000 r--p 00001000 fc:00 2233308                    /usr/local/lib/slurm/layouts_power_default.so
+7f236518d000-7f236518e000 rw-p 00002000 fc:00 2233308                    /usr/local/lib/slurm/layouts_power_default.so
+7f236518e000-7f2365190000 r-xp 00000000 fc:00 2233235                    /usr/local/lib/slurm/layouts_unit_default.so
+7f2365190000-7f2365390000 ---p 00002000 fc:00 2233235                    /usr/local/lib/slurm/layouts_unit_default.so
+7f2365390000-7f2365391000 r--p 00002000 fc:00 2233235                    /usr/local/lib/slurm/layouts_unit_default.so
+7f2365391000-7f2365392000 rw-p 00003000 fc:00 2233235                    /usr/local/lib/slurm/layouts_unit_default.so
+7f2365392000-7f2365394000 r-xp 00000000 fc:00 2233208                    /usr/local/lib/slurm/layouts_cons_res_partition_default.so
+7f2365394000-7f2365593000 ---p 00002000 fc:00 2233208                    /usr/local/lib/slurm/layouts_cons_res_partition_default.so
+7f2365593000-7f2365594000 r--p 00001000 fc:00 2233208                    /usr/local/lib/slurm/layouts_cons_res_partition_default.so
+7f2365594000-7f2365595000 rw-p 00002000 fc:00 2233208                    /usr/local/lib/slurm/layouts_cons_res_partition_default.so
+7f2365595000-7f2365598000 r-xp 00000000 fc:00 2230501                    /usr/local/lib/slurm/accounting_storage_none.so
+7f2365598000-7f2365797000 ---p 00003000 fc:00 2230501                    /usr/local/lib/slurm/accounting_storage_none.so
+7f2365797000-7f2365798000 r--p 00002000 fc:00 2230501                    /usr/local/lib/slurm/accounting_storage_none.so
+7f2365798000-7f2365799000 rw-p 00003000 fc:00 2230501                    /usr/local/lib/slurm/accounting_storage_none.so
+7f2365799000-7f236579b000 r-xp 00000000 fc:00 2233420                    /usr/local/lib/slurm/switch_none.so
+7f236579b000-7f236599a000 ---p 00002000 fc:00 2233420                    /usr/local/lib/slurm/switch_none.so
+7f236599a000-7f236599b000 r--p 00001000 fc:00 2233420                    /usr/local/lib/slurm/switch_none.so
+7f236599b000-7f236599c000 rw-p 00002000 fc:00 2233420                    /usr/local/lib/slurm/switch_none.so
+7f236599c000-7f236599d000 r-xp 00000000 fc:00 2233425                    /usr/local/lib/slurm/ext_sensors_none.so
+7f236599d000-7f2365b9c000 ---p 00001000 fc:00 2233425                    /usr/local/lib/slurm/ext_sensors_none.so
+7f2365b9c000-7f2365b9d000 r--p 00000000 fc:00 2233425                    /usr/local/lib/slurm/ext_sensors_none.so
+7f2365b9d000-7f2365b9e000 rw-p 00001000 fc:00 2233425                    /usr/local/lib/slurm/ext_sensors_none.so
+7f2365b9e000-7f2365ba2000 r-xp 00000000 fc:00 2233290                    /usr/local/lib/slurm/jobacct_gather_linux.so
+7f2365ba2000-7f2365da1000 ---p 00004000 fc:00 2233290                    /usr/local/lib/slurm/jobacct_gather_linux.so
+7f2365da1000-7f2365da2000 r--p 00003000 fc:00 2233290                    /usr/local/lib/slurm/jobacct_gather_linux.so
+7f2365da2000-7f2365da3000 rw-p 00004000 fc:00 2233290                    /usr/local/lib/slurm/jobacct_gather_linux.so
+7f2365da3000-7f2365da4000 r-xp 00000000 fc:00 2233379                    /usr/local/lib/slurm/acct_gather_filesystem_none.so
+7f2365da4000-7f2365fa3000 ---p 00001000 fc:00 2233379                    /usr/local/lib/slurm/acct_gather_filesystem_none.so
+7f2365fa3000-7f2365fa4000 r--p 00000000 fc:00 2233379                    /usr/local/lib/slurm/acct_gather_filesystem_none.so
+7f2365fa4000-7f2365fa5000 rw-p 00001000 fc:00 2233379                    /usr/local/lib/slurm/acct_gather_filesystem_none.so
+7f2365fa5000-7f2365fa6000 r-xp 00000000 fc:00 2233378                    /usr/local/lib/slurm/acct_gather_infiniband_none.so
+7f2365fa6000-7f23661a5000 ---p 00001000 fc:00 2233378                    /usr/local/lib/slurm/acct_gather_infiniband_none.so
+7f23661a5000-7f23661a6000 r--p 00000000 fc:00 2233378                    /usr/local/lib/slurm/acct_gather_infiniband_none.so
+7f23661a6000-7f23661a7000 rw-p 00001000 fc:00 2233378                    /usr/local/lib/slurm/acct_gather_infiniband_none.so
+7f23661a7000-7f23661a8000 r-xp 00000000 fc:00 2233374                    /usr/local/lib/slurm/acct_gather_profile_none.so
+7f23661a8000-7f23663a7000 ---p 00001000 fc:00 2233374                    /usr/local/lib/slurm/acct_gather_profile_none.so
+7f23663a7000-7f23663a8000 r--p 00000000 fc:00 2233374                    /usr/local/lib/slurm/acct_gather_profile_none.so
+7f23663a8000-7f23663a9000 rw-p 00001000 fc:00 2233374                    /usr/local/lib/slurm/acct_gather_profile_none.so
+7f23663a9000-7f23663aa000 r-xp 00000000 fc:00 2233368                    /usr/local/lib/slurm/acct_gather_energy_none.so
+7f23663aa000-7f23665a9000 ---p 00001000 fc:00 2233368                    /usr/local/lib/slurm/acct_gather_energy_none.so
+7f23665a9000-7f23665aa000 r--p 00000000 fc:00 2233368                    /usr/local/lib/slurm/acct_gather_energy_none.so
+7f23665aa000-7f23665ab000 rw-p 00001000 fc:00 2233368                    /usr/local/lib/slurm/acct_gather_energy_none.so
+7f23665ab000-7f23665ac000 r-xp 00000000 fc:00 2233414                    /usr/local/lib/slurm/checkpoint_none.so
+7f23665ac000-7f23667ac000 ---p 00001000 fc:00 2233414                    /usr/local/lib/slurm/checkpoint_none.so
+7f23667ac000-7f23667ad000 r--p 00001000 fc:00 2233414                    /usr/local/lib/slurm/checkpoint_none.so
+7f23667ad000-7f23667ae000 rw-p 00002000 fc:00 2233414                    /usr/local/lib/slurm/checkpoint_none.so
+7f23667ae000-7f23667b0000 r-xp 00000000 fc:00 2233362                    /usr/local/lib/slurm/preempt_qos.so
+7f23667b0000-7f23669af000 ---p 00002000 fc:00 2233362                    /usr/local/lib/slurm/preempt_qos.so
+7f23669af000-7f23669b0000 r--p 00001000 fc:00 2233362                    /usr/local/lib/slurm/preempt_qos.so
+7f23669b0000-7f23669b1000 rw-p 00002000 fc:00 2233362                    /usr/local/lib/slurm/preempt_qos.so
+7f23669b1000-7f23669c8000 r-xp 00000000 fc:00 2233413                    /usr/local/lib/slurm/select_cons_res_layout.so
+7f23669c8000-7f2366bc7000 ---p 00017000 fc:00 2233413                    /usr/local/lib/slurm/select_cons_res_layout.so
+7f2366bc7000-7f2366bc8000 r--p 00016000 fc:00 2233413                    /usr/local/lib/slurm/select_cons_res_layout.so
+7f2366bc8000-7f2366bc9000 rw-p 00017000 fc:00 2233413                    /usr/local/lib/slurm/select_cons_res_layout.so
+7f2366bc9000-7f2366bd1000 r-xp 00000000 fc:00 1835056                    /usr/lib/libmunge.so.2.0.0
+7f2366bd1000-7f2366dd0000 ---p 00008000 fc:00 1835056                    /usr/lib/libmunge.so.2.0.0
+7f2366dd0000-7f2366dd1000 r--p 00007000 fc:00 1835056                    /usr/lib/libmunge.so.2.0.0
+7f2366dd1000-7f2366dd2000 rw-p 00008000 fc:00 1835056                    /usr/lib/libmunge.so.2.0.0
+7f2366dd2000-7f2366dd4000 r-xp 00000000 fc:00 2233423                    /usr/local/lib/slurm/crypto_munge.so
+7f2366dd4000-7f2366fd3000 ---p 00002000 fc:00 2233423                    /usr/local/lib/slurm/crypto_munge.so
+7f2366fd3000-7f2366fd4000 r--p 00001000 fc:00 2233423                    /usr/local/lib/slurm/crypto_munge.so
+7f2366fd4000-7f2366fd5000 rw-p 00002000 fc:00 2233423                    /usr/local/lib/slurm/crypto_munge.so
+7f2366fd5000-7f2366fe0000 r-xp 00000000 fc:00 24772781                   /lib/x86_64-linux-gnu/libnss_files-2.19.so
+7f2366fe0000-7f23671df000 ---p 0000b000 fc:00 24772781                   /lib/x86_64-linux-gnu/libnss_files-2.19.so
+7f23671df000-7f23671e0000 r--p 0000a000 fc:00 24772781                   /lib/x86_64-linux-gnu/libnss_files-2.19.so
+7f23671e0000-7f23671e1000 rw-p 0000b000 fc:00 24772781                   /lib/x86_64-linux-gnu/libnss_files-2.19.so
+7f23671e1000-7f23671ec000 r-xp 00000000 fc:00 24773454                   /lib/x86_64-linux-gnu/libnss_nis-2.19.so
+7f23671ec000-7f23673eb000 ---p 0000b000 fc:00 24773454                   /lib/x86_64-linux-gnu/libnss_nis-2.19.so
+7f23673eb000-7f23673ec000 r--p 0000a000 fc:00 24773454                   /lib/x86_64-linux-gnu/libnss_nis-2.19.so
+7f23673ec000-7f23673ed000 rw-p 0000b000 fc:00 24773454                   /lib/x86_64-linux-gnu/libnss_nis-2.19.so
+7f23673ed000-7f2367404000 r-xp 00000000 fc:00 24773443                   /lib/x86_64-linux-gnu/libnsl-2.19.so
+7f2367404000-7f2367603000 ---p 00017000 fc:00 24773443                   /lib/x86_64-linux-gnu/libnsl-2.19.so
+7f2367603000-7f2367604000 r--p 00016000 fc:00 24773443                   /lib/x86_64-linux-gnu/libnsl-2.19.so
+7f2367604000-7f2367605000 rw-p 00017000 fc:00 24773443                   /lib/x86_64-linux-gnu/libnsl-2.19.so
+7f2367605000-7f2367607000 rw-p 00000000 00:00 0 
+7f2367607000-7f2367610000 r-xp 00000000 fc:00 24773442                   /lib/x86_64-linux-gnu/libnss_compat-2.19.so
+7f2367610000-7f236780f000 ---p 00009000 fc:00 24773442                   /lib/x86_64-linux-gnu/libnss_compat-2.19.so
+7f236780f000-7f2367810000 r--p 00008000 fc:00 24773442                   /lib/x86_64-linux-gnu/libnss_compat-2.19.so
+7f2367810000-7f2367811000 rw-p 00009000 fc:00 24773442                   /lib/x86_64-linux-gnu/libnss_compat-2.19.so
+7f2367811000-7f23679cc000 r-xp 00000000 fc:00 24773448                   /lib/x86_64-linux-gnu/libc-2.19.so
+7f23679cc000-7f2367bcb000 ---p 001bb000 fc:00 24773448                   /lib/x86_64-linux-gnu/libc-2.19.so
+7f2367bcb000-7f2367bcf000 r--p 001ba000 fc:00 24773448                   /lib/x86_64-linux-gnu/libc-2.19.so
+7f2367bcf000-7f2367bd1000 rw-p 001be000 fc:00 24773448                   /lib/x86_64-linux-gnu/libc-2.19.so
+7f2367bd1000-7f2367bd6000 rw-p 00000000 00:00 0 
+7f2367bd6000-7f2367bef000 r-xp 00000000 fc:00 24773449                   /lib/x86_64-linux-gnu/libpthread-2.19.so
+7f2367bef000-7f2367dee000 ---p 00019000 fc:00 24773449                   /lib/x86_64-linux-gnu/libpthread-2.19.so
+7f2367dee000-7f2367def000 r--p 00018000 fc:00 24773449                   /lib/x86_64-linux-gnu/libpthread-2.19.so
+7f2367def000-7f2367df0000 rw-p 00019000 fc:00 24773449                   /lib/x86_64-linux-gnu/libpthread-2.19.so
+7f2367df0000-7f2367df4000 rw-p 00000000 00:00 0 
+7f2367df4000-7f2367df7000 r-xp 00000000 fc:00 24773437                   /lib/x86_64-linux-gnu/libdl-2.19.so
+7f2367df7000-7f2367ff6000 ---p 00003000 fc:00 24773437                   /lib/x86_64-linux-gnu/libdl-2.19.so
+7f2367ff6000-7f2367ff7000 r--p 00002000 fc:00 24773437                   /lib/x86_64-linux-gnu/libdl-2.19.so
+7f2367ff7000-7f2367ff8000 rw-p 00003000 fc:00 24773437                   /lib/x86_64-linux-gnu/libdl-2.19.so
+7f2367ff8000-7f236801b000 r-xp 00000000 fc:00 24773445                   /lib/x86_64-linux-gnu/ld-2.19.so
+7f23680f2000-7f23680f3000 ---p 00000000 00:00 0 
+7f23680f3000-7f23681f7000 rw-p 00000000 00:00 0                          [stack:9815]
+7f2368216000-7f236821a000 rw-p 00000000 00:00 0 
+7f236821a000-7f236821b000 r--p 00022000 fc:00 24773445                   /lib/x86_64-linux-gnu/ld-2.19.so
+7f236821b000-7f236821c000 rw-p 00023000 fc:00 24773445                   /lib/x86_64-linux-gnu/ld-2.19.so
+7f236821c000-7f236821d000 rw-p 00000000 00:00 0 
+7fff48d7c000-7fff48d9d000 rw-p 00000000 00:00 0                          [stack]
+7fff48da0000-7fff48da2000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+dinesh@dinesh-HP-ProDesk-600-G1-TWR:~/current-dev$

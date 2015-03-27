@@ -1,0 +1,284 @@
+Priority=10
+Root=Cluster
+Entity=Cluster Type=Center NumSumNodes=41 NumSumCoresInCluster=160 NumSumSocketsInCluster=80 FreeSumNodes=41 FreeSumCoresInCluster=160 FreeSumSocketsInCluster=80 AllocatedSumNodes=0 AllocatedSumCoresInCluster=0 AllocatedSumSocketsInCluster=0 Enclosed=virtual[0-40]
+Entity=virtual0 Type=Node BitmapPosition=0 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[0-1]
+Entity=socket0 Type=Socket BitmapPosition=1 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[0-1]
+Entity=core0 Type=Core BitmapPosition=0 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core1 Type=Core BitmapPosition=1 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket1 Type=Socket BitmapPosition=3 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[2-3]
+Entity=core2 Type=Core BitmapPosition=2 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core3 Type=Core BitmapPosition=3 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual1 Type=Node BitmapPosition=1 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[2-3]
+Entity=socket2 Type=Socket BitmapPosition=5 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[4-5]
+Entity=core4 Type=Core BitmapPosition=4 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core5 Type=Core BitmapPosition=5 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket3 Type=Socket BitmapPosition=7 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[6-7]
+Entity=core6 Type=Core BitmapPosition=6 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core7 Type=Core BitmapPosition=7 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual2 Type=Node BitmapPosition=2 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[4-5]
+Entity=socket4 Type=Socket BitmapPosition=9 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[8-9]
+Entity=core8 Type=Core BitmapPosition=8 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core9 Type=Core BitmapPosition=9 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket5 Type=Socket BitmapPosition=11 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[10-11]
+Entity=core10 Type=Core BitmapPosition=10 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core11 Type=Core BitmapPosition=11 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual3 Type=Node BitmapPosition=3 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=1 NumSumCoresInNode=2 FreeSumSockets=1 FreeSumCoresInNode=2 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket6
+Entity=socket6 Type=Socket BitmapPosition=13 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[12-13]
+Entity=core12 Type=Core BitmapPosition=12 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core13 Type=Core BitmapPosition=13 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual4 Type=Node BitmapPosition=4 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[8-9]
+Entity=socket8 Type=Socket BitmapPosition=17 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[16-17]
+Entity=core16 Type=Core BitmapPosition=16 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core17 Type=Core BitmapPosition=17 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket9 Type=Socket BitmapPosition=19 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[18-19]
+Entity=core18 Type=Core BitmapPosition=18 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core19 Type=Core BitmapPosition=19 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual5 Type=Node BitmapPosition=5 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[10-11]
+Entity=socket10 Type=Socket BitmapPosition=21 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[20-21]
+Entity=core20 Type=Core BitmapPosition=20 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core21 Type=Core BitmapPosition=21 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket11 Type=Socket BitmapPosition=23 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[22-23]
+Entity=core22 Type=Core BitmapPosition=22 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core23 Type=Core BitmapPosition=23 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual6 Type=Node BitmapPosition=6 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=1 NumSumCoresInNode=2 FreeSumSockets=1 FreeSumCoresInNode=2 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket13
+Entity=socket13 Type=Socket BitmapPosition=27 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[26-27]
+Entity=core26 Type=Core BitmapPosition=26 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core27 Type=Core BitmapPosition=27 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual7 Type=Node BitmapPosition=7 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[14-15]
+Entity=socket14 Type=Socket BitmapPosition=29 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[28-29]
+Entity=core28 Type=Core BitmapPosition=28 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core29 Type=Core BitmapPosition=29 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket15 Type=Socket BitmapPosition=31 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[30-31]
+Entity=core30 Type=Core BitmapPosition=30 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core31 Type=Core BitmapPosition=31 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual8 Type=Node BitmapPosition=8 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[16-17]
+Entity=socket16 Type=Socket BitmapPosition=33 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[32-33]
+Entity=core32 Type=Core BitmapPosition=32 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core33 Type=Core BitmapPosition=33 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket17 Type=Socket BitmapPosition=35 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[34-35]
+Entity=core34 Type=Core BitmapPosition=34 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core35 Type=Core BitmapPosition=35 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual9 Type=Node BitmapPosition=9 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[18-19]
+Entity=socket18 Type=Socket BitmapPosition=37 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[36-37]
+Entity=core36 Type=Core BitmapPosition=36 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core37 Type=Core BitmapPosition=37 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket19 Type=Socket BitmapPosition=39 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[38-39]
+Entity=core38 Type=Core BitmapPosition=38 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core39 Type=Core BitmapPosition=39 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual10 Type=Node BitmapPosition=10 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[20-21]
+Entity=socket20 Type=Socket BitmapPosition=41 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[40-41]
+Entity=core40 Type=Core BitmapPosition=40 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core41 Type=Core BitmapPosition=41 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket21 Type=Socket BitmapPosition=43 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[42-43]
+Entity=core42 Type=Core BitmapPosition=42 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core43 Type=Core BitmapPosition=43 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual11 Type=Node BitmapPosition=11 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[22-23]
+Entity=socket22 Type=Socket BitmapPosition=45 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[44-45]
+Entity=core44 Type=Core BitmapPosition=44 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core45 Type=Core BitmapPosition=45 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket23 Type=Socket BitmapPosition=47 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[46-47]
+Entity=core46 Type=Core BitmapPosition=46 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core47 Type=Core BitmapPosition=47 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual12 Type=Node BitmapPosition=12 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[24-25]
+Entity=socket24 Type=Socket BitmapPosition=49 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[48-49]
+Entity=core48 Type=Core BitmapPosition=48 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core49 Type=Core BitmapPosition=49 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket25 Type=Socket BitmapPosition=51 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[50-51]
+Entity=core50 Type=Core BitmapPosition=50 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core51 Type=Core BitmapPosition=51 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual13 Type=Node BitmapPosition=13 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[26-27]
+Entity=socket26 Type=Socket BitmapPosition=53 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[52-53]
+Entity=core52 Type=Core BitmapPosition=52 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core53 Type=Core BitmapPosition=53 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket27 Type=Socket BitmapPosition=55 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[54-55]
+Entity=core54 Type=Core BitmapPosition=54 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core55 Type=Core BitmapPosition=55 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual14 Type=Node BitmapPosition=14 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[28-29]
+Entity=socket28 Type=Socket BitmapPosition=57 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[56-57]
+Entity=core56 Type=Core BitmapPosition=56 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core57 Type=Core BitmapPosition=57 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket29 Type=Socket BitmapPosition=59 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[58-59]
+Entity=core58 Type=Core BitmapPosition=58 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core59 Type=Core BitmapPosition=59 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual15 Type=Node BitmapPosition=15 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[30-31]
+Entity=socket30 Type=Socket BitmapPosition=61 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[60-61]
+Entity=core60 Type=Core BitmapPosition=60 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core61 Type=Core BitmapPosition=61 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket31 Type=Socket BitmapPosition=63 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[62-63]
+Entity=core62 Type=Core BitmapPosition=62 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core63 Type=Core BitmapPosition=63 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual16 Type=Node BitmapPosition=16 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[32-33]
+Entity=socket32 Type=Socket BitmapPosition=65 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[64-65]
+Entity=core64 Type=Core BitmapPosition=64 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core65 Type=Core BitmapPosition=65 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket33 Type=Socket BitmapPosition=67 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[66-67]
+Entity=core66 Type=Core BitmapPosition=66 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core67 Type=Core BitmapPosition=67 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual17 Type=Node BitmapPosition=17 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[34-35]
+Entity=socket34 Type=Socket BitmapPosition=69 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[68-69]
+Entity=core68 Type=Core BitmapPosition=68 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core69 Type=Core BitmapPosition=69 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket35 Type=Socket BitmapPosition=71 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[70-71]
+Entity=core70 Type=Core BitmapPosition=70 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core71 Type=Core BitmapPosition=71 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual18 Type=Node BitmapPosition=18 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[36-37]
+Entity=socket36 Type=Socket BitmapPosition=73 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[72-73]
+Entity=core72 Type=Core BitmapPosition=72 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core73 Type=Core BitmapPosition=73 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket37 Type=Socket BitmapPosition=75 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[74-75]
+Entity=core74 Type=Core BitmapPosition=74 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core75 Type=Core BitmapPosition=75 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual19 Type=Node BitmapPosition=19 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[38-39]
+Entity=socket38 Type=Socket BitmapPosition=77 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[76-77]
+Entity=core76 Type=Core BitmapPosition=76 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core77 Type=Core BitmapPosition=77 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket39 Type=Socket BitmapPosition=79 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[78-79]
+Entity=core78 Type=Core BitmapPosition=78 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core79 Type=Core BitmapPosition=79 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual20 Type=Node BitmapPosition=20 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[40-41]
+Entity=socket40 Type=Socket BitmapPosition=81 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[80-81]
+Entity=core80 Type=Core BitmapPosition=80 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core81 Type=Core BitmapPosition=81 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket41 Type=Socket BitmapPosition=83 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[82-83]
+Entity=core82 Type=Core BitmapPosition=82 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core83 Type=Core BitmapPosition=83 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual21 Type=Node BitmapPosition=21 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[42-43]
+Entity=socket42 Type=Socket BitmapPosition=85 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[84-85]
+Entity=core84 Type=Core BitmapPosition=84 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core85 Type=Core BitmapPosition=85 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket43 Type=Socket BitmapPosition=87 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[86-87]
+Entity=core86 Type=Core BitmapPosition=86 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core87 Type=Core BitmapPosition=87 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual22 Type=Node BitmapPosition=22 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[44-45]
+Entity=socket44 Type=Socket BitmapPosition=89 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[88-89]
+Entity=core88 Type=Core BitmapPosition=88 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core89 Type=Core BitmapPosition=89 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket45 Type=Socket BitmapPosition=91 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[90-91]
+Entity=core90 Type=Core BitmapPosition=90 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core91 Type=Core BitmapPosition=91 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual23 Type=Node BitmapPosition=23 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[46-47]
+Entity=socket46 Type=Socket BitmapPosition=93 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[92-93]
+Entity=core92 Type=Core BitmapPosition=92 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core93 Type=Core BitmapPosition=93 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket47 Type=Socket BitmapPosition=95 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[94-95]
+Entity=core94 Type=Core BitmapPosition=94 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core95 Type=Core BitmapPosition=95 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual24 Type=Node BitmapPosition=24 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[48-49]
+Entity=socket48 Type=Socket BitmapPosition=97 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[96-97]
+Entity=core96 Type=Core BitmapPosition=96 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core97 Type=Core BitmapPosition=97 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket49 Type=Socket BitmapPosition=99 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[98-99]
+Entity=core98 Type=Core BitmapPosition=98 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core99 Type=Core BitmapPosition=99 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual25 Type=Node BitmapPosition=25 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[50-51]
+Entity=socket50 Type=Socket BitmapPosition=101 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[100-101]
+Entity=core100 Type=Core BitmapPosition=100 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core101 Type=Core BitmapPosition=101 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket51 Type=Socket BitmapPosition=103 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[102-103]
+Entity=core102 Type=Core BitmapPosition=102 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core103 Type=Core BitmapPosition=103 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual26 Type=Node BitmapPosition=26 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[52-53]
+Entity=socket52 Type=Socket BitmapPosition=105 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[104-105]
+Entity=core104 Type=Core BitmapPosition=104 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core105 Type=Core BitmapPosition=105 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket53 Type=Socket BitmapPosition=107 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[106-107]
+Entity=core106 Type=Core BitmapPosition=106 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core107 Type=Core BitmapPosition=107 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual27 Type=Node BitmapPosition=27 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[54-55]
+Entity=socket54 Type=Socket BitmapPosition=109 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[108-109]
+Entity=core108 Type=Core BitmapPosition=108 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core109 Type=Core BitmapPosition=109 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket55 Type=Socket BitmapPosition=111 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[110-111]
+Entity=core110 Type=Core BitmapPosition=110 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core111 Type=Core BitmapPosition=111 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual28 Type=Node BitmapPosition=28 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[56-57]
+Entity=socket56 Type=Socket BitmapPosition=113 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[112-113]
+Entity=core112 Type=Core BitmapPosition=112 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core113 Type=Core BitmapPosition=113 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket57 Type=Socket BitmapPosition=115 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[114-115]
+Entity=core114 Type=Core BitmapPosition=114 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core115 Type=Core BitmapPosition=115 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual29 Type=Node BitmapPosition=29 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[58-59]
+Entity=socket58 Type=Socket BitmapPosition=117 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[116-117]
+Entity=core116 Type=Core BitmapPosition=116 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core117 Type=Core BitmapPosition=117 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket59 Type=Socket BitmapPosition=119 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[118-119]
+Entity=core118 Type=Core BitmapPosition=118 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core119 Type=Core BitmapPosition=119 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual30 Type=Node BitmapPosition=30 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[60-61]
+Entity=socket60 Type=Socket BitmapPosition=121 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[120-121]
+Entity=core120 Type=Core BitmapPosition=120 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core121 Type=Core BitmapPosition=121 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket61 Type=Socket BitmapPosition=123 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[122-123]
+Entity=core122 Type=Core BitmapPosition=122 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core123 Type=Core BitmapPosition=123 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual31 Type=Node BitmapPosition=31 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[62-63]
+Entity=socket62 Type=Socket BitmapPosition=125 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[124-125]
+Entity=core124 Type=Core BitmapPosition=124 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core125 Type=Core BitmapPosition=125 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket63 Type=Socket BitmapPosition=127 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[126-127]
+Entity=core126 Type=Core BitmapPosition=126 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core127 Type=Core BitmapPosition=127 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual32 Type=Node BitmapPosition=32 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[64-65]
+Entity=socket64 Type=Socket BitmapPosition=129 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[128-129]
+Entity=core128 Type=Core BitmapPosition=128 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core129 Type=Core BitmapPosition=129 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket65 Type=Socket BitmapPosition=131 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[130-131]
+Entity=core130 Type=Core BitmapPosition=130 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core131 Type=Core BitmapPosition=131 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual33 Type=Node BitmapPosition=33 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[66-67]
+Entity=socket66 Type=Socket BitmapPosition=133 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[132-133]
+Entity=core132 Type=Core BitmapPosition=132 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core133 Type=Core BitmapPosition=133 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket67 Type=Socket BitmapPosition=135 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[134-135]
+Entity=core134 Type=Core BitmapPosition=134 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core135 Type=Core BitmapPosition=135 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual34 Type=Node BitmapPosition=34 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[68-69]
+Entity=socket68 Type=Socket BitmapPosition=137 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[136-137]
+Entity=core136 Type=Core BitmapPosition=136 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core137 Type=Core BitmapPosition=137 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket69 Type=Socket BitmapPosition=139 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[138-139]
+Entity=core138 Type=Core BitmapPosition=138 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core139 Type=Core BitmapPosition=139 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual35 Type=Node BitmapPosition=35 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[70-71]
+Entity=socket70 Type=Socket BitmapPosition=141 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[140-141]
+Entity=core140 Type=Core BitmapPosition=140 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core141 Type=Core BitmapPosition=141 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket71 Type=Socket BitmapPosition=143 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[142-143]
+Entity=core142 Type=Core BitmapPosition=142 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core143 Type=Core BitmapPosition=143 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual36 Type=Node BitmapPosition=36 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[72-73]
+Entity=socket72 Type=Socket BitmapPosition=145 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[144-145]
+Entity=core144 Type=Core BitmapPosition=144 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core145 Type=Core BitmapPosition=145 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket73 Type=Socket BitmapPosition=147 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[146-147]
+Entity=core146 Type=Core BitmapPosition=146 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core147 Type=Core BitmapPosition=147 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual37 Type=Node BitmapPosition=37 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[74-75]
+Entity=socket74 Type=Socket BitmapPosition=149 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[148-149]
+Entity=core148 Type=Core BitmapPosition=148 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core149 Type=Core BitmapPosition=149 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket75 Type=Socket BitmapPosition=151 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[150-151]
+Entity=core150 Type=Core BitmapPosition=150 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core151 Type=Core BitmapPosition=151 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual38 Type=Node BitmapPosition=38 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[76-77]
+Entity=socket76 Type=Socket BitmapPosition=153 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[152-153]
+Entity=core152 Type=Core BitmapPosition=152 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core153 Type=Core BitmapPosition=153 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket77 Type=Socket BitmapPosition=155 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[154-155]
+Entity=core154 Type=Core BitmapPosition=154 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core155 Type=Core BitmapPosition=155 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual39 Type=Node BitmapPosition=39 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[78-79]
+Entity=socket78 Type=Socket BitmapPosition=157 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[156-157]
+Entity=core156 Type=Core BitmapPosition=156 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core157 Type=Core BitmapPosition=157 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket79 Type=Socket BitmapPosition=159 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[158-159]
+Entity=core158 Type=Core BitmapPosition=158 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core159 Type=Core BitmapPosition=159 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=virtual40 Type=Node BitmapPosition=40 Selected=false AllocatedNodeCount=0 AllocatedJobID=0 nodecount=1 NumSumSockets=2 NumSumCoresInNode=4 FreeSumSockets=2 FreeSumCoresInNode=4 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 Enclosed=socket[80-81]
+Entity=socket80 Type=Socket BitmapPosition=161 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[160-161]
+Entity=core160 Type=Core BitmapPosition=160 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core161 Type=Core BitmapPosition=161 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=socket81 Type=Socket BitmapPosition=163 Selected=false AllocatedSocketCount=0 AllocatedJobID=0 socketcount=1 NumSumCores=2 FreeSumCores=2 AllocatedSumCores=0 Enclosed=core[162-163]
+Entity=core162 Type=Core BitmapPosition=162 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
+Entity=core163 Type=Core BitmapPosition=163 Selected=false AllocatedCoreCount=0 AllocatedJobID=0 corecount=1 ThreadsPerCore=4
