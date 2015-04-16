@@ -1,0 +1,56 @@
+\begin{thebibliography}{AHLR07}
+
+\bibitem[AHLR07]{Shellcoders07}
+Chris Anley, John Heasman, Felix Linder, and Gerardo Richarte.
+\newblock {\em {T}he {S}hellcoder's {H}andbook: {D}iscovering and {E}xploiting
+  {S}ecurity {H}oles}.
+\newblock John Wiley \& Sons, 2nd edition, 2007.
+
+\bibitem[Eri07]{Erickson07}
+Jon Erickson.
+\newblock {\em {H}acking: {T}he {A}rt of {E}xploitation}.
+\newblock No Starch Press, 2nd edition, 2007.
+
+\bibitem[HM04]{HG04}
+Greg Hoglund and Gary McGraw.
+\newblock {\em {E}xploiting {S}oftware: {H}ow to {B}reak {C}ode}.
+\newblock Software Security Serie. Addison Wesley, 2004.
+
+\bibitem[Hog05]{HB05}
+Jamie Hoglund, Greg et~Butler.
+\newblock {\em {R}ootkits: {S}ubverting the {W}indows {K}ernel}.
+\newblock Software Security Serie. Addison Wesley, 2005.
+
+\bibitem[Hyd03]{Hyde03}
+Randall Hyde.
+\newblock {\em {T}he {A}rt of {A}ssembly {L}anguage}.
+\newblock No Starch, 2003.
+
+\bibitem[Kon07]{Kong07}
+Joseph Kong.
+\newblock {\em {D}esigning {BSD} {R}ootkits: {A}n {I}ntroduction to {K}ernel
+  {H}acking}.
+\newblock No Starch, 2007.
+
+\bibitem[Lov05]{Love05}
+Robert Love.
+\newblock {\em Linux Kernel Development}.
+\newblock Sams, 2nd edition, 2005.
+
+\bibitem[Lov07]{Love07}
+Robert Love.
+\newblock {\em {L}inux {S}ystem {P}rogramming: {T}alking {D}irectly to the
+  {K}ernel and {C} {L}ibrary}.
+\newblock O'Reilly Media, 2007.
+
+\bibitem[Sea05]{Seacord05}
+Robert~C. Seacord.
+\newblock {\em {S}ecure {C}oding in {C} and {C}++}.
+\newblock SEI Series. Addison Wesley, 2005.
+
+\bibitem[Szo05]{Szor05}
+Peter Szor.
+\newblock {\em {T}he {A}rt of {C}omputer {V}irus {R}esearch and {D}efense}.
+\newblock Addison Wesley, 2005.
+
+\end{thebibliography}

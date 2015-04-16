@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Gluster File System}{3}{0}{1}
+\beamer@sectionintoc {2}{Encrypted File System}{6}{0}{2}
+\beamer@sectionintoc {3}{VeraCrypt}{7}{0}{3}
