@@ -1,0 +1,53 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Andrew~Uselton}{2010}]{IOR_Performance_measurement_in_File_System}
+Daniela~Ushizima Andrew~Uselton, Katie~Antypas.
+\newblock File system monitoring as a window into user i/o requirements.
+\newblock {\em Computational Research}, May 2010.
+
+\bibitem[\protect\citeauthoryear{Capit \bgroup \em et al.\egroup
+  }{2005}]{inproceedingscapit.cd-cghmmnr_bswhlc_05}
+Nicolas Capit, Georges Da~Costa, Yiannis Georgiou, Guillaume Huard, Cyrille
+  Martin, Grégory Mounié, Pierre Neyron, and Olivier Richard.
+\newblock {A} batch scheduler with high level components.
+\newblock In {\em {C}luster computing and {G}rid 2005 ({CCG}rid05)}, number
+  143, 2005.
+
+\bibitem[\protect\citeauthoryear{Docker}{}]{docker}
+Docker.
+\newblock {\em Software developed for develop,built and Deploy Distributer
+  applications}.
+\newblock http://www.docker.com/whatisdocker/.
+
+\bibitem[\protect\citeauthoryear{GRID'5000}{2012}]{Grid5000}
+GRID'5000.
+\newblock {\em French National Grid test bed}.
+\newblock Alaadin Grid'5000:INRIA Lab,
+  http://www.nersc.gov/users/computational-systems/nersc-8-system-cori/nersc-8-procurement/trinity-nersc-8-rfp/nersc-8-trinity-benchmarks/ior/,
+  2012.
+
+\bibitem[\protect\citeauthoryear{IOR-Bennchmark}{2012}]{IOR_Description}
+IOR-Bennchmark.
+\newblock {\em IORv2.10.1}.
+\newblock NERSC Lab,
+  http://www.nersc.gov/users/computational-systems/nersc-8-system-cori/nersc-8-procurement/trinity-nersc-8-rfp/nersc-8-trinity-benchmarks/ior/,
+  2012.
+
+\bibitem[\protect\citeauthoryear{Lallouette \bgroup \em et al.\egroup
+  }{2014}]{lallouette:hal-00967106}
+Jules Lallouette, Maurizio De~Pitt{\`a}, Eshel Ben~Jacob, and Hugues Berry.
+\newblock {Sparse short-distance connections enhance calcium wave propagation
+  in a 3D model of astrocyte networks}.
+\newblock {\em Frontiers in Computational Neuroscience}, 8:45, 2014.
+
+\bibitem[\protect\citeauthoryear{Salem~Horrache}{2014}]{docker-oar}
+Pierre~Neyron Salem~Horrache.
+\newblock {\em Test OAR Cluster in a Docker Environment}.
+\newblock http://www.docker.com/whatisdocker/, 2014.
+
+\bibitem[\protect\citeauthoryear{Silberschatz}{1994}]{Distributed_File_System}
+Galvin Silberschatz.
+\newblock {\em chapter 17 Distributed file systems}.
+\newblock Addison-Wesley Publishing Company, 1994.
+
+\end{thebibliography}

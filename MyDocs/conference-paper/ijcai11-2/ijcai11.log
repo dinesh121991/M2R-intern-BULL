@@ -1,0 +1,377 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.6)  14 JUN 2014 23:53
+entering extended mode
+**ijcai11.tex
+("H:\MoSIG M1 Course\M1-S2\M1-S2-Research Internship\MyReports\ReportInLatex\ijcai11-2\ijcai11.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali
+, bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, galic
+ian, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, icelandic, indonesian, interlingua, irish, italian,
+ kannada, kurmanji, latin, latvian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, ngerman
+-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sloven
+ian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usenglishmax, w
+elsh, loaded.
+IJCAI-11 Instructions for Authors
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("H:\MoSIG M1 Course\M1-S2\M1-S2-Research Internship\MyReports\ReportInLatex\ijcai11-2\ijcai11.sty"
+Conference Style, version of 6 September 1995 (revised Nov 2010)
+\titlebox=\skip43
+Named Citation Style, version of 30 November 1994
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count88
+\float@exts=\toks15
+\float@box=\box26
+\@float@everytoks=\toks16
+\@floatcapt=\box27
+)
+\@float@every@figure=\toks17
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\times.sty"
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+("H:\MoSIG M1 Course\M1-S2\M1-S2-Research Internship\MyReports\ReportInLatex\ijcai11-2\ijcai11.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 52.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(C:\Users\Jagadeesh\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count89
+\scratchdimen=\dimen105
+\scratchbox=\box28
+\nofMPsegments=\count90
+\nofMParguments=\count91
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count92
+\MPscratchDim=\dimen106
+\MPnumerator=\count93
+\makeMPintoPDFobject=\count94
+\everyMPtoPDFconversion=\toks19
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 53.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 53.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 53.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+
+Underfull \hbox (badness 4156) in paragraph at lines 56--57
+\OT1/ptm/m/n/10 Ar-chi-tec-ture shar-ing Dis-tributed File Sys-tems
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+\OT1/ptm/m/n/10 (\OT1/ptm/m/it/10 eg.PVFS,NFS,CLUSTER\OT1/ptm/m/n/10 )[] Sil-ber-schatz, 1994[]
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 56--57
+\OT1/ptm/m/n/10 with the hun-dreds of thou-sands of com-put-ing
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 56--57
+\OT1/ptm/m/n/10 will de-grade the per-for-mance and pro-duc-tiv-ity
+ []
+
+
+Underfull \hbox (badness 2894) in paragraph at lines 56--57
+\OT1/ptm/m/n/10 con-tention, and in-crease the pro-duc-tiv-ity and
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 56--57
+\OT1/ptm/m/n/10 per-for-mance. We Per-formed ex-per-i-ment with
+ []
+
+
+Underfull \hbox (badness 4467) in paragraph at lines 56--57
+\OT1/ptm/m/n/10 IOR[] IOR-Bennchmark, 2012[][] An-drew Usel-ton,
+ []
+
+
+Underfull \hbox (badness 2073) in paragraph at lines 56--57
+\OT1/ptm/m/n/10 duc-tiv-ity and File sys-tem Per-for-mance in the
+ []
+
+
+Underfull \hbox (badness 2865) in paragraph at lines 56--57
+\OT1/ptm/m/n/10 OAR[] Capit \OT1/ptm/m/it/10 et al.\OT1/ptm/m/n/10 , 2005[] Batch Sched-uler in
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+[1{C:/Users/Jagadeesh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+
+]
+<CusterArchitecture-exp.jpg, id=8, 684.30656pt x 469.00218pt>
+File: CusterArchitecture-exp.jpg Graphic file (type jpg)
+ <use CusterArchitecture-exp.jpg>
+Package pdftex.def Info: CusterArchitecture-exp.jpg used on input line 87.
+(pdftex.def)             Requested size: 252.94499pt x 173.35634pt.
+
+Overfull \hbox (9.03374pt too wide) in paragraph at lines 87--89
+ [][] 
+ []
+
+! Undefined control sequence.
+l.92 ...n command is only considering the {\typebf
+                                                   Computing nodes} as the r...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<BandwidthVariationinLine.png, id=9, 413.29407pt x 219.06844pt>
+File: BandwidthVariationinLine.png Graphic file (type png)
+ <use BandwidthVariationinLine.png>
+Package pdftex.def Info: BandwidthVariationinLine.png used on input line 96.
+(pdftex.def)             Requested size: 252.94499pt x 134.07611pt.
+
+Overfull \hbox (9.03374pt too wide) in paragraph at lines 96--98
+ [][] 
+ []
+
+! Undefined control sequence.
+l.99 ...we choosed for the experiments are \typebf
+                                                   { 1) High I/O job run alo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<ScatterDiagram.jpg, id=10, 444.91219pt x 238.64156pt>
+File: ScatterDiagram.jpg Graphic file (type jpg)
+ <use ScatterDiagram.jpg>
+Package pdftex.def Info: ScatterDiagram.jpg used on input line 103.
+(pdftex.def)             Requested size: 252.94499pt x 135.67387pt.
+
+Overfull \hbox (9.03374pt too wide) in paragraph at lines 103--105
+ [][] 
+ []
+
+<RunningTime-I-O-Contention.jpg, id=11, 448.67625pt x 270.25969pt>
+File: RunningTime-I-O-Contention.jpg Graphic file (type jpg)
+ <use RunningTime-I-O-Contention.jpg>
+Package pdftex.def Info: RunningTime-I-O-Contention.jpg used on input line 108.
+(pdftex.def)             Requested size: 252.94499pt x 152.35884pt.
+
+Overfull \hbox (9.03374pt too wide) in paragraph at lines 108--110
+ [][] 
+ []
+
+<IOR-Application-Performance.jpg, id=12, 365.11406pt x 244.66406pt>
+File: IOR-Application-Performance.jpg Graphic file (type jpg)
+ <use IOR-Application-Performance.jpg>
+Package pdftex.def Info: IOR-Application-Performance.jpg used on input line 117.
+(pdftex.def)             Requested size: 252.94499pt x 169.49783pt.
+
+Overfull \hbox (9.03374pt too wide) in paragraph at lines 117--119
+ [][] 
+ []
+
+[2 <H:/MoSIG M1 Course/M1-S2/M1-S2-Research Internship/MyReports/ReportInLatex/ijcai11-2/CusterArchitecture-exp.jpg> <H:
+/MoSIG M1 Course/M1-S2/M1-S2-Research Internship/MyReports/ReportInLatex/ijcai11-2/BandwidthVariationinLine.png> <H:/MoS
+IG M1 Course/M1-S2/M1-S2-Research Internship/MyReports/ReportInLatex/ijcai11-2/ScatterDiagram.jpg>]
+<IOR-Scatter.jpg, id=16, 347.04657pt x 228.855pt>
+File: IOR-Scatter.jpg Graphic file (type jpg)
+ <use IOR-Scatter.jpg>
+Package pdftex.def Info: IOR-Scatter.jpg used on input line 126.
+(pdftex.def)             Requested size: 252.94499pt x 166.80783pt.
+
+Overfull \hbox (9.03374pt too wide) in paragraph at lines 126--128
+ [][] 
+ []
+
+! Undefined control sequence.
+l.131 ...ommands with the Virtual Resource \typebf
+                                                   {bw (Bandwidth)}. It will...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<Commands.jpg, id=17, 456.95718pt x 215.30438pt>
+File: Commands.jpg Graphic file (type jpg)
+ <use Commands.jpg>
+Package pdftex.def Info: Commands.jpg used on input line 142.
+(pdftex.def)             Requested size: 252.94499pt x 119.17995pt.
+
+Overfull \hbox (9.03374pt too wide) in paragraph at lines 142--144
+ [][] 
+ []
+
+<Theoretical-Earlier-Scheduling.jpg, id=18, 392.21532pt x 235.63031pt>
+File: Theoretical-Earlier-Scheduling.jpg Graphic file (type jpg)
+ <use Theoretical-Earlier-Scheduling.jpg>
+Package pdftex.def Info: Theoretical-Earlier-Scheduling.jpg used on input line 148.
+(pdftex.def)             Requested size: 252.94499pt x 151.9642pt.
+
+Overfull \hbox (9.03374pt too wide) in paragraph at lines 148--150
+ [][] 
+ []
+
+<New-Scheduling-Good.png, id=19, 519.44063pt x 290.58563pt>
+File: New-Scheduling-Good.png Graphic file (type png)
+ <use New-Scheduling-Good.png>
+Package pdftex.def Info: New-Scheduling-Good.png used on input line 153.
+(pdftex.def)             Requested size: 252.94499pt x 141.5014pt.
+
+Overfull \hbox (9.03374pt too wide) in paragraph at lines 153--155
+ [][] 
+ []
+
+[3 <H:/MoSIG M1 Course/M1-S2/M1-S2-Research Internship/MyReports/ReportInLatex/ijcai11-2/RunningTime-I-O-Contention.jpg>
+ <H:/MoSIG M1 Course/M1-S2/M1-S2-Research Internship/MyReports/ReportInLatex/ijcai11-2/IOR-Application-Performance.jpg>]
+[4 <H:/MoSIG M1 Course/M1-S2/M1-S2-Research Internship/MyReports/ReportInLatex/ijcai11-2/IOR-Scatter.jpg> <H:/MoSIG M1 C
+ourse/M1-S2/M1-S2-Research Internship/MyReports/ReportInLatex/ijcai11-2/Commands.jpg> <H:/MoSIG M1 Course/M1-S2/M1-S2-Re
+search Internship/MyReports/ReportInLatex/ijcai11-2/Theoretical-Earlier-Scheduling.jpg> <H:/MoSIG M1 Course/M1-S2/M1-S2-
+Research Internship/MyReports/ReportInLatex/ijcai11-2/New-Scheduling-Good.png>]
+("H:\MoSIG M1 Course\M1-S2\M1-S2-Research Internship\MyReports\ReportInLatex\ijcai11-2\ijcai11.bbl"
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--21
+[]\OT1/ptm/m/n/10 Docker.  \OT1/ptm/m/it/10 Soft-ware de-vel-oped for de-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--21
+\OT1/ptm/m/it/10 velop,built and De-ploy Dis-tributer ap-pli-ca-tions\OT1/ptm/m/n/10 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--28
+[]\OT1/ptm/m/n/10 GRID'5000.  \OT1/ptm/m/it/10 French Na-tional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--28
+\OT1/ptm/m/it/10 Grid test bed\OT1/ptm/m/n/10 .  Alaadin Grid'5000:INRIA Lab,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--28
+\OT1/ptm/m/n/10 http://www.nersc.gov/users/computational-systems/nersc-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--28
+\OT1/ptm/m/n/10 8-system-cori/nersc-8-procurement/trinity-nersc-8-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--35
+\OT1/ptm/m/n/10 systems/nersc-8-system-cori/nersc-8-procurement/trinity-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--47
+[]\OT1/ptm/m/n/10 Pierre Ney-ron Salem Hor-
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 44--47
+\OT1/ptm/m/n/10 rache.  \OT1/ptm/m/it/10 Test OAR Clus-ter in a Docker En-vi-ron-ment\OT1/ptm/m/n/10 .
+ []
+
+) [5] ("H:\MoSIG M1 Course\M1-S2\M1-S2-Research Internship\MyReports\ReportInLatex\ijcai11-2\ijcai11.aux") ) 
+Here is how much of TeX's memory you used:
+ 1328 strings out of 493921
+ 18964 string characters out of 3144865
+ 77450 words of memory out of 3000000
+ 4632 multiletter control sequences out of 15000+200000
+ 16615 words of font info for 36 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 27i,10n,19p,1187b,244s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/ur
+w/times/utmri8a.pfb>
+Output written on ijcai11.pdf (5 pages, 496136 bytes).
+PDF statistics:
+ 40 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+
