@@ -1,0 +1,37 @@
+	{"BitmapPosition", S_P_UINT32},  // Bitmap position or Array Index correlation, This is used for conversion from Layout to Bitmap
+	{"Selected", S_P_BOOLEAN},
+	{"AllocatedNodeCount",S_P_UINT32}, // Selected,Allocated separate list is possible
+	{"AllocatedSocketCount",S_P_UINT32},
+	{"AllocatedCoreCount",S_P_UINT32},
+	{"AllocatedJobID", S_P_UINT32},
+	
+	/* Non-Aggregated keys and used for aggregation */
+	{"nodecount",S_P_UINT16},  // It is for SUM from child , And it shoud be "1"
+	{"socketcount",S_P_UINT16},  // It is for SUM from child , And it shoud be "1"
+	{"corecount",S_P_UINT16},  // It is for SUM from child , And it shoud be "1"
+	{"ThreadsPerCore",S_P_UINT32},  // RD_ONLY value never Change.In the core entity only
+
+	
+	{"AllocatedJobID", S_P_LONG},
+	
+	{"NumSumNodes", S_P_UINT32},  // It is in Cluster
+	{"NumSumCoresInCluster",S_P_UINT32},
+	{"NumSumSocketsInCluster",S_P_UINT32},
+	{"NumSumSockets",S_P_UINT32}, // It is in Node
+	{"NumSumCoresInNode",S_P_UINT32},
+	{"NumSumCores",S_P_UINT32}, //It is in Socket
+	
+	{"FreeSumNodes", S_P_UINT32},  // It is in Cluster
+	{"FreeSumCoresInCluster",S_P_UINT32},
+	{"FreeSumSocketsInCluster",S_P_UINT32},
+	{"FreeSumSockets",S_P_UINT32}, // It is in Node
+	{"FreeSumCoresInNode",S_P_UINT32},
+	{"FreeSumCores",S_P_UINT32},	//It is in Socket
+	
+	{"AllocatedSumNodes", S_P_UINT32},  // It is in Cluster
+	{"AllocatedSumCoresInCluster",S_P_UINT32},
+	{"AllocatedSumSocketsInCluster",S_P_UINT32},
+	{"AllocatedSumSockets",S_P_UINT32}, // It is in Node
+	{"AllocatedSumCoresInNode",S_P_UINT32},
+	{"AllocatedSumCores",S_P_UINT32}, //It is in Socket
+

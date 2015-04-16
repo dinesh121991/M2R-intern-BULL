@@ -1,0 +1,595 @@
+Layouts Interesting Error Scenarios
+=====================================
+
+slurmctld: debug3: Success.
+slurmctld: error: ################################################
+slurmctld: error: ###       SEVERE SECURITY VULERABILTY        ###
+slurmctld: error: ### StateSaveLocation DIRECTORY IS WORLD WRITABLE ###
+slurmctld: error: ###         CORRECT FILE PERMISSIONS         ###
+slurmctld: error: ################################################
+slurmctld: layouts: loading entities/relations information
+slurmctld: debug3: layouts: loading node dinesh-HP-ProDesk-600-G1-TWR
+slurmctld: debug:  layouts: 1/1 nodes in hash table, rc=0
+slurmctld: debug:  layouts: loading stage 1
+slurmctld: debug3: layouts: reading config for cons_res_partition
+slurmctld: debug3: layouts: configuration file '/usr/local/etc/layouts.d/cons_res_partition.conf' is loaded
+slurmctld: debug3: layouts: reading config for unit
+slurmctld: debug3: layouts: configuration file '/usr/local/etc/layouts.d/unit.conf' is loaded
+slurmctld: debug3: layouts: reading config for power
+slurmctld: debug3: layouts: configuration file '/usr/local/etc/layouts.d/power.conf' is loaded
+slurmctld: error: layouts: entity 'virtual0' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual1' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual2' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual3' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual4' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual5' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual6' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual7' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual8' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual9' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual10' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual11' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual12' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual13' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual14' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual15' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual16' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual17' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual18' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual19' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual20' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual21' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual22' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual23' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual24' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual25' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual26' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual27' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual28' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual29' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual30' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual31' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual32' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual33' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual34' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual35' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual36' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual37' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual38' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual39' type (Node) differs from already registered entity type (node) skipping
+slurmctld: debug:  layouts: loading stage 1.1 (restore state)
+slurmctld: debug3: layouts: reading state of cons_res_partition
+slurmctld: error: Parsing error at unrecognized key: NumNodes
+slurmctld: error: Unable to parse line  NumNodes=1 NumCores=4 NumJobs=0 NumParts=1 FreeNodes=1 FreeCores=4 AllocatedNodes=0 AllocatedCores=0 Enclosed=debug
+
+slurmctld: error: Parse error in file /tmp/layouts_state_cons_res_partition line 3: " NumNodes=1 NumCores=4 NumJobs=0 NumParts=1 FreeNodes=1 FreeCores=4 AllocatedNodes=0 AllocatedCores=0 Enclosed=debug"
+slurmctld: error: Parsing error at unrecognized key: Position
+slurmctld: error: Unable to parse line  Position=0 Selected=false Allocated=false NumNodes=1 NumCores=4 NumJobs=0 FreeNodes=1 FreeCores=4 AllocatedNodes=0 AllocatedCores=0 ForWhatPurposePriority=0 Enclosed=dinesh-HP-ProDesk-600-G1-TWR
+
+slurmctld: error: Parse error in file /tmp/layouts_state_cons_res_partition line 4: " Position=0 Selected=false Allocated=false NumNodes=1 NumCores=4 NumJobs=0 FreeNodes=1 FreeCores=4 AllocatedNodes=0 AllocatedCores=0 ForWhatPurposePriority=0 Enclosed=dinesh-HP-ProDesk-600-G1-TWR"
+slurmctld: error: Parsing error at unrecognized key: Position
+slurmctld: error: Unable to parse line  Position=0 Selected=false Allocated=false NumCores=4 NumSockets=2 NumJobs=0 FreeCores=4 FreeSockets=2 FreeMemory=7897 AllocatedCores=0 AllocatedSockets=0 ForWhatPurposePriority=0 AllocatedMemory=0 Enclosed=so00
+
+slurmctld: error: Parse error in file /tmp/layouts_state_cons_res_partition line 5: " Position=0 Selected=false Allocated=false NumCores=4 NumSockets=2 NumJobs=0 FreeCores=4 FreeSockets=2 FreeMemory=7897 AllocatedCores=0 AllocatedSockets=0 ForWhatPurposePriority=0 AllocatedMemory=0 Enclosed=so00"
+slurmctld: error: Parsing error at unrecognized key: Position
+slurmctld: error: Unable to parse line  Position=0 Selected=false Allocated=false NumCores=4 NumJobs=0 FreeCores=4 AllocatedCores=0 ForWhatPurposePriority=0 AllocatedJobID=0 Enclosed=co[00-01]
+
+slurmctld: error: Parse error in file /tmp/layouts_state_cons_res_partition line 6: " Position=0 Selected=false Allocated=false NumCores=4 NumJobs=0 FreeCores=4 AllocatedCores=0 ForWhatPurposePriority=0 AllocatedJobID=0 Enclosed=co[00-01]"
+slurmctld: error: Parsing error at unrecognized key: Position
+slurmctld: error: Unable to parse line  Position=0 Selected=false Allocated=false NumJobs=0 ForWhatPurposePriority=0 ThreadsPerCore=1 AllocatedJobID=0
+
+slurmctld: error: Parse error in file /tmp/layouts_state_cons_res_partition line 7: " Position=0 Selected=false Allocated=false NumJobs=0 ForWhatPurposePriority=0 ThreadsPerCore=1 AllocatedJobID=0"
+slurmctld: error: Parsing error at unrecognized key: Position
+slurmctld: error: Unable to parse line  Position=0 Selected=false Allocated=false NumJobs=0 ForWhatPurposePriority=0 ThreadsPerCore=1 AllocatedJobID=0
+
+slurmctld: error: Parse error in file /tmp/layouts_state_cons_res_partition line 8: " Position=0 Selected=false Allocated=false NumJobs=0 ForWhatPurposePriority=0 ThreadsPerCore=1 AllocatedJobID=0"
+slurmctld: fatal: layouts: something went wrong when opening/reading '/tmp/layouts_state_cons_res_partition': No error
+root@dinesh-HP-ProDesk-600-G1-TWR:/home/dinesh/dev-select-layout# which slurmctld
+/usr/local/sbin/slurmctld
+root@dinesh-HP-ProDesk-600-G1-TWR:/home/dinesh/dev-select-layout# vim  /usr/local/etc/layouts.d/
+cons_res_partition.conf  power.conf               unit.conf                
+root@dinesh-HP-ProDesk-600-G1-TWR:/home/dinesh/dev-select-layout# vim  /usr/local/etc/layouts.d/cons_res_partition.conf 
+root@dinesh-HP-ProDesk-600-G1-TWR:/home/dinesh/dev-select-layout# rm /tmp/layouts_state_cons_res_partition*
+root@dinesh-HP-ProDesk-600-G1-TWR:/home/dinesh/dev-select-layout# 
+
+
+
+
+
+
+
+2) =========================================================================
+
+
+slurmctld: layouts: layouts_init done : 3 layout(s) initialized
+slurmctld: debug3: Trying to load plugin /usr/local/lib/slurm/topology_none.so
+slurmctld: topology NONE plugin loaded
+slurmctld: debug3: Success.
+slurmctld: debug:  No DownNodes
+slurmctld: debug3: Trying to load plugin /usr/local/lib/slurm/jobcomp_none.so
+slurmctld: debug3: Success.
+slurmctld: debug3: Trying to load plugin /usr/local/lib/slurm/sched_backfill.so
+slurmctld: sched: Backfill scheduler plugin loaded
+slurmctld: debug3: Success.
+slurmctld: debug3: Trying to load plugin /usr/local/lib/slurm/route_default.so
+slurmctld: route default plugin loaded
+slurmctld: debug3: Success.
+slurmctld: error: ################################################
+slurmctld: error: ###       SEVERE SECURITY VULERABILTY        ###
+slurmctld: error: ### StateSaveLocation DIRECTORY IS WORLD WRITABLE ###
+slurmctld: error: ###         CORRECT FILE PERMISSIONS         ###
+slurmctld: error: ################################################
+slurmctld: layouts: loading entities/relations information
+slurmctld: debug3: layouts: loading node dinesh-HP-ProDesk-600-G1-TWR
+slurmctld: debug:  layouts: 1/1 nodes in hash table, rc=0
+slurmctld: debug:  layouts: loading stage 1
+slurmctld: debug3: layouts: reading config for cons_res_partition
+slurmctld: debug3: layouts: configuration file '/usr/local/etc/layouts.d/cons_res_partition.conf' is loaded
+slurmctld: debug3: layouts: reading config for unit
+slurmctld: debug3: layouts: configuration file '/usr/local/etc/layouts.d/unit.conf' is loaded
+slurmctld: debug3: layouts: reading config for power
+slurmctld: debug3: layouts: configuration file '/usr/local/etc/layouts.d/power.conf' is loaded
+slurmctld: error: layouts: entity 'virtual0' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual1' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual2' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual3' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual4' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual5' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual6' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual7' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual8' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual9' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual10' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual11' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual12' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual13' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual14' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual15' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual16' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual17' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual18' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual19' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual20' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual21' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual22' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual23' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual24' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual25' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual26' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual27' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual28' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual29' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual30' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual31' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual32' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual33' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual34' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual35' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual36' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual37' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual38' type (Node) differs from already registered entity type (node) skipping
+slurmctld: error: layouts: entity 'virtual39' type (Node) differs from already registered entity type (node) skipping
+slurmctld: debug:  layouts: loading stage 1.1 (restore state)
+slurmctld: debug3: layouts: reading state of cons_res_partition
+slurmctld: debug:  layouts: skipping non existent state file for 'cons_res_partition/default'
+slurmctld: debug3: layouts: reading state of unit
+slurmctld: error: s_p_parse_file: unable to read "/tmp/layouts_state_unit": Permission denied
+slurmctld: fatal: layouts: something went wrong when opening/reading '/tmp/layouts_state_unit': Permission denied
+root@dinesh-HP-ProDesk-600-G1-TWR:/home/dinesh/dev-select-layout# rm /tmp/*
+
+
+
+
+
+
+
+3) ===========================================================================
+
+
+slurmctld: debug3: Success.
+slurmctld: debug3: Trying to load plugin /usr/local/lib/slurm/sched_backfill.so
+slurmctld: sched: Backfill scheduler plugin loaded
+slurmctld: debug3: Success.
+slurmctld: debug3: Trying to load plugin /usr/local/lib/slurm/route_default.so
+slurmctld: route default plugin loaded
+slurmctld: debug3: Success.
+slurmctld: error: ################################################
+slurmctld: error: ###       SEVERE SECURITY VULERABILTY        ###
+slurmctld: error: ### StateSaveLocation DIRECTORY IS WORLD WRITABLE ###
+slurmctld: error: ###         CORRECT FILE PERMISSIONS         ###
+slurmctld: error: ################################################
+slurmctld: layouts: loading entities/relations information
+slurmctld: debug3: layouts: loading node virtual0
+slurmctld: debug3: layouts: loading node virtual1
+slurmctld: debug3: layouts: loading node virtual2
+slurmctld: debug3: layouts: loading node virtual3
+slurmctld: debug3: layouts: loading node virtual4
+slurmctld: debug3: layouts: loading node virtual5
+slurmctld: debug3: layouts: loading node virtual6
+slurmctld: debug3: layouts: loading node virtual7
+slurmctld: debug3: layouts: loading node virtual8
+slurmctld: debug3: layouts: loading node virtual9
+slurmctld: debug3: layouts: loading node virtual10
+slurmctld: debug3: layouts: loading node virtual11
+slurmctld: debug3: layouts: loading node virtual12
+slurmctld: debug3: layouts: loading node virtual13
+slurmctld: debug3: layouts: loading node virtual14
+slurmctld: debug3: layouts: loading node virtual15
+slurmctld: debug3: layouts: loading node virtual16
+slurmctld: debug3: layouts: loading node virtual17
+slurmctld: debug3: layouts: loading node virtual18
+slurmctld: debug3: layouts: loading node virtual19
+slurmctld: debug3: layouts: loading node virtual20
+slurmctld: debug3: layouts: loading node virtual21
+slurmctld: debug3: layouts: loading node virtual22
+slurmctld: debug3: layouts: loading node virtual23
+slurmctld: debug3: layouts: loading node virtual24
+slurmctld: debug3: layouts: loading node virtual25
+slurmctld: debug3: layouts: loading node virtual26
+slurmctld: debug3: layouts: loading node virtual27
+slurmctld: debug3: layouts: loading node virtual28
+slurmctld: debug3: layouts: loading node virtual29
+slurmctld: debug3: layouts: loading node virtual30
+slurmctld: debug3: layouts: loading node virtual31
+slurmctld: debug3: layouts: loading node virtual32
+slurmctld: debug3: layouts: loading node virtual33
+slurmctld: debug3: layouts: loading node virtual34
+slurmctld: debug3: layouts: loading node virtual35
+slurmctld: debug3: layouts: loading node virtual36
+slurmctld: debug3: layouts: loading node virtual37
+slurmctld: debug3: layouts: loading node virtual38
+slurmctld: debug3: layouts: loading node virtual39
+slurmctld: debug3: layouts: loading node virtual40
+slurmctld: debug:  layouts: 41/41 nodes in hash table, rc=0
+slurmctld: debug:  layouts: loading stage 1
+slurmctld: debug3: layouts: reading config for unit
+slurmctld: debug3: layouts: configuration file '/usr/local/etc/layouts.d/unit.conf' is loaded
+slurmctld: debug3: layouts: reading config for power
+slurmctld: debug3: layouts: configuration file '/usr/local/etc/layouts.d/power.conf' is loaded
+slurmctld: debug:  layouts: loading stage 1.1 (restore state)
+slurmctld: debug3: layouts: reading state of unit
+slurmctld: debug3: layouts: configuration file '/tmp/layouts_state_unit' is loaded
+slurmctld: debug3: layouts: reading state of power
+slurmctld: debug3: layouts: configuration file '/tmp/layouts_state_power' is loaded
+slurmctld: debug:  layouts: loading stage 2
+slurmctld: debug3: layouts: creating relations for unit
+slurmctld: debug3: layouts: creating relations for power
+slurmctld: debug:  layouts: loading stage 3
+slurmctld: debug3: layouts: autoupdating unit
+slurmctld: debug3: layouts: autoupdating power
+slurmctld: debug3: Version string in node_state header is PROTOCOL_VERSION
+slurmctld: Recovered state of 41 nodes
+slurmctld: debug3: Version string in job_state header is PROTOCOL_VERSION
+slurmctld: debug3: Job id in job_state header is 3002
+slurmctld: debug3: Set job_id_sequence to 3002
+slurmctld: Recovered information about 0 jobs
+slurmctld: cons_res: select_p_node_init
+slurmctld: cons_res: preparing for 2 partitions
+slurmctld: init_requeue_policy: kill_invalid_depend is set to 0
+slurmctld: debug:  Updating partition uid access list
+slurmctld: debug3: Version string in resv_state header is PROTOCOL_VERSION
+slurmctld: Recovered state of 0 reservations
+slurmctld: State of 0 triggers recovered
+slurmctld: read_slurm_conf: backup_controller not specified.
+slurmctld: cons_res: select_p_reconfigure
+slurmctld: cons_res: select_p_node_init
+slurmctld: cons_res: preparing for 2 partitions
+slurmctld: Running as primary controller
+slurmctld: debug3: Trying to load plugin /usr/local/lib/slurm/priority_multifactor.so
+slurmctld: error: You are not running a supported accounting_storage plugin
+(accounting_storage/none).
+Fairshare can only be calculated with either 'accounting_storage/slurmdbd' or 'accounting_storage/mysql' enabled.  If you want multifactor priority without fairshare ignore this message.
+slurmctld: debug:  Priority MULTIFACTOR plugin loaded
+slurmctld: debug3: Success.
+slurmctld: debug3: Version string in sicp_state header is PROTOCOL_VERSION
+slurmctld: Recovered information about 0 sicp jobs
+slurmctld: debug3: _slurmctld_rpc_mgr pid = 23086
+slurmctld: debug3: _slurmctld_background pid = 23086
+slurmctld: debug:  power_save module disabled, SuspendTime < 0
+slurmctld: debug2: slurmctld listening on 0.0.0.0:6817
+slurmctld: debug3: Trying to load plugin /usr/local/lib/slurm/auth_munge.so
+slurmctld: debug:  auth plugin for Munge (http://code.google.com/p/munge/) loaded
+slurmctld: debug3: Success.
+slurmctld: debug2: Processing RPC: REQUEST_SICP_INFO from uid=0
+slurmctld: debug:  Spawning registration agent for virtual[0-40] 41 hosts
+slurmctld: debug2: Spawning RPC agent for msg_type REQUEST_NODE_REGISTRATION_STATUS
+slurmctld: debug2: got 1 threads to send out
+slurmctld: debug3: Tree sending to virtual0
+slurmctld: debug3: Tree sending to virtual3
+slurmctld: debug3: Tree sending to virtual2
+slurmctld: debug3: Tree sending to virtual1
+slurmctld: debug3: Tree sending to virtual4
+slurmctld: debug3: Tree sending to virtual5
+slurmctld: debug3: Tree sending to virtual6
+slurmctld: debug3: Tree sending to virtual15
+slurmctld: debug3: Tree sending to virtual8
+slurmctld: debug3: Tree sending to virtual9
+slurmctld: debug3: Tree sending to virtual19
+slurmctld: debug3: Tree sending to virtual23
+slurmctld: debug2: Tree head got back 0 looking for 41
+slurmctld: debug3: Tree sending to virtual13
+slurmctld: debug3: Tree sending to virtual14
+slurmctld: debug3: Tree sending to virtual7
+slurmctld: debug3: Tree sending to virtual16
+slurmctld: debug3: Tree sending to virtual17
+slurmctld: debug3: Tree sending to virtual18
+slurmctld: debug3: Tree sending to virtual20
+slurmctld: debug3: Tree sending to virtual21
+slurmctld: debug3: Tree sending to virtual22
+slurmctld: debug3: Tree sending to virtual26
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug3: Tree sending to virtual24
+slurmctld: debug3: Tree sending to virtual25
+slurmctld: debug3: Tree sending to virtual11
+slurmctld: debug3: Tree sending to virtual35
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug3: Tree sending to virtual12
+slurmctld: debug3: Tree sending to virtual38
+slurmctld: debug3: Tree sending to virtual10
+slurmctld: debug3: Tree sending to virtual28
+slurmctld: debug3: Tree sending to virtual32
+slurmctld: debug3: Tree sending to virtual34
+slurmctld: debug3: Tree sending to virtual30
+slurmctld: debug3: Tree sending to virtual40
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug3: Tree sending to virtual33
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug3: Tree sending to virtual29
+slurmctld: debug3: Tree sending to virtual31
+slurmctld: debug3: Tree sending to virtual27
+slurmctld: debug3: Tree sending to virtual39
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug3: Tree sending to virtual36
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug3: Tree sending to virtual37
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug2: Tree head got back 1
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug2: Tree head got back 2
+slurmctld: debug2: Tree head got back 3
+slurmctld: debug2: Tree head got back 4
+slurmctld: debug2: Tree head got back 5
+slurmctld: debug2: Tree head got back 6
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug2: Tree head got back 7
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug2: Tree head got back 8
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug2: Tree head got back 9
+slurmctld: debug2: Tree head got back 10
+slurmctld: debug2: Tree head got back 10
+slurmctld: debug2: Tree head got back 11
+slurmctld: debug2: Tree head got back 12
+slurmctld: debug2: Tree head got back 13
+slurmctld: debug2: Tree head got back 14
+slurmctld: debug2: Tree head got back 15
+slurmctld: debug2: Tree head got back 16
+slurmctld: debug2: Tree head got back 17
+slurmctld: debug2: Tree head got back 18
+slurmctld: debug2: Tree head got back 19
+slurmctld: debug2: Tree head got back 21
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug2: Tree head got back 22
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug2: Tree head got back 23
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual30 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug2: Tree head got back 24
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual30 usec=115
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug2: Tree head got back 25
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual27 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual27 usec=42
+slurmctld: debug2: Tree head got back 26
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual35 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual1 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual31 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug4: orig_timeout was 60000 we have 0 steps and a timeout of 60000
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual1 usec=30
+slurmctld: debug2: Tree head got back 27
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual35 usec=252
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual31 usec=26
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual6 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual6 usec=71
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual2 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual2 usec=338
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual15 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual4 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual15 usec=36
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual14 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual4 usec=31
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual21 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual21 usec=23
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual14 usec=30
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual22 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual18 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual13 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual18 usec=52
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual33 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual22 usec=50
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual13 usec=36
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual33 usec=38
+slurmctld: debug2: Tree head got back 28
+slurmctld: debug2: Tree head got back 29
+slurmctld: debug2: Tree head got back 30
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual11 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual11 usec=55
+slurmctld: debug2: Tree head got back 33
+slurmctld: debug2: Tree head got back 34
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual34 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual34 usec=35
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual10 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: Tree head got back 35
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual39 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual3 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual10 usec=62
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual37 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual12 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual32 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual23 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual0 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual20 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual39 usec=272
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual7 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual7 usec=32
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual40 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual3 usec=267
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual23 usec=150
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual9 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual0 usec=291
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual12 usec=356
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual20 usec=37
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual26 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual16 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual40 usec=635
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual17 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual29 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual29 usec=1509
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual25 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual25 usec=1308
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual38 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual37 usec=270
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual9 usec=1757
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual24 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual24 usec=408
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual28 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual28 usec=421
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual32 usec=142
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual16 usec=1738
+slurmctld: debug2: Tree head got back 36
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual17 usec=1812
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual19 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual19 usec=2016
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual36 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual8 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual8 usec=2838
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual26 usec=1955
+slurmctld: debug2: Tree head got back 41
+slurmctld: debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from uid=0
+slurmctld: error: Node virtual5 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual36 usec=1137
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual38 usec=693
+slurmctld: debug2: _slurm_rpc_node_registration complete for virtual5 usec=2318
+slurmctld: debug2: Tree head got back 41
+slurmctld: debug2: node_did_resp virtual1
+slurmctld: debug2: node_did_resp virtual3
+slurmctld: debug2: node_did_resp virtual32
+slurmctld: debug2: node_did_resp virtual10
+slurmctld: debug2: node_did_resp virtual40
+slurmctld: debug2: node_did_resp virtual35
+slurmctld: debug2: node_did_resp virtual27
+slurmctld: debug2: node_did_resp virtual31
+slurmctld: debug2: node_did_resp virtual30
+slurmctld: debug2: node_did_resp virtual12
+slurmctld: debug2: node_did_resp virtual37
+slurmctld: debug2: node_did_resp virtual15
+slurmctld: debug2: node_did_resp virtual4
+slurmctld: debug2: node_did_resp virtual14
+slurmctld: debug2: node_did_resp virtual21
+slurmctld: debug2: node_did_resp virtual22
+slurmctld: debug2: node_did_resp virtual18
+slurmctld: debug2: node_did_resp virtual13
+slurmctld: debug2: node_did_resp virtual26
+slurmctld: debug2: node_did_resp virtual8
+slurmctld: debug2: node_did_resp virtual20
+slurmctld: debug2: node_did_resp virtual6
+slurmctld: debug2: node_did_resp virtual23
+slurmctld: debug2: node_did_resp virtual33
+slurmctld: debug2: node_did_resp virtual39
+slurmctld: debug2: node_did_resp virtual2
+slurmctld: debug2: node_did_resp virtual0
+slurmctld: debug2: node_did_resp virtual7
+slurmctld: debug2: node_did_resp virtual11
+slurmctld: debug2: node_did_resp virtual34
+slurmctld: debug2: node_did_resp virtual16
+slurmctld: debug2: node_did_resp virtual9
+slurmctld: debug2: node_did_resp virtual17
+slurmctld: debug2: node_did_resp virtual19
+slurmctld: debug2: node_did_resp virtual5
+slurmctld: debug2: node_did_resp virtual25
+slurmctld: debug2: node_did_resp virtual38
+slurmctld: debug2: node_did_resp virtual28
+slurmctld: debug2: node_did_resp virtual36
+slurmctld: debug2: node_did_resp virtual24
+slurmctld: debug2: node_did_resp virtual29
+slurmctld: debug2: Performing purge of old job records
+slurmctld: debug2: Processing RPC: REQUEST_SICP_INFO from uid=0
+slurmctld: debug2: Performing purge of old job records
+slurmctld: debug2: Processing RPC: REQUEST_SICP_INFO from uid=0
+^Cslurmctld: Terminate signal (SIGINT or SIGTERM) received
+slurmctld: debug:  sched: slurmctld terminating
+slurmctld: debug3: _slurmctld_rpc_mgr shutting down
+slurmctld: Saving all slurm state
+slurmctld: debug3: Writing job id 3002 to header record of job_state file
+slurmctld: debug3: _slurmctld_background shutting down
+slurmctld: debug3: layouts: layouts_fini()...
+slurmctld: layouts: all layouts are now unloaded.
+slurmctld: Unable to remove pidfile '/usr/local/slurm-powercap/var/run/slurmctld.pid': No such file or directory
+root@dinesh-HP-ProDesk-600-G1-TWR:/home/dinesh/dev-select-layout# 
+
+
