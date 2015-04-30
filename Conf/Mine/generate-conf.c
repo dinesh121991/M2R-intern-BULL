@@ -13,7 +13,7 @@ printf("# Compute node layout configuration \n");
         {
                 j= 2*i;
 
-                printf("Entity=virtual%d type=Node nodecount=1 SelectedNodeCount=0 AllocatedNodeCount=0 NumSumSockets=0 NumSumCoresInNode=0 SelectedSumSockets=0 SelectedSumCoresInNode=0 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 BitmapPosition=0 Enclosed=socket[%d-%d] \n",i,j,j+1);
+                printf("Entity=mod%d type=Node nodecount=1 SelectedNodeCount=0 AllocatedNodeCount=0 NumSumSockets=0 NumSumCoresInNode=0 SelectedSumSockets=0 SelectedSumCoresInNode=0 AllocatedSumSockets=0 AllocatedSumCoresInNode=0 BitmapPosition=0 Enclosed=socket[%d-%d] \n",i,j,j+1);
         }
 printf("#Socket Level layout configuration following\n");
 
