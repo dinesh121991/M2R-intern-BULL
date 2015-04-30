@@ -1,0 +1,11 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {2}{General overview of the project}{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{Aims}{3}{0}{1}
+\beamer@subsectionintoc {2}{2}{Being more specific}{4}{0}{1}
+\beamer@sectionintoc {3}{Last 6 months}{7}{0}{2}
+\beamer@subsectionintoc {3}{1}{P1: Tracking the flu pandemic by monitoring the Social Web}{7}{0}{2}
+\beamer@subsectionintoc {3}{2}{P2: Flu detector - Tracking epidemics on Twitter}{10}{0}{2}
+\beamer@subsectionintoc {3}{3}{Other activities}{11}{0}{2}
+\beamer@sectionintoc {4}{Next 6 months}{12}{0}{3}
+\beamer@subsectionintoc {4}{1}{General goals \& activities}{12}{0}{3}
+\beamer@subsectionintoc {4}{2}{A more time specific tentative plan}{13}{0}{3}

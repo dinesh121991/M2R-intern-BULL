@@ -1,0 +1,158 @@
+/* Select the best set of resources for the given job
+ * IN: job_ptr      - pointer to the job requesting resources
+ * IN: min_nodes    - minimum number of nodes required
+ * IN: max_nodes    - maximum number of nodes requested
+ * IN: req_nodes    - number of requested nodes
+ * IN/OUT: node_map - bitmap of available nodes / bitmap of selected nodes
+ * IN: cr_node_cnt  - total number of nodes in the cluster
+ * IN/OUT: core_map - bitmap of available cores / bitmap of selected cores
+ * IN: cr_type      - resource type
+ * IN: test_only    - ignore allocated memory check
+ * IN: part_core_map - bitmap of cores allocated to jobs of this partition
+ *                     or NULL if don't care
+ * IN: prefer_alloc_nodes - select currently allocated nodes first
+ * RET - array with number of CPUs available per node or NULL if not runnable
+ */
+static uint16_t *_select_nodes(struct job_record *job_ptr, uint32_t min_nodes,
+				uint32_t max_nodes, uint32_t req_nodes,
+				bitstr_t *node_map, uint32_t cr_node_cnt,
+				bitstr_t *core_map,
+				struct node_use_record *node_usage,
+				uint16_t cr_type, bool test_only,
+				bitstr_t *part_core_map,
+				bool prefer_alloc_nodes)
+{
+	int i, rc;
+	uint32_t *cpu_cnt, *cpus = NULL;
+	uint32_t start, n, a;
+	struct job_details *details_ptr = job_ptr->details;
+	bitstr_t *req_map = details_ptr->req_node_bitmap;
+	char str[200]="[No map]";
+	uint32_t node_count_set=1,node_count_clear=0;
+	int total_cpus=0;
+	char str_i[30];
+	int cpu_count1;
+
+	if (bit_set_count(node_map) < min_nodes)
+		return NULL;
+
+	info("L- Enter _select_nodes");
+	_log_select_maps("_select_nodes/enter", node_map, core_map);
+	/* get resource usage for this job from each available node */
+	_get_res_usage(job_ptr, node_map, core_map, cr_node_cnt,
+		       node_usage, cr_type, &cpu_cnt, test_only, part_core_map);
+
+	/* clear all nodes that do not have sufficient resources for this job */
+	for (n = 0; n < cr_node_cnt; n++) {
+		if (bit_test(node_map, n) && (cpu_cnt[n] == 0)) 
+		{
+			/* insufficient resources available on this node */
+			if (req_map && bit_test(req_map, n)) 
+			{
+				/* cannot clear a required node! */
+				xfree(cpu_cnt);
+				return NULL;
+			}
+			bit_clear(node_map, n);
+		/*	info("L-Entered inside the selected_node clear in topology");
+			if(layouts_entity_setpush_kv (L_CONS_RES_TOPOLOGY,node_record_table_ptr[n].name,L_SELECTED_NODE_COUNT_IN_NODE,&node_count_clear,L_T_UINT32) == SLURM_SUCCESS )
+			{ 
+				if(layouts_entity_setpush_kv ( L_CONS_RES_TOPOLOGY,node_record_table_ptr[n].name,L_SELECTED_CPU_COUNT_IN_NODE,&cpu_cnt[n],L_T_UINT32) == SLURM_SUCCESS && 
+					   layouts_entity_get_kv (L_CONS_RES_TOPOLOGY,node_record_table_ptr[n].name,L_SELECTED_CPU_COUNT_IN_NODE,&cpu_count1,L_T_UINT32) == SLURM_SUCCESS)						
+						info("L-Cons_res_topology was cleared cpu_cnt[n]:%d cpu_cnt[n]@:%ld cpu_count1:%d",cpu_cnt[n],&cpu_cnt[n],cpu_count1);
+			}
+			else
+			{
+				info("L- cons_res topology was not updated");
+			}*/
+		}
+		/*else
+		{
+			if(bit_test(node_map, n))
+			{
+				
+				info("L-Entered inside the selected_node set in topology");
+				if(layouts_entity_setpush_kv (L_CONS_RES_TOPOLOGY,node_record_table_ptr[n].name,L_SELECTED_NODE_COUNT_IN_NODE,&node_count_set,L_T_UINT32) == SLURM_SUCCESS )
+				{ 
+					if(layouts_entity_setpush_kv ( L_CONS_RES_TOPOLOGY,node_record_table_ptr[n].name,L_SELECTED_CPU_COUNT_IN_NODE,&cpu_cnt[n],L_T_UINT32) == SLURM_SUCCESS && 
+					   layouts_entity_get_kv (L_CONS_RES_TOPOLOGY,node_record_table_ptr[n].name,L_SELECTED_CPU_COUNT_IN_NODE,&cpu_count1,L_T_UINT32) == SLURM_SUCCESS)						
+						info("L-Cons_res_topology was updated cpu_cnt[n]:%d cpu_cnt[n]@:%ld cpu_count1:%d",cpu_cnt[n],&cpu_cnt[n],cpu_count1);
+				}
+				else
+				{
+					info("L- cons_res topology was not updated");
+				}
+			}
+			else
+			{
+				info("L-Entered inside the selected_node clear in topology");
+				if(layouts_entity_setpush_kv (L_CONS_RES_TOPOLOGY,node_record_table_ptr[n].name,L_SELECTED_NODE_COUNT_IN_NODE,&node_count_clear,L_T_UINT32) == SLURM_SUCCESS )
+				{ 
+					if(layouts_entity_setpush_kv ( L_CONS_RES_TOPOLOGY,node_record_table_ptr[n].name,L_SELECTED_CPU_COUNT_IN_NODE,&cpu_cnt[n],L_T_UINT32) == SLURM_SUCCESS && 
+					   layouts_entity_get_kv (L_CONS_RES_TOPOLOGY,node_record_table_ptr[n].name,L_SELECTED_CPU_COUNT_IN_NODE,&cpu_count1,L_T_UINT32) == SLURM_SUCCESS)						
+						info("L-Cons_res_topology was cleared cpu_cnt[n]:%d cpu_cnt[n]@:%ld cpu_count1:%d",cpu_cnt[n],&cpu_cnt[n],cpu_count1);
+				}
+				else
+				{
+					info("L- cons_res topology was not updated");
+				}
+			}
+		}*/
+		
+	}
+	
+	/*sprintf(str_i,"%s%d",L_SELECTED_SUM_CPUS_IN_LEVEL,switch_record_table[root_switch_index].level);
+	
+	if(layouts_entity_pullget_kv (L_CONS_RES_TOPOLOGY,switch_record_table[root_switch_index].name,str_i,&total_cpus,L_T_UINT32) == SLURM_SUCCESS )
+	{
+		info("L- root-switch cpus values:%d",cpu_count1);
+	}*/
+	
+	if (bit_set_count(node_map) < min_nodes && total_cpus < job_ptr->details->min_cpus) {
+		info("L- bit_set_count(node_map) < min_nodes && total_cpus < job_ptr->details->min_cpus");
+		xfree(cpu_cnt);
+		return NULL;
+	}
+	
+	_log_select_maps("_select_nodes/elim_nodes", node_map, core_map);
+
+	if (details_ptr->ntasks_per_node && details_ptr->num_tasks) {
+		i  = details_ptr->num_tasks;
+		i += (details_ptr->ntasks_per_node - 1);
+		i /= details_ptr->ntasks_per_node;
+		min_nodes = MAX(min_nodes, i);
+	}
+
+	/* choose the best nodes for the job */
+	rc = _choose_nodes(job_ptr, node_map, min_nodes, max_nodes, req_nodes,
+			   cr_node_cnt, cpu_cnt, cr_type, prefer_alloc_nodes);
+	_log_select_maps("_select_nodes/choose_nodes", node_map, core_map);
+
+	if(node_map)
+		bit_fmt(str,sizeof(str),node_map);
+	info("L-_select_nodes after choose_nodes node_map:%s",str);
+	/* if successful, sync up the core_map with the node_map, and
+	 * create a cpus array */
+	if (rc == SLURM_SUCCESS) {
+		cpus = xmalloc(bit_set_count(node_map) * sizeof(uint16_t));
+		start = 0;
+		a = 0;
+		for (n = 0; n < cr_node_cnt; n++) {
+			if (bit_test(node_map, n)) {
+				cpus[a++] = cpu_cnt[n];
+				if (cr_get_coremap_offset(n) != start) {
+					bit_nclear(core_map, start,
+						   (cr_get_coremap_offset(n))-1);
+				}
+				start = cr_get_coremap_offset(n + 1);
+			}
+		}
+		if (cr_get_coremap_offset(n) != start) {
+			bit_nclear(core_map, start, cr_get_coremap_offset(n)-1);
+		}
+	}
+	_log_select_maps("_select_nodes/sync_cores", node_map, core_map);
+	xfree(cpu_cnt);
+	info("L-_select_nodes after choose_nodes node_map:%s",str);
+	return (uint16_t *)cpus;
+}

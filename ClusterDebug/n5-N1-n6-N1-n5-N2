@@ -1,0 +1,346 @@
+slurmctld: debug2: _slurm_rpc_node_registration complete for mo98 usec=177
+slurmctld: debug2: node_did_resp mo99
+slurmctld: debug2: node_did_resp mo98
+slurmctld: SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=4,partition_job_depth=0
+slurmctld: debug:  sched: Running job scheduler
+slurmctld: debug3: Processing RPC: REQUEST_JOB_INFO from uid=0
+slurmctld: debug2: Processing RPC: REQUEST_PARTITION_INFO uid=0
+slurmctld: debug2: _slurm_rpc_dump_partitions, size=128 usec=42
+slurmctld: debug2: sched: Processing RPC: REQUEST_RESOURCE_ALLOCATION from uid=0
+slurmctld: debug3: JobDesc: user_id=0 job_id=N/A partition=(null) name=bash
+slurmctld: debug3:    cpus=5-4294967294 pn_min_cpus=-1 core_spec=-1
+slurmctld: debug3:    -N min-[max]: 1-[1]:65534:65534:65534
+slurmctld: debug3:    pn_min_memory_job=-1 pn_min_tmp_disk=-1
+slurmctld: debug3:    immediate=0 features=(null) reservation=(null)
+slurmctld: debug3:    req_nodes=(null) exc_nodes=(null) gres=(null)
+slurmctld: debug3:    time_limit=-1--1 priority=-1 contiguous=0 shared=-1
+slurmctld: debug3:    kill_on_node_fail=-1 script=(null)
+slurmctld: debug3:    stdin=(null) stdout=(null) stderr=(null)
+slurmctld: debug3:    work_dir=/root alloc_node:sid=mo66:1761
+slurmctld: debug3:    resp_host=10.0.0.36 alloc_resp_port=39596  other_port=57592
+slurmctld: debug3:    dependency=(null) account=(null) qos=(null) comment=(null)
+slurmctld: debug3:    mail_type=0 mail_user=(null) nice=0 num_tasks=5 open_mode=0 overcommit=-1 acctg_freq=(null)
+slurmctld: debug3:    network=(null) begin=Unknown cpus_per_task=-1 requeue=-1 licenses=(null)
+slurmctld: debug3:    end_time= signal=0@0 wait_all_nodes=-1 cpu_freq=
+slurmctld: debug3:    ntasks_per_node=-1 ntasks_per_socket=-1 ntasks_per_core=-1
+slurmctld: debug3:    mem_bind=65534:(null) plane_size:65534
+slurmctld: debug3:    array_inx=(null)
+slurmctld: debug3:    burst_buffer=(null)
+slurmctld: debug3: found correct user
+slurmctld: debug3: found correct association
+slurmctld: debug3: found correct qos
+slurmctld: debug3: before alteration asking for nodes 1-1 cpus 5-4294967294
+slurmctld: debug3: after alteration asking for nodes 1-1 cpus 5-4294967294
+slurmctld: debug2: found 2 usable nodes from config containing mo[98-99]
+slurmctld: debug3: _pick_best_nodes: job 47 idle_nodes 2 share_nodes 2
+slurmctld: Node-names:mo98,node_record_count:2,i:0
+slurmctld: Node-names:mo99,node_record_count:2,i:1
+slurmctld: D-select_p_job_test for bitmap:0-1
+slurmctld: D-select_p_job_test for job id:47, bitmap:0-1,min_nodes:1, max_nodes:1, req_nodes:1, mode:0, preemptee_candidates-count:(SF),preemptee_candidates-head_value:0	 preemptee_job_list-count:(SF), preemptee_job_list-head_value:0
+slurmctld: D-select_p_job_test BM-NN  for bitmap:0-1
+slurmctld: D-select_p_job_test NN-BM for bitmap:0-1
+slurmctld: D-select_p_job_test for debug_check:1, debug_cpu_bind:%B, slurm_get_debug_flags():1 DEBUG_FLAG_SELECT_TYPE:1,select_debug_flags:1 
+slurmctld: D-select_p_job_test: select_p_job_test: job 47 job_node_req 1 mode 0
+slurmctld: D-select_p_job_test: select_p_job_test: min_n 1 max_n 1 req_n 1 avail_n 2
+slurmctld: node:mo98 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:0
+slurmctld: node:mo99 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:0
+slurmctld: part:debug rows:1 pri:1 
+slurmctld: D-select_p_job_test-SELECT_MODE_RUN_NOW-before: for bitmap:0-1
+slurmctld: D-_run_now for bitmap:0-1
+slurmctld: D-_run_now-before-cr_job_test : tmp_cr_type:20
+slurmctld: D-_run_now-before-cr_job_test : job_ptr->part_ptr->cr_type:0 cr_type:20 tmp_cr_type:20
+slurmctld: node:mo98 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:0
+slurmctld: node:mo99 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:0
+slurmctld: part:debug rows:1 pri:1 
+slurmctld: cons_res: cr_job_test: evaluating job 47 on 2 nodes
+slurmctld: cons_res: _can_job_run_on_node: 8 cpus on mo98(0), mem 0/17959
+slurmctld: cons_res: _can_job_run_on_node: 8 cpus on mo99(0), mem 0/17959
+slurmctld: cons_res: eval_nodes:0 consec c=16 n=2 b=0 e=1 r=-1
+slurmctld: cons_res: cr_job_test: test 0 pass - job fits on given resources
+slurmctld: cons_res: _can_job_run_on_node: 8 cpus on mo98(0), mem 0/17959
+slurmctld: cons_res: _can_job_run_on_node: 8 cpus on mo99(0), mem 0/17959
+slurmctld: cons_res: eval_nodes:0 consec c=16 n=2 b=0 e=1 r=-1
+slurmctld: cons_res: cr_job_test: test 1 pass - idle resources found
+slurmctld: cons_res: cr_job_test: distributing job 47
+slurmctld: cons_res: cr_job_test: job 47 ncpus 5 cbits 8/8 nbits 1
+slurmctld: DEBUG: job 47 node mo98 vpus 1 cpus 5
+slurmctld: D-_run_now-after-cr_job_test bitmap size:2
+slurmctld: node:mo98 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:0
+slurmctld: node:mo99 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:0
+slurmctld: part:debug rows:1 pri:1 
+slurmctld: D-_run_now-after-cr_job_test for bitmap:0
+slurmctld: D-_run_now for job id:47 ,min_nodes:3436019504, max_nodes:1, req_nodes:1, job_node_req:1, tmp_cr_type:1, select_node_cnt:20,
+slurmctld: node:mo98 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:0
+slurmctld: node:mo99 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:0
+slurmctld: part:debug rows:1 pri:1 
+slurmctld: D-select_p_job_test-SELECT_MODE_RUN_NOW-after: for bitmap:0
+slurmctld: ====================
+slurmctld: job_id:47 nhosts:1 ncpus:5 node_req:1 nodes=mo98
+slurmctld: Node[0]:
+slurmctld:   Mem(MB):0:0  Sockets:2  Cores:4  CPUs:5:0
+slurmctld:   Socket[0] Core[0] is allocated
+slurmctld:   Socket[0] Core[1] is allocated
+slurmctld:   Socket[0] Core[2] is allocated
+slurmctld:   Socket[1] Core[0] is allocated
+slurmctld:   Socket[1] Core[1] is allocated
+slurmctld: --------------------
+slurmctld: cpu_array_value[0]:5 reps:1
+slurmctld: ====================
+slurmctld: D-select_p_job_test : return rc=0
+slurmctld: D-select_p_job_begin : current_cpu_cnt:5,cr_enabled:1,alloc_node:mo66
+slurmctld: debug3: cons_res: _add_job_to_res: job 47 act 0 
+slurmctld: DEBUG: Dump job_resources: nhosts 1 cb 0-2,4-5
+slurmctld: debug3: cons_res: adding job 47 to part debug row 0
+slurmctld: DEBUG: _add_job_to_res (after):
+slurmctld: part:debug rows:1 pri:1 
+slurmctld:   row0: num_jobs 1: bitmap: 0-2,4-5
+slurmctld: debug2: sched: JobId=47 allocated resources: NodeList=mo98
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=47 NodeList=mo98 usec=1508
+slurmctld: debug3: Writing job id 47 to header record of job_state file
+slurmctld: D-select_p_job_ready : current_cpu_cnt:5,cr_enabled:1,alloc_node:mo66
+slurmctld: debug2: _slurm_rpc_job_ready(47)=3 usec=35
+slurmctld: debug:  backfill: beginning
+slurmctld: debug:  backfill: no jobs to backfill
+slurmctld: debug2: Testing job time limits and checkpoints
+slurmctld: debug2: sched: Processing RPC: REQUEST_RESOURCE_ALLOCATION from uid=0
+slurmctld: debug3: JobDesc: user_id=0 job_id=N/A partition=(null) name=bash
+slurmctld: debug3:    cpus=6-4294967294 pn_min_cpus=-1 core_spec=-1
+slurmctld: debug3:    -N min-[max]: 1-[1]:65534:65534:65534
+slurmctld: debug3:    pn_min_memory_job=-1 pn_min_tmp_disk=-1
+slurmctld: debug3:    immediate=0 features=(null) reservation=(null)
+slurmctld: debug3:    req_nodes=(null) exc_nodes=(null) gres=(null)
+slurmctld: debug3:    time_limit=-1--1 priority=-1 contiguous=0 shared=-1
+slurmctld: debug3:    kill_on_node_fail=-1 script=(null)
+slurmctld: debug3:    stdin=(null) stdout=(null) stderr=(null)
+slurmctld: debug3:    work_dir=/root alloc_node:sid=mo66:1761
+slurmctld: debug3:    resp_host=10.0.0.36 alloc_resp_port=47152  other_port=33763
+slurmctld: debug3:    dependency=(null) account=(null) qos=(null) comment=(null)
+slurmctld: debug3:    mail_type=0 mail_user=(null) nice=0 num_tasks=6 open_mode=0 overcommit=-1 acctg_freq=(null)
+slurmctld: debug3:    network=(null) begin=Unknown cpus_per_task=-1 requeue=-1 licenses=(null)
+slurmctld: debug3:    end_time= signal=0@0 wait_all_nodes=-1 cpu_freq=
+slurmctld: debug3:    ntasks_per_node=-1 ntasks_per_socket=-1 ntasks_per_core=-1
+slurmctld: debug3:    mem_bind=65534:(null) plane_size:65534
+slurmctld: debug3:    array_inx=(null)
+slurmctld: debug3:    burst_buffer=(null)
+slurmctld: debug3: found correct user
+slurmctld: debug3: found correct association
+slurmctld: debug3: found correct qos
+slurmctld: debug3: before alteration asking for nodes 1-1 cpus 6-4294967294
+slurmctld: debug3: after alteration asking for nodes 1-1 cpus 6-4294967294
+slurmctld: debug2: found 2 usable nodes from config containing mo[98-99]
+slurmctld: debug3: _pick_best_nodes: job 48 idle_nodes 1 share_nodes 2
+slurmctld: Node-names:mo98,node_record_count:2,i:0
+slurmctld: Node-names:mo99,node_record_count:2,i:1
+slurmctld: D-select_p_job_test for bitmap:0-1
+slurmctld: D-select_p_job_test for job id:48, bitmap:0-1,min_nodes:1, max_nodes:1, req_nodes:1, mode:0, preemptee_candidates-count:(SF),preemptee_candidates-head_value:0	 preemptee_job_list-count:(SF), preemptee_job_list-head_value:0
+slurmctld: D-select_p_job_test BM-NN  for bitmap:0-1
+slurmctld: D-select_p_job_test NN-BM for bitmap:0-1
+slurmctld: D-select_p_job_test for debug_check:1, debug_cpu_bind:%B, slurm_get_debug_flags():1 DEBUG_FLAG_SELECT_TYPE:1,select_debug_flags:1 
+slurmctld: D-select_p_job_test: select_p_job_test: job 48 job_node_req 1 mode 0
+slurmctld: D-select_p_job_test: select_p_job_test: min_n 1 max_n 1 req_n 1 avail_n 2
+slurmctld: node:mo98 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:1
+slurmctld: node:mo99 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:0
+slurmctld: part:debug rows:1 pri:1 
+slurmctld:   row0: num_jobs 1: bitmap: 0-2,4-5
+slurmctld: D-select_p_job_test-SELECT_MODE_RUN_NOW-before: for bitmap:0-1
+slurmctld: D-_run_now for bitmap:0-1
+slurmctld: D-_run_now-before-cr_job_test : tmp_cr_type:20
+slurmctld: D-_run_now-before-cr_job_test : job_ptr->part_ptr->cr_type:0 cr_type:20 tmp_cr_type:20
+slurmctld: node:mo98 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:1
+slurmctld: node:mo99 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:0
+slurmctld: part:debug rows:1 pri:1 
+slurmctld:   row0: num_jobs 1: bitmap: 0-2,4-5
+slurmctld: cons_res: cr_job_test: evaluating job 48 on 2 nodes
+slurmctld: cons_res: _can_job_run_on_node: 8 cpus on mo98(1), mem 0/17959
+slurmctld: cons_res: _can_job_run_on_node: 8 cpus on mo99(0), mem 0/17959
+slurmctld: cons_res: eval_nodes:0 consec c=16 n=2 b=0 e=1 r=-1
+slurmctld: cons_res: cr_job_test: test 0 pass - job fits on given resources
+slurmctld: cons_res: _can_job_run_on_node: 3 cpus on mo98(1), mem 0/17959
+slurmctld: cons_res: _can_job_run_on_node: 8 cpus on mo99(0), mem 0/17959
+slurmctld: cons_res: eval_nodes:0 consec c=11 n=2 b=0 e=1 r=-1
+slurmctld: cons_res: cr_job_test: test 1 pass - idle resources found
+slurmctld: cons_res: cr_job_test: distributing job 48
+slurmctld: cons_res: cr_job_test: job 48 ncpus 6 cbits 8/8 nbits 1
+slurmctld: DEBUG: job 48 node mo99 vpus 1 cpus 6
+slurmctld: D-_run_now-after-cr_job_test bitmap size:2
+slurmctld: node:mo98 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:1
+slurmctld: node:mo99 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:0
+slurmctld: part:debug rows:1 pri:1 
+slurmctld:   row0: num_jobs 1: bitmap: 0-2,4-5
+slurmctld: D-_run_now-after-cr_job_test for bitmap:1
+slurmctld: D-_run_now for job id:48 ,min_nodes:3436019504, max_nodes:1, req_nodes:1, job_node_req:1, tmp_cr_type:1, select_node_cnt:20,
+slurmctld: node:mo98 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:1
+slurmctld: node:mo99 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:0
+slurmctld: part:debug rows:1 pri:1 
+slurmctld:   row0: num_jobs 1: bitmap: 0-2,4-5
+slurmctld: D-select_p_job_test-SELECT_MODE_RUN_NOW-after: for bitmap:1
+slurmctld: ====================
+slurmctld: job_id:48 nhosts:1 ncpus:6 node_req:1 nodes=mo99
+slurmctld: Node[0]:
+slurmctld:   Mem(MB):0:0  Sockets:2  Cores:4  CPUs:6:0
+slurmctld:   Socket[0] Core[0] is allocated
+slurmctld:   Socket[0] Core[1] is allocated
+slurmctld:   Socket[0] Core[2] is allocated
+slurmctld:   Socket[1] Core[0] is allocated
+slurmctld:   Socket[1] Core[1] is allocated
+slurmctld:   Socket[1] Core[2] is allocated
+slurmctld: --------------------
+slurmctld: cpu_array_value[0]:6 reps:1
+slurmctld: ====================
+slurmctld: D-select_p_job_test : return rc=0
+slurmctld: D-select_p_job_begin : current_cpu_cnt:6,cr_enabled:1,alloc_node:mo66
+slurmctld: debug3: cons_res: _add_job_to_res: job 48 act 0 
+slurmctld: DEBUG: Dump job_resources: nhosts 1 cb 0-2,4-6
+slurmctld: debug3: cons_res: adding job 48 to part debug row 0
+slurmctld: DEBUG: _add_job_to_res (after):
+slurmctld: part:debug rows:1 pri:1 
+slurmctld:   row0: num_jobs 2: bitmap: 0-2,4-5,8-10,12-14
+slurmctld: debug2: sched: JobId=48 allocated resources: NodeList=mo99
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=48 NodeList=mo99 usec=1718
+slurmctld: debug3: Writing job id 48 to header record of job_state file
+slurmctld: D-select_p_job_ready : current_cpu_cnt:6,cr_enabled:1,alloc_node:mo66
+slurmctld: debug2: _slurm_rpc_job_ready(48)=3 usec=29
+slurmctld: debug3: Processing RPC: REQUEST_JOB_INFO from uid=0
+slurmctld: debug2: Processing RPC: REQUEST_PARTITION_INFO uid=0
+slurmctld: debug2: _slurm_rpc_dump_partitions, size=128 usec=38
+slurmctld: debug:  backfill: beginning
+slurmctld: debug:  backfill: no jobs to backfill
+slurmctld: debug2: Testing job time limits and checkpoints
+slurmctld: debug2: Performing purge of old job records
+slurmctld: debug:  sched: Running job scheduler
+slurmctld: debug2: sched: Processing RPC: REQUEST_RESOURCE_ALLOCATION from uid=0
+slurmctld: debug3: JobDesc: user_id=0 job_id=N/A partition=(null) name=bash
+slurmctld: debug3:    cpus=5-4294967294 pn_min_cpus=-1 core_spec=-1
+slurmctld: debug3:    -N min-[max]: 2-[2]:65534:65534:65534
+slurmctld: debug3:    pn_min_memory_job=-1 pn_min_tmp_disk=-1
+slurmctld: debug3:    immediate=0 features=(null) reservation=(null)
+slurmctld: debug3:    req_nodes=(null) exc_nodes=(null) gres=(null)
+slurmctld: debug3:    time_limit=-1--1 priority=-1 contiguous=0 shared=-1
+slurmctld: debug3:    kill_on_node_fail=-1 script=(null)
+slurmctld: debug3:    stdin=(null) stdout=(null) stderr=(null)
+slurmctld: debug3:    work_dir=/root alloc_node:sid=mo66:1761
+slurmctld: debug3:    resp_host=10.0.0.36 alloc_resp_port=40940  other_port=60063
+slurmctld: debug3:    dependency=(null) account=(null) qos=(null) comment=(null)
+slurmctld: debug3:    mail_type=0 mail_user=(null) nice=0 num_tasks=5 open_mode=0 overcommit=-1 acctg_freq=(null)
+slurmctld: debug3:    network=(null) begin=Unknown cpus_per_task=-1 requeue=-1 licenses=(null)
+slurmctld: debug3:    end_time= signal=0@0 wait_all_nodes=-1 cpu_freq=
+slurmctld: debug3:    ntasks_per_node=-1 ntasks_per_socket=-1 ntasks_per_core=-1
+slurmctld: debug3:    mem_bind=65534:(null) plane_size:65534
+slurmctld: debug3:    array_inx=(null)
+slurmctld: debug3:    burst_buffer=(null)
+slurmctld: debug3: found correct user
+slurmctld: debug3: found correct association
+slurmctld: debug3: found correct qos
+slurmctld: debug3: before alteration asking for nodes 2-2 cpus 5-4294967294
+slurmctld: debug3: after alteration asking for nodes 2-2 cpus 5-4294967294
+slurmctld: debug2: found 2 usable nodes from config containing mo[98-99]
+slurmctld: debug3: _pick_best_nodes: job 49 idle_nodes 0 share_nodes 2
+slurmctld: Node-names:mo98,node_record_count:2,i:0
+slurmctld: Node-names:mo99,node_record_count:2,i:1
+slurmctld: D-select_p_job_test for bitmap:0-1
+slurmctld: D-select_p_job_test for job id:49, bitmap:0-1,min_nodes:2, max_nodes:2, req_nodes:2, mode:0, preemptee_candidates-count:(SF),preemptee_candidates-head_value:0	 preemptee_job_list-count:(SF), preemptee_job_list-head_value:0
+slurmctld: D-select_p_job_test BM-NN  for bitmap:0-1
+slurmctld: D-select_p_job_test NN-BM for bitmap:0-1
+slurmctld: D-select_p_job_test for debug_check:1, debug_cpu_bind:%B, slurm_get_debug_flags():1 DEBUG_FLAG_SELECT_TYPE:1,select_debug_flags:1 
+slurmctld: D-select_p_job_test: select_p_job_test: job 49 job_node_req 1 mode 0
+slurmctld: D-select_p_job_test: select_p_job_test: min_n 2 max_n 2 req_n 2 avail_n 2
+slurmctld: node:mo98 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:1
+slurmctld: node:mo99 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:1
+slurmctld: part:debug rows:1 pri:1 
+slurmctld:   row0: num_jobs 2: bitmap: 0-2,4-5,8-10,12-14
+slurmctld: D-select_p_job_test-SELECT_MODE_RUN_NOW-before: for bitmap:0-1
+slurmctld: D-_run_now for bitmap:0-1
+slurmctld: D-_run_now-before-cr_job_test : tmp_cr_type:20
+slurmctld: D-_run_now-before-cr_job_test : job_ptr->part_ptr->cr_type:0 cr_type:20 tmp_cr_type:20
+slurmctld: node:mo98 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:1
+slurmctld: node:mo99 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:1
+slurmctld: part:debug rows:1 pri:1 
+slurmctld:   row0: num_jobs 2: bitmap: 0-2,4-5,8-10,12-14
+slurmctld: cons_res: cr_job_test: evaluating job 49 on 2 nodes
+slurmctld: cons_res: _can_job_run_on_node: 8 cpus on mo98(1), mem 0/17959
+slurmctld: cons_res: _can_job_run_on_node: 8 cpus on mo99(1), mem 0/17959
+slurmctld: cons_res: eval_nodes:0 consec c=16 n=2 b=0 e=1 r=-1
+slurmctld: cons_res: cr_job_test: test 0 pass - job fits on given resources
+slurmctld: cons_res: _can_job_run_on_node: 3 cpus on mo98(1), mem 0/17959
+slurmctld: cons_res: _can_job_run_on_node: 2 cpus on mo99(1), mem 0/17959
+slurmctld: cons_res: eval_nodes:0 consec c=5 n=2 b=0 e=1 r=-1
+slurmctld: cons_res: cr_job_test: test 1 pass - idle resources found
+slurmctld: cons_res: cr_job_test: distributing job 49
+slurmctld: cons_res: cr_job_test: job 49 ncpus 5 cbits 5/5 nbits 2
+slurmctld: DEBUG: job 49 node mo98 vpus 1 cpus 3
+slurmctld: DEBUG: job 49 node mo99 vpus 1 cpus 2
+slurmctld: D-_run_now-after-cr_job_test bitmap size:2
+slurmctld: node:mo98 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:1
+slurmctld: node:mo99 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:1
+slurmctld: part:debug rows:1 pri:1 
+slurmctld:   row0: num_jobs 2: bitmap: 0-2,4-5,8-10,12-14
+slurmctld: D-_run_now-after-cr_job_test for bitmap:0-1
+slurmctld: D-_run_now for job id:49 ,min_nodes:3436019504, max_nodes:2, req_nodes:2, job_node_req:2, tmp_cr_type:1, select_node_cnt:20,
+slurmctld: node:mo98 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:1
+slurmctld: node:mo99 cpus:8 c:4 s:2 t:1 mem:17959 a_mem:0 state:1
+slurmctld: part:debug rows:1 pri:1 
+slurmctld:   row0: num_jobs 2: bitmap: 0-2,4-5,8-10,12-14
+slurmctld: D-select_p_job_test-SELECT_MODE_RUN_NOW-after: for bitmap:0-1
+slurmctld: ====================
+slurmctld: job_id:49 nhosts:2 ncpus:5 node_req:1 nodes=mo[98-99]
+slurmctld: Node[0]:
+slurmctld:   Mem(MB):0:0  Sockets:2  Cores:4  CPUs:3:0
+slurmctld:   Socket[0] Core[3] is allocated
+slurmctld:   Socket[1] Core[2] is allocated
+slurmctld:   Socket[1] Core[3] is allocated
+slurmctld: Node[1]:
+slurmctld:   Mem(MB):0:0  Sockets:2  Cores:4  CPUs:2:0
+slurmctld:   Socket[0] Core[3] is allocated
+slurmctld:   Socket[1] Core[3] is allocated
+slurmctld: --------------------
+slurmctld: cpu_array_value[0]:3 reps:1
+slurmctld: cpu_array_value[1]:2 reps:1
+slurmctld: ====================
+slurmctld: D-select_p_job_test : return rc=0
+slurmctld: D-select_p_job_begin : current_cpu_cnt:5,cr_enabled:1,alloc_node:mo66
+slurmctld: debug3: cons_res: _add_job_to_res: job 49 act 0 
+slurmctld: DEBUG: Dump job_resources: nhosts 2 cb 3,6-7,11,15
+slurmctld: debug3: cons_res: adding job 49 to part debug row 0
+slurmctld: DEBUG: _add_job_to_res (after):
+slurmctld: part:debug rows:1 pri:1 
+slurmctld:   row0: num_jobs 3: bitmap: 0-15
+slurmctld: debug2: sched: JobId=49 allocated resources: NodeList=mo[98-99]
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=49 NodeList=mo[98-99] usec=3110
+slurmctld: debug3: Writing job id 49 to header record of job_state file
+slurmctld: D-select_p_job_ready : current_cpu_cnt:5,cr_enabled:1,alloc_node:mo66
+slurmctld: debug2: _slurm_rpc_job_ready(49)=3 usec=214
+slurmctld: debug3: Processing RPC: REQUEST_JOB_INFO from uid=0
+slurmctld: debug2: Processing RPC: REQUEST_PARTITION_INFO uid=0
+slurmctld: debug2: _slurm_rpc_dump_partitions, size=128 usec=41
+^Cslurmctld: Terminate signal (SIGINT or SIGTERM) received
+slurmctld: debug:  sched: slurmctld terminating
+slurmctld: debug3: _slurmctld_rpc_mgr shutting down
+slurmctld: Saving all slurm state
+slurmctld: D-select_cons_res-select_p_state_save :Directory Name - /tmp/var/
+slurmctld: debug3: Writing job id 49 to header record of job_state file
+slurmctld: debug3: _slurmctld_background shutting down
+slurmctld: slurmdbd: saved 0 pending RPCs
+slurmctld: debug:  slurmdbd: Sent fini msg
+slurmctld: debug3: layouts: slurm_layouts_fini()...
+slurmctld: layouts: all layouts are now unloaded.
+[root@mo66 ~]# vim /usr/local/
+bin/               lib/               share/             slurm-fresh/       
+etc/               lib64/             slurm1411hdf5/     slurmfse/          
+games/             libexec/           slurm1411msg/      slurm-select-cr-D/ 
+include/           sbin/              slurm-dresden/     src/               
+[root@mo66 ~]# vim /usr/local/
+bin/               lib/               share/             slurm-fresh/       
+etc/               lib64/             slurm1411hdf5/     slurmfse/          
+games/             libexec/           slurm1411msg/      slurm-select-cr-D/ 
+include/           sbin/              slurm-dresden/     src/               
+[root@mo66 ~]# vim /usr/local/slurm-select-cr-D/
+bin/              include/          lib/              share/            var/
+etc/              last_config_lite  sbin/             slurmctld.pid     
+[root@mo66 ~]# vim /usr/local/slurm-select-cr-D/var/
+last_config_lite      sched.log             slurmdbd.pid          
+last_config_lite.old  slurmctld.log         slurmd.log            
+[root@mo66 ~]# vim /usr/local/slurm-select-cr-D/var/slurmctld.log 
+-bash: vim: command not found
+[root@mo66 ~]# vi /usr/local/slurm-select-cr-D/var/slurmctld.log 
+[root@mo66 ~]# 
+

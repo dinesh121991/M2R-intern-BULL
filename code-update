@@ -1,0 +1,29 @@
+char core[145],node[41];
+	
+	core_first_set= bit_ffs(job->core_bitmap);
+	core_last_set = bit_fls(job->core_bitmap);
+	node_first_set = bit_ffs(job->node_bitmap);
+	node_last_set = bit_fls(job->node_bitmap);
+	
+	if(job->node_bitmap && job->core_bitmap)
+	{
+		bit_fmt(node,sizeof(node),job->node_bitmap);
+		bit_fmt(core,sizeof(core),job->core_bitmap);
+	}
+	info("L-_add_job_l core_first_set:%d core_last_set:%d node_map:%s core_map:%s node_first_set:%d node_last_set:%d"
+	     ,core_first_set,core_last_set,node,core,node_first_set,node_last_set);
+	for(i=0; i< node_record_count &&  bit_test(job->node_bitmap,i) ; i++)
+	{
+		for(j=cr_get_coremap_offset (i); j < cr_get_coremap_offset (i+1) &&
+		    bit_test(job->core_bitmap,j); j++)
+		{
+		sprintf(str_i,"%s%d",L_CORE,j);
+		if(layouts_entity_setpush_kv (L_CONS_RES_PARTITION,str_i,
+		                              L_ALLOCATED_CORE_COUNT,&allocated_core_count,
+		                              L_T_UINT32) == SLURM_SUCCESS)
+		{
+			info("L-Job_res core:%s is allocated:%d",str_i,allocated_core_count);
+		}
+		else 
+			return SLURM_ERROR;
+	}

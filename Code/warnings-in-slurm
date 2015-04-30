@@ -1,0 +1,93 @@
+mv -f .deps/dist_tasks.Tpo .deps/dist_tasks.Plo
+/bin/bash ../../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../../.. -I../../../../slurm  -I../../../.. -I../../../../src/common   -g -O2 -pthread -fno-gcse -MT job_test.lo -MD -MP -MF .deps/job_test.Tpo -c -o job_test.lo job_test.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../../.. -I../../../../slurm -I../../../.. -I../../../../src/common -g -O2 -pthread -fno-gcse -MT job_test.lo -MD -MP -MF .deps/job_test.Tpo -c job_test.c  -fPIC -DPIC -o .libs/job_test.o
+job_test.c: In function '_eval_nodes':
+job_test.c:1851:7: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'uint32_t *' [-Wformat=]
+       info("L-Cons_res_topology was updated cpu_cnt[n]:%d cpu_cnt[n]@:%ld cpu_count1:%d",cpu_cnt[n],&cpu_cnt[n],cpu_count1);
+       ^
+job_test.c:1867:7: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'uint32_t *' [-Wformat=]
+       info("L-Cons_res_topology was cleared cpu_cnt[n]:%d cpu_cnt[n]@:%ld cpu_count1:%d",cpu_cnt[n],&cpu_cnt[n],cpu_count1);
+       ^
+job_test.c: In function '_eval_nodes_topo':
+job_test.c:2582:2: warning: passing argument 1 of 'ctime' makes pointer from integer without a cast [enabled by default]
+  info("L-Entered eval_nodes_topo=>job_ptr->req_switch:%d,job_ptr->wait4switch:%d,job_ptr->wait4switch_start:%s,job_ptr->best_switch:%d switch_levels:%d switch_record_cnt:%d",job_ptr->req_switch,job_ptr->wait4switch,ctime(job_ptr->wait4switch_start),job_ptr->best_switch,switch_levels,switch_record_cnt);
+  ^
+In file included from job_test.c:103:0:
+/usr/include/time.h:264:14: note: expected 'const time_t *' but argument is of type 'time_t'
+ extern char *ctime (const time_t *__timer) __THROW;
+              ^
+job_test.c:3227:9: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'int' [-Wformat=]
+         job_ptr->req_switch,job_ptr->best_switch);
+         ^
+job_test.c: In function '_eval_nodes_topo_l':
+job_test.c:3369:2: warning: passing argument 1 of 'ctime' makes pointer from integer without a cast [enabled by default]
+  info("L-Entered eval_nodes_topo=>job_ptr->req_switch:%d,job_ptr->wait4switch:%d,job_ptr->wait4switch_start:%s,job_ptr->best_switch:%d switch_levels:%d switch_record_cnt:%d leaf_switch_cnt:%d,root_switch_index:%d",job_ptr->req_switch,job_ptr->wait4switch,ctime(job_ptr->wait4switch_start),job_ptr->best_switch,switch_levels,switch_record_cnt,leaf_switch_cnt,root_switch_index);
+  ^
+In file included from job_test.c:103:0:
+/usr/include/time.h:264:14: note: expected 'const time_t *' but argument is of type 'time_t'
+ extern char *ctime (const time_t *__timer) __THROW;
+              ^
+job_test.c:3613:5: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+     info("L- before best_fit_inx:%d changed level:%d, switch_record_table[best_fit_inx].level:%d, switches_required[best_fit_inx]:%d ",best_fit_inx,switch_record_table[best_fit_inx].level,switches_required[best_fit_inx]);
+     ^
+job_test.c:3615:5: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+     info("L- before j:%d changed level:%d, switch_record_table[j].level:%d, switches_required[best_fit_inx]:%d ",j,switch_record_table[j].level,switches_required[j]);
+     ^
+job_test.c:3748:9: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'int' [-Wformat=]
+         job_ptr->req_switch,job_ptr->best_switch);
+         ^
+job_test.c: In function '_log_select_maps':
+job_test.c:3962:22: error: expected ')' before 'str'
+   info("coremap: %s" str);
+                      ^
+job_test.c:3962:22: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+job_test.c: In function 'cr_job_test':
+job_test.c:4285:12: warning: assignment from incompatible pointer type [enabled by default]
+  cpu_count = _select_nodes(job_ptr, min_nodes, max_nodes, req_nodes,
+            ^
+job_test.c:4427:12: warning: assignment from incompatible pointer type [enabled by default]
+  cpu_count = _select_nodes(job_ptr, min_nodes, max_nodes, req_nodes,
+            ^
+job_test.c:4509:12: warning: assignment from incompatible pointer type [enabled by default]
+  cpu_count = _select_nodes(job_ptr, min_nodes, max_nodes, req_nodes,
+            ^
+job_test.c:4547:12: warning: assignment from incompatible pointer type [enabled by default]
+  cpu_count = _select_nodes(job_ptr, min_nodes, max_nodes, req_nodes,
+            ^
+job_test.c:4586:13: warning: assignment from incompatible pointer type [enabled by default]
+   cpu_count = _select_nodes(job_ptr, min_nodes, max_nodes,
+             ^
+job_test.c:4613:13: warning: assignment from incompatible pointer type [enabled by default]
+   cpu_count = _select_nodes(job_ptr, min_nodes, max_nodes,
+             ^
+job_test.c:4637:13: warning: assignment from incompatible pointer type [enabled by default]
+   cpu_count = _select_nodes(job_ptr, min_nodes, max_nodes,
+             ^
+job_test.c:4725:28: warning: assignment from incompatible pointer type [enabled by default]
+  job_res->cpus             = cpu_count;
+                            ^
+job_test.c: In function 'cr_job_test_l':
+job_test.c:4968:12: warning: comparison of distinct pointer types lacks a cast [enabled by default]
+  cpu_count == _select_nodes(job_ptr, min_nodes, max_nodes, req_nodes,
+            ^
+job_test.c:5130:12: warning: assignment from incompatible pointer type [enabled by default]
+  cpu_count = _select_nodes(job_ptr, min_nodes, max_nodes, req_nodes,
+            ^
+job_test.c:5216:12: warning: assignment from incompatible pointer type [enabled by default]
+  cpu_count = _select_nodes(job_ptr, min_nodes, max_nodes, req_nodes,
+            ^
+job_test.c:5254:12: warning: assignment from incompatible pointer type [enabled by default]
+  cpu_count = _select_nodes(job_ptr, min_nodes, max_nodes, req_nodes,
+            ^
+job_test.c:5293:13: warning: assignment from incompatible pointer type [enabled by default]
+   cpu_count = _select_nodes(job_ptr, min_nodes, max_nodes,
+             ^
+job_test.c:5320:13: warning: assignment from incompatible pointer type [enabled by default]
+   cpu_count = _select_nodes(job_ptr, min_nodes, max_nodes,
+             ^
+job_test.c:5344:13: warning: assignment from incompatible pointer type [enabled by default]
+   cpu_count = _select_nodes(job_ptr, min_nodes, max_nodes,
+             ^
+job_test.c:5432:28: warning: assignment from incompatible pointer type [enabled by default]
+  job_res->cpus             = cpu_count;
+

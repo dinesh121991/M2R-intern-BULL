@@ -1,1 +1,1 @@
-for i in {0..40}; do /usr/local/sbin/slurmd -N virtual$i; done
+for i in {0..229}; do /usr/local/sbin/slurmd -N virtual$i; done

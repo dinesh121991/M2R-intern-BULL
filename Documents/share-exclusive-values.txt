@@ -1,0 +1,48 @@
+/*
+ * Decide if a job can share nodes with other jobs based on the
+ * following three input parameters:
+ *
+ * IN user_flag - may be 0 (do not share nodes), 1 (node sharing allowed),
+ *                or any other number means "don't care"
+ * IN part_max_share - current partition's node sharing policy
+ * IN cons_res_flag - 1 if the consumable resources flag is enable, 0 otherwise
+ *
+ *
+ * The followed table details the node SHARED state for the various scenarios
+ *
+ *                                      part=   part=   part=   part=
+ *      cons_res        user_request    EXCLUS  NO      YES     FORCE
+ *      --------        ------------    ------  -----   -----   -----
+ *      no              default         whole   whole   whole   whole/O
+ *      no              exclusive       whole   whole   whole   whole/O
+ *      no              share=yes       whole   whole   whole/O whole/O
+ *      yes             default         whole   share   share   share/O
+ *      yes             exclusive       whole   whole   whole   whole/O
+ *      yes             share=yes       whole   share   share/O share/O
+ *
+ * whole  = entire node is allocated to the job
+ * share  = less than entire node may be allocated to the job
+ * -/O    = resources can be over-committed (e.g. gang scheduled)
+ *
+ * part->max_share:
+ *      &SHARED_FORCE   = FORCE
+ *      0               = EXCLUSIVE
+ *      1               = NO
+ *      > 1             = YES
+ *
+ * job_ptr->details->share_res:
+ *      0               = default or share=no
+ *      1               = share=yes
+ *
+ * job_ptr->details->whole_node:
+ *      0               = default
+ *      1               = exclusive
+ *
+ * Return values:
+ *      0 = requires idle nodes
+ *      1 = can use non-idle nodes
+ */
+static int
+_resolve_shared_status(struct job_record *job_ptr, uint16_t part_max_share,
+                       int cons_res_flag)
+{
