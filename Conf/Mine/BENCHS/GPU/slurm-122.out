@@ -1,0 +1,8 @@
+- mo104:1 - sleep 300 s
+- mo104:0 - sleep 300 s
+ MPI RANK - 0 - , runs on - mo104 - 
+ ERROR NO DEVICE on - mo104 - 
+srun: error: mo104: task 0: Exited with exit code 1
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+slurmstepd: *** JOB 122 CANCELLED AT 2014-02-05T10:26:32 ***
+slurmstepd: *** STEP 122.0 CANCELLED AT 2014-02-05T10:26:32 ***

@@ -1,0 +1,6 @@
+srun: error: unrecognized --cpu-freq argument ""
+srun: error: Invalid --cpu-freq argument: . Ignored
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+slurmstepd-virtual40: *** JOB 3365 CANCELLED AT 2015-05-05T20:16:16 DUE TO TIME LIMIT on virtual40 ***
+srun: got SIGCONT
+srun: forcing job termination

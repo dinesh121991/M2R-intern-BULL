@@ -1,0 +1,273 @@
+[2015-05-11T17:42:50.129] L-_verify_node_state-Before node availability check node_map:10-239
+[2015-05-11T17:42:50.129] L-_verify_node_state-After node availability check node_map:10-239
+[2015-05-11T17:42:50.129] L-_get_res_usage before
+[2015-05-11T17:42:50.129] L-_get_res_usage after
+[2015-05-11T17:42:50.129] L-Entered inside the eval_nodes
+[2015-05-11T17:42:50.129] L-Before eval_nodes topo
+[2015-05-11T17:42:50.129] L-End value of rc:0 bitmap:10-19
+[2015-05-11T17:42:50.129] L-_get_res_usage before
+[2015-05-11T17:42:50.130] L-_get_res_usage after
+[2015-05-11T17:42:50.130] L-Entered inside the eval_nodes
+[2015-05-11T17:42:50.130] L-Before eval_nodes topo
+[2015-05-11T17:42:50.130] L-End value of rc:0 bitmap:10-19
+[2015-05-11T17:42:50.130] sched: _slurm_rpc_allocate_resources JobId=3273 NodeList=virtual[10-19] usec=1188
+[2015-05-11T17:42:52.222] job_complete: JobID=3273 State=0x1 NodeCnt=10 WIFEXITED 1 WEXITSTATUS 0
+
+
+[2015-05-11T17:49:00.047] L-_verify_node_state-Before node availability check node_map:20-239
+[2015-05-11T17:49:00.047] L-_verify_node_state-After node availability check node_map:20-239
+[2015-05-11T17:49:00.048] L-_get_res_usage before
+[2015-05-11T17:49:00.048] L-_get_res_usage after
+[2015-05-11T17:49:00.048] L-Entered inside the eval_nodes
+[2015-05-11T17:49:00.048] L-Before eval_nodes topo
+[2015-05-11T17:49:00.048] L-End value of rc:0 bitmap:20-29
+[2015-05-11T17:49:00.048] L-_get_res_usage before
+[2015-05-11T17:49:00.048] L-_get_res_usage after
+[2015-05-11T17:49:00.048] L-Entered inside the eval_nodes
+[2015-05-11T17:49:00.048] L-Before eval_nodes topo
+[2015-05-11T17:49:00.048] L-End value of rc:0 bitmap:20-29
+[2015-05-11T17:49:00.048] sched: _slurm_rpc_allocate_resources JobId=3274 NodeList=virtual[20-29] usec=1109
+
+
+[2015-05-11T17:49:39.097] L-_verify_node_state-Before node availability check node_map:40-239
+[2015-05-11T17:49:39.097] L-_verify_node_state-After node availability check node_map:40-239
+[2015-05-11T17:49:39.098] L-_get_res_usage before
+[2015-05-11T17:49:39.098] L-_get_res_usage after
+[2015-05-11T17:49:39.098] L-Entered inside the eval_nodes
+[2015-05-11T17:49:39.098] L-Before eval_nodes topo
+[2015-05-11T17:49:39.098] L-End value of rc:0 bitmap:40-49
+[2015-05-11T17:49:39.098] L-_get_res_usage before
+[2015-05-11T17:49:39.098] L-_get_res_usage after
+[2015-05-11T17:49:39.098] L-Entered inside the eval_nodes
+[2015-05-11T17:49:39.098] L-Before eval_nodes topo
+[2015-05-11T17:49:39.098] L-End value of rc:0 bitmap:40-49
+[2015-05-11T17:49:39.098] sched: _slurm_rpc_allocate_resources JobId=3277 NodeList=virtual[40-49] usec=992
+
+
+
+
+[2015-05-11T17:51:12.529] L-_verify_node_state-Before node availability check node_map:60-239
+[2015-05-11T17:51:12.529] L-_verify_node_state-After node availability check node_map:60-239
+[2015-05-11T17:51:12.529] L-_get_res_usage before
+[2015-05-11T17:51:12.529] L-_get_res_usage after
+[2015-05-11T17:51:12.529] L-Entered inside the eval_nodes
+[2015-05-11T17:51:12.529] L-Before eval_nodes topo
+[2015-05-11T17:51:12.529] L-End value of rc:0 bitmap:60-69
+[2015-05-11T17:51:12.529] L-_get_res_usage before
+[2015-05-11T17:51:12.529] L-_get_res_usage after
+[2015-05-11T17:51:12.529] L-Entered inside the eval_nodes
+[2015-05-11T17:51:12.529] L-Before eval_nodes topo
+[2015-05-11T17:51:12.529] L-End value of rc:0 bitmap:60-69
+[2015-05-11T17:51:12.529] sched: _slurm_rpc_allocate_resources JobId=3280 NodeList=virtual[60-69] usec=1006
+
+
+[2015-05-11T17:51:58.277] L-_verify_node_state-Before node availability check node_map:80-239
+[2015-05-11T17:51:58.277] L-_verify_node_state-After node availability check node_map:80-239
+[2015-05-11T17:51:58.277] L-_get_res_usage before
+[2015-05-11T17:51:58.277] L-_get_res_usage after
+[2015-05-11T17:51:58.277] L-Entered inside the eval_nodes
+[2015-05-11T17:51:58.277] L-Before eval_nodes topo
+[2015-05-11T17:51:58.277] L-End value of rc:0 bitmap:80-89
+[2015-05-11T17:51:58.277] L-_get_res_usage before
+[2015-05-11T17:51:58.278] L-_get_res_usage after
+[2015-05-11T17:51:58.278] L-Entered inside the eval_nodes
+[2015-05-11T17:51:58.278] L-Before eval_nodes topo
+[2015-05-11T17:51:58.278] L-End value of rc:0 bitmap:80-89
+[2015-05-11T17:51:58.278] sched: _slurm_rpc_allocate_resources JobId=3283 NodeList=virtual[80-89] usec=992
+
+
+[2015-05-11T17:53:32.296] L-_verify_node_state-Before node availability check node_map:90-239
+[2015-05-11T17:53:32.296] L-_verify_node_state-After node availability check node_map:90-239
+[2015-05-11T17:53:32.296] L-_get_res_usage before
+[2015-05-11T17:53:32.296] L-_get_res_usage after
+[2015-05-11T17:53:32.296] L-Entered inside the eval_nodes
+[2015-05-11T17:53:32.296] L-Before eval_nodes topo
+[2015-05-11T17:53:32.296] L-End value of rc:0 bitmap:90-99
+[2015-05-11T17:53:32.296] L-_get_res_usage before
+[2015-05-11T17:53:32.296] L-_get_res_usage after
+[2015-05-11T17:53:32.296] L-Entered inside the eval_nodes
+[2015-05-11T17:53:32.296] L-Before eval_nodes topo
+[2015-05-11T17:53:32.296] L-End value of rc:0 bitmap:90-99
+[2015-05-11T17:53:32.296] sched: _slurm_rpc_allocate_resources JobId=3285 NodeList=virtual[90-99] usec=1123
+
+[2015-05-11T17:54:04.351] L-_verify_node_state-Before node availability check node_map:110-239
+[2015-05-11T17:54:04.351] L-_verify_node_state-After node availability check node_map:110-239
+[2015-05-11T17:54:04.351] L-_get_res_usage before
+[2015-05-11T17:54:04.351] L-_get_res_usage after
+[2015-05-11T17:54:04.351] L-Entered inside the eval_nodes
+[2015-05-11T17:54:04.351] L-Before eval_nodes topo
+[2015-05-11T17:54:04.351] L-End value of rc:0 bitmap:110-119
+[2015-05-11T17:54:04.351] L-_get_res_usage before
+[2015-05-11T17:54:04.351] L-_get_res_usage after
+[2015-05-11T17:54:04.351] L-Entered inside the eval_nodes
+[2015-05-11T17:54:04.351] L-Before eval_nodes topo
+[2015-05-11T17:54:04.351] L-End value of rc:0 bitmap:110-119
+[2015-05-11T17:54:04.351] sched: _slurm_rpc_allocate_resources JobId=3288 NodeList=virtual[110-119] usec=895
+
+
+[2015-05-11T17:55:04.561] L-_verify_node_state-After node availability check node_map:120-239
+[2015-05-11T17:55:04.561] L-_get_res_usage before
+[2015-05-11T17:55:04.562] L-_get_res_usage after
+[2015-05-11T17:55:04.562] L-Entered inside the eval_nodes
+[2015-05-11T17:55:04.562] L-Before eval_nodes topo
+[2015-05-11T17:55:04.562] L-End value of rc:0 bitmap:120-129
+[2015-05-11T17:55:04.562] L-_get_res_usage before
+[2015-05-11T17:55:04.562] L-_get_res_usage after
+[2015-05-11T17:55:04.562] L-Entered inside the eval_nodes
+[2015-05-11T17:55:04.562] L-Before eval_nodes topo
+[2015-05-11T17:55:04.562] L-End value of rc:0 bitmap:120-129
+[2015-05-11T17:55:04.562] sched: _slurm_rpc_allocate_resources JobId=3290 NodeList=virtual[120-129] usec=1019
+[2015-05-11T17:55:05.980] job_complete: JobID=3290 State=0x1 NodeCnt=10 WIFEXITED 1 WEXITSTATUS 0
+
+
+[2015-05-11T17:55:40.728] L-_verify_node_state-Before node availability check node_map:130-239
+[2015-05-11T17:55:40.728] L-_verify_node_state-After node availability check node_map:130-239
+[2015-05-11T17:55:40.728] L-_get_res_usage before
+[2015-05-11T17:55:40.729] L-_get_res_usage after
+[2015-05-11T17:55:40.729] L-Entered inside the eval_nodes
+[2015-05-11T17:55:40.729] L-Before eval_nodes topo
+[2015-05-11T17:55:40.729] L-End value of rc:0 bitmap:130-139
+[2015-05-11T17:55:40.729] L-_get_res_usage before
+[2015-05-11T17:55:40.729] L-_get_res_usage after
+[2015-05-11T17:55:40.729] L-Entered inside the eval_nodes
+[2015-05-11T17:55:40.729] L-Before eval_nodes topo
+[2015-05-11T17:55:40.729] L-End value of rc:0 bitmap:130-139
+[2015-05-11T17:55:40.729] sched: _slurm_rpc_allocate_resources JobId=3292 NodeList=virtual[130-139] usec=993
+[2015-05-11T17:55:42.261] job_complete: JobID=3292 State=0x1 NodeCnt=10 WIFEXITED 1 WEXITSTATUS 0
+
+
+
+[2015-05-11T17:56:20.456] L-_verify_node_state-After node availability check node_map:140-239
+[2015-05-11T17:56:20.456] L-_get_res_usage before
+[2015-05-11T17:56:20.457] L-_get_res_usage after
+[2015-05-11T17:56:20.457] L-Entered inside the eval_nodes
+[2015-05-11T17:56:20.457] L-Before eval_nodes topo
+[2015-05-11T17:56:20.457] L-End value of rc:0 bitmap:140-149
+[2015-05-11T17:56:20.457] L-_get_res_usage before
+[2015-05-11T17:56:20.457] L-_get_res_usage after
+[2015-05-11T17:56:20.457] L-Entered inside the eval_nodes
+[2015-05-11T17:56:20.457] L-Before eval_nodes topo
+[2015-05-11T17:56:20.457] L-End value of rc:0 bitmap:140-149
+[2015-05-11T17:56:20.457] sched: _slurm_rpc_allocate_resources JobId=3294 NodeList=virtual[140-149] usec=1037
+
+
+[2015-05-11T17:57:42.048] L-_verify_node_state-Before node availability check node_map:150-239
+[2015-05-11T17:57:42.048] L-_verify_node_state-After node availability check node_map:150-239
+[2015-05-11T17:57:42.048] L-_get_res_usage before
+[2015-05-11T17:57:42.048] L-_get_res_usage after
+[2015-05-11T17:57:42.048] L-Entered inside the eval_nodes
+[2015-05-11T17:57:42.048] L-Before eval_nodes topo
+[2015-05-11T17:57:42.048] L-End value of rc:0 bitmap:150-159
+[2015-05-11T17:57:42.048] L-_get_res_usage before
+[2015-05-11T17:57:42.048] L-_get_res_usage after
+[2015-05-11T17:57:42.048] L-Entered inside the eval_nodes
+[2015-05-11T17:57:42.048] L-Before eval_nodes topo
+[2015-05-11T17:57:42.048] L-End value of rc:0 bitmap:150-159
+[2015-05-11T17:57:42.048] sched: _slurm_rpc_allocate_resources JobId=3296 NodeList=virtual[150-159] usec=882
+
+
+[2015-05-11T17:58:13.037] L-_verify_node_state-Before node availability check node_map:170-239
+[2015-05-11T17:58:13.037] L-_verify_node_state-After node availability check node_map:170-239
+[2015-05-11T17:58:13.037] L-_get_res_usage before
+[2015-05-11T17:58:13.037] L-_get_res_usage after
+[2015-05-11T17:58:13.037] L-Entered inside the eval_nodes
+[2015-05-11T17:58:13.037] L-Before eval_nodes topo
+[2015-05-11T17:58:13.037] L-End value of rc:0 bitmap:170-179
+[2015-05-11T17:58:13.037] L-_get_res_usage before
+[2015-05-11T17:58:13.037] L-_get_res_usage after
+[2015-05-11T17:58:13.037] L-Entered inside the eval_nodes
+[2015-05-11T17:58:13.037] L-Before eval_nodes topo
+[2015-05-11T17:58:13.037] L-End value of rc:0 bitmap:170-179
+[2015-05-11T17:58:13.037] sched: _slurm_rpc_allocate_resources JobId=3299 NodeList=virtual[170-179] usec=849
+
+
+[2015-05-11T17:58:56.024] L-_verify_node_state-Before node availability check node_map:180-239
+[2015-05-11T17:58:56.024] L-_verify_node_state-After node availability check node_map:180-239
+[2015-05-11T17:58:56.024] L-_get_res_usage before
+[2015-05-11T17:58:56.024] L-_get_res_usage after
+[2015-05-11T17:58:56.024] L-Entered inside the eval_nodes
+[2015-05-11T17:58:56.024] L-Before eval_nodes topo
+[2015-05-11T17:58:56.024] L-End value of rc:0 bitmap:180-189
+[2015-05-11T17:58:56.024] L-_get_res_usage before
+[2015-05-11T17:58:56.024] L-_get_res_usage after
+[2015-05-11T17:58:56.024] L-Entered inside the eval_nodes
+[2015-05-11T17:58:56.024] L-Before eval_nodes topo
+[2015-05-11T17:58:56.024] L-End value of rc:0 bitmap:180-189
+[2015-05-11T17:58:56.024] sched: _slurm_rpc_allocate_resources JobId=3301 NodeList=virtual[180-189] usec=893
+
+
+[2015-05-11T17:58:57.452] L-_verify_node_state-Before node availability check node_map:180-239
+[2015-05-11T17:58:57.452] L-_verify_node_state-After node availability check node_map:180-239
+[2015-05-11T17:58:57.452] L-_get_res_usage before
+[2015-05-11T17:58:57.452] L-_get_res_usage after
+[2015-05-11T17:58:57.452] L-Entered inside the eval_nodes
+[2015-05-11T17:58:57.452] L-Before eval_nodes topo
+[2015-05-11T17:58:57.452] L-End value of rc:0 bitmap:180-189
+[2015-05-11T17:58:57.452] L-_get_res_usage before
+[2015-05-11T17:58:57.452] L-_get_res_usage after
+[2015-05-11T17:58:57.452] L-Entered inside the eval_nodes
+[2015-05-11T17:58:57.452] L-Before eval_nodes topo
+[2015-05-11T17:58:57.452] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:58:57.452] sched: _slurm_rpc_allocate_resources JobId=3302 NodeList=virtual[190-199] usec=789
+
+
+[2015-05-11T17:59:42.027] L-_verify_node_state-Before node availability check node_map:200-239
+[2015-05-11T17:59:42.027] L-_verify_node_state-After node availability check node_map:200-239
+[2015-05-11T17:59:42.027] L-_get_res_usage before
+[2015-05-11T17:59:42.027] L-_get_res_usage after
+[2015-05-11T17:59:42.027] L-Entered inside the eval_nodes
+[2015-05-11T17:59:42.027] L-Before eval_nodes topo
+[2015-05-11T17:59:42.028] L-End value of rc:0 bitmap:200-209
+[2015-05-11T17:59:42.028] L-_get_res_usage before
+[2015-05-11T17:59:42.028] L-_get_res_usage after
+[2015-05-11T17:59:42.028] L-Entered inside the eval_nodes
+[2015-05-11T17:59:42.028] L-Before eval_nodes topo
+[2015-05-11T17:59:42.028] L-End value of rc:0 bitmap:200-209
+[2015-05-11T17:59:42.028] sched: _slurm_rpc_allocate_resources JobId=3304 NodeList=virtual[200-209] usec=900
+
+
+[2015-05-11T18:01:35.978] L-_verify_node_state-Before node availability check node_map:200-239
+[2015-05-11T18:01:35.978] L-_verify_node_state-After node availability check node_map:200-239
+[2015-05-11T18:01:35.978] L-_get_res_usage before
+[2015-05-11T18:01:35.978] L-_get_res_usage after
+[2015-05-11T18:01:35.978] L-Entered inside the eval_nodes
+[2015-05-11T18:01:35.978] L-Before eval_nodes topo
+[2015-05-11T18:01:35.978] L-End value of rc:0 bitmap:200-209
+[2015-05-11T18:01:35.978] L-_get_res_usage before
+[2015-05-11T18:01:35.978] L-_get_res_usage after
+[2015-05-11T18:01:35.978] L-Entered inside the eval_nodes
+[2015-05-11T18:01:35.978] L-Before eval_nodes topo
+[2015-05-11T18:01:35.978] L-End value of rc:0 bitmap:210-219
+[2015-05-11T18:01:35.978] sched: _slurm_rpc_allocate_resources JobId=3306 NodeList=virtual[210-219] usec=928
+
+
+
+
+[2015-05-11T18:02:40.785] L-_verify_node_state-Before node availability check node_map:220-239
+[2015-05-11T18:02:40.785] L-_verify_node_state-After node availability check node_map:220-239
+[2015-05-11T18:02:40.785] L-_get_res_usage before
+[2015-05-11T18:02:40.785] L-_get_res_usage after
+[2015-05-11T18:02:40.785] L-Entered inside the eval_nodes
+[2015-05-11T18:02:40.785] L-Before eval_nodes topo
+[2015-05-11T18:02:40.785] L-End value of rc:0 bitmap:220-229
+[2015-05-11T18:02:40.785] L-_get_res_usage before
+[2015-05-11T18:02:40.786] L-_get_res_usage after
+[2015-05-11T18:02:40.786] L-Entered inside the eval_nodes
+[2015-05-11T18:02:40.786] L-Before eval_nodes topo
+[2015-05-11T18:02:40.786] L-End value of rc:0 bitmap:220-229
+[2015-05-11T18:02:40.786] sched: _slurm_rpc_allocate_resources JobId=3308 NodeList=virtual[220-229] usec=857
+
+
+[2015-05-11T18:02:41.601] L-_verify_node_state-Before node availability check node_map:220-239
+[2015-05-11T18:02:41.601] L-_verify_node_state-After node availability check node_map:220-239
+[2015-05-11T18:02:41.601] L-_get_res_usage before
+[2015-05-11T18:02:41.601] L-_get_res_usage after
+[2015-05-11T18:02:41.601] L-Entered inside the eval_nodes
+[2015-05-11T18:02:41.601] L-Before eval_nodes topo
+[2015-05-11T18:02:41.601] L-End value of rc:0 bitmap:220-229
+[2015-05-11T18:02:41.601] L-_get_res_usage before
+[2015-05-11T18:02:41.601] L-_get_res_usage after
+[2015-05-11T18:02:41.601] L-Entered inside the eval_nodes
+[2015-05-11T18:02:41.601] L-Before eval_nodes topo
+[2015-05-11T18:02:41.601] L-End value of rc:0 bitmap:230-239
+[2015-05-11T18:02:41.601] sched: _slurm_rpc_allocate_resources JobId=3309 NodeList=virtual[230-239] usec=685

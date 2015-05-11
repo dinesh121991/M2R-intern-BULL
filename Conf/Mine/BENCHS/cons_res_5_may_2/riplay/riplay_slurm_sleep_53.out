@@ -1,0 +1,14 @@
+/tmp/1508-select-layouts/slurm-virtual3/job03336/slurm_script: line 9: cd: HPL_K24: No such file or directory
+srun: error: unrecognized --cpu-freq argument ""
+srun: error: Invalid --cpu-freq argument: . Ignored
+slurmstepd-virtual3: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual3: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual3: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual3: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual3: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual3: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual3: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual3: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual3: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual3: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual3: slurm_receive_msg: Socket timed out on send/recv operation

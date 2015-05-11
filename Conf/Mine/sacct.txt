@@ -1,0 +1,9 @@
+JobID,Submit,TotalCPU,NodeList,MinCPUNode,MinCPUTask,NCPUS,NNodes,ExitCode,AllocCPUS,JobName,Layout,CPUTime,NTasks,Priority,Partition,Timelimit
+
+sacct -o JobID,Submit,TotalCPU,NodeList,MinCPUNode,MinCPUTask,NCPUS,NNodes,ExitCode,AllocCPUS,JobName,Layout,CPUTime,NTasks,Priority,Partition,Timelimit > sacct.txt
+
+	sacct -o JobID,JobName,Submit,Timelimit,start,end,cputimeraw,elapsed,SystemCPU,state,eligible,TotalCPU,NodeList,MinCPUTask,NCPUS,NNodes,ExitCode,AllocCPUS,CPUTime,NTasks > sacct.txt
+
+sacct -o JobID,JobName,Submit,Timelimit,start,end,cputimeraw,CPUTime,elapsed,SystemCPU,state,eligible,TotalCPU,NodeList,MinCPUTask,NCPUS,NNodes,ExitCode,AllocCPUS,NTasks > sacct.txt
+
+sacct -o JobID,JobName,Submit,Timelimit,start,end,cputimeraw,CPUTime,elapsed,SystemCPU,state,eligible,TotalCPU,NodeList > sacct.txt

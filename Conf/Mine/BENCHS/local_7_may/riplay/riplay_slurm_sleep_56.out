@@ -1,0 +1,4 @@
+slurmstepd-virtual36: _test_cpu_owner_lock: mkdir failed: No such file or directory /tmp/slurm-%n/cpu
+slurmstepd-virtual36: _test_cpu_owner_lock: mkdir failed: No such file or directory /tmp/slurm-%n/cpu
+slurmstepd-virtual36: _test_cpu_owner_lock: mkdir failed: No such file or directory /tmp/slurm-%n/cpu
+slurmstepd-virtual36: _test_cpu_owner_lock: mkdir failed: No such file or directory /tmp/slurm-%n/cpu

@@ -1,0 +1,80 @@
+Submitted batch job 3031
+Submitted batch job 3032
+Submitted batch job 3033
+sbatch: error: slurm_receive_msg: Socket timed out on send/recv operation
+sbatch: error: Batch job submission failed: Socket timed out on send/recv operation
+sbatch: error: slurm_receive_msg: Socket timed out on send/recv operation
+sbatch: error: Batch job submission failed: Socket timed out on send/recv operation
+# create sbatch file 46 walltime: 0:3:51 nbprocs: 15
+# bash -c 'sbatch ./46.slurm.job'
+
+
+
+bash -c 'sbatch ./76.slurm.job'
+# create sbatch file 77 walltime: 0:0:33 nbprocs: 8
+# bash -c 'sbatch ./77.slurm.job'
+Submitted batch job 3072
+Submitted batch job 3073
+Submitted batch job 3074
+# create sbatch file 78 walltime: 0:0:33 nbprocs: 8
+# bash -c 'sbatch ./78.slurm.job'
+# create sbatch file 79 walltime: 0:1:16 nbprocs: 60
+# bash -c 'sbatch ./79.slurm.job'
+# create sbatch file 80 walltime: 0:0:33 nbprocs: 8
+# bash -c 'sbatch ./80.slurm.job'
+# create sbatch file 81 walltime: 0:2:46 nbprocs: 30
+# bash -c 'sbatch ./81.slurm.job'
+# create sbatch file 82 walltime: 0:0:45 nbprocs: 30
+# bash -c 'sbatch ./82.slurm.job'
+# create sbatch file 83 walltime: 0:2:58 nbprocs: 8
+# bash -c 'sbatch ./83.slurm.job'
+# create sbatch file 84 walltime: 0:0:33 nbprocs: 8
+# bash -c 'sbatch ./84.slurm.job'
+# create sbatch file 85 walltime: 0:0:45 nbprocs: 30
+# bash -c 'sbatch ./85.slurm.job'
+# create sbatch file 86 walltime: 0:0:33 nbprocs: 8
+# bash -c 'sbatch ./86.slurm.job'
+Submitted batch job 3076
+Submitted batch job 3077
+# create sbatch file 87 walltime: 0:0:33 nbprocs: 8
+# bash -c 'sbatch ./87.slurm.job'
+# create sbatch file 88 walltime: 0:1:1 nbprocs: 23
+# bash -c 'sbatch ./88.slurm.job'
+# create sbatch file 89 walltime: 0:0:33 nbprocs: 8
+# bash -c 'sbatch ./89.slurm.job'
+Submitted batch job 3078
+Submitted batch job 3079
+# create sbatch file 90 walltime: 0:0:45 nbprocs: 30
+# bash -c 'sbatch ./90.slurm.job'
+# create sbatch file 91 walltime: 0:0:45 nbprocs: 30
+# bash -c 'sbatch ./91.slurm.job'
+sbatch: error: slurm_receive_msg: Socket timed out on send/recv operation
+sbatch: error: Batch job submission failed: Socket timed out on send/recv operation
+# create sbatch file 92 walltime: 0:2:13 nbprocs: 38
+# bash -c 'sbatch ./92.slurm.job'
+sbatch: error: slurm_receive_msg: Socket timed out on send/recv operation
+sbatch: error: Batch job submission failed: Socket timed out on send/recv operation
+Submitted batch job 3080
+sbatch: error: slurm_receive_msg: Socket timed out on send/recv operation
+sbatch: error: Batch job submission failed: Socket timed out on send/recv operation
+Submitted batch job 3082
+# create sbatch file 93 walltime: 0:0:45 nbprocs: 30
+# bash -c 'sbatch ./93.slurm.job'
+Submitted batch job 3083
+# create sbatch file 94 walltime: 0:0:45 nbprocs: 30
+# bash -c 'sbatch ./94.slurm.job'
+Submitted batch job 3085
+Submitted batch job 3086
+Submitted batch job 3087
+Submitted batch job 3089
+# create sbatch file 95 walltime: 0:2:58 nbprocs: 8
+# bash -c 'sbatch ./95.slurm.job'
+# create sbatch file 96 walltime: 0:0:33 nbprocs: 8
+# bash -c 'sbatch ./96.slurm.job'
+# create sbatch file 97 walltime: 0:0:33 nbprocs: 8
+# bash -c 'sbatch ./97.slurm.job'
+Submitted batch job 3090
+Submitted batch job 3091
+Submitted batch job 3092
+
+

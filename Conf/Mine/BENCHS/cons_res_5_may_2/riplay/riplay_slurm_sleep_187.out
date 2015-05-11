@@ -1,0 +1,7 @@
+/tmp/1508-select-layouts/slurm-virtual19/job03348/slurm_script: line 9: cd: HPL_L36: No such file or directory
+srun: error: unrecognized --cpu-freq argument ""
+srun: error: Invalid --cpu-freq argument: . Ignored
+slurmstepd-virtual19: *** JOB 3348 CANCELLED AT 2015-05-05T20:16:16 DUE TO TIME LIMIT on virtual19 ***
+srun: got SIGCONT
+srun: forcing job termination
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.

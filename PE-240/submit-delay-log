@@ -1,0 +1,92 @@
+Check
+=========
+
+urmctld: L-Entered eval_nodes_topo=>job_ptr->req_switch:0,job_ptr->wait4switch:0,job_ptr->wait4switch_start:(null),job_ptr->best_switch:1 switch_levels:2 switch_record_cnt:7
+slurmctld: L-End value of rc:0
+
+
+log file :
+============
+
+[2015-05-07T16:15:04.753] C-_allocate_sc -Before- Core-map:0-3839 , node_i:238 , entire_sockets_only:0
+[2015-05-07T16:15:04.753] _allocate_sc - Core-map:0-3839 , node_i:238 , entire_sockets_only:0 num_tasks:16 cpu_count:16
+[2015-05-07T16:15:04.753] C-_allocate_sc -Before- Core-map:0-3839 , node_i:239 , entire_sockets_only:0
+[2015-05-07T16:15:04.753] _allocate_sc - Core-map:0-3839 , node_i:239 , entire_sockets_only:0 num_tasks:16 cpu_count:16
+[2015-05-07T16:15:04.753] L-Entered inside the eval_node set in topology
+[2015-05-07T16:15:05.375] L-Entered eval_nodes_topo=>job_ptr->req_switch:0,job_ptr->wait4switch:0,job_ptr->wait4switch_start:(null),job_ptr->best_switch:1 switch_levels:2 switch_record_cnt:7
+[2015-05-07T16:15:05.761] L-End value of rc:0
+[2015-05-07T16:15:42.484] Warning: Note very large processing time from _slurm_rpc_allocate_resources: usec=38848459 began=16:15:03.636
+[2015-05-07T16:15:42.484] sched: _slurm_rpc_allocate_resources JobId=3001 NodeList=virtual[0-58,60-239] usec=38848459
+[2015-05-07T16:15:42.485] Warning: Note very large processing time from _slurm_rpc_dump_sicp: usec=36856387 began=16:15:05.628
+[2015-05-07T16:15:42.485] Warning: Note very large processing time from _slurmctld_background: usec=37848858 began=16:15:04.636
+[2015-05-07T16:15:44.487] SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=4,partition_job_depth=0
+
+
+Local Log File 
+===============
+
+[2015-05-07T17:32:47.225] select_p_job_test for job 3004
+[2015-05-07T17:32:47.258] L-_verify_node_state-Before node availability check node_map:0-239
+
+[2015-05-07T17:32:50.116] L-_verify_node_state-After node availability check node_map:0-239
+[2015-05-07T17:32:50.116] L-_get_res_usage before
+[2015-05-07T17:32:50.121] L-_get_res_usage after
+[2015-05-07T17:32:50.121] L-Entered inside the eval_nodes
+[2015-05-07T17:32:50.228] L-Before eval_nodes topo
+[2015-05-07T17:32:50.263] L-_get_res_usage before
+[2015-05-07T17:32:50.268] L-_get_res_usage after
+[2015-05-07T17:32:50.268] L-Entered inside the eval_nodes
+[2015-05-07T17:32:50.374] L-Before eval_nodes topo
+[2015-05-07T17:32:50.408] select_p_job_test return:0
+[2015-05-07T17:32:50.409] L-_add_job_l core_first_set:0 core_last_set:1584 node_map:120-159,180-239 core_map:0,16,32,48,64,80,96,112,128,144,160,176,192,208,224,240,256,272,288,304,320,336,352,368,384,400,416,432,448,464,480,496,512,528,544,560,576,592 node_first_set:120 node_last_set:239 SizeOfNode:240&Core:1600
+[2015-05-07T17:32:50.409]   Allocated Node-Size:100 Cor-size:100
+
+[2015-05-07T17:32:55.799] _add_job_l return:0
+[2015-05-07T17:32:55.799] Warning: Note very large processing time from _slurm_rpc_allocate_resources: usec=8574092 began=17:32:47.225
+[2015-05-07T17:32:55.799] sched: _slurm_rpc_allocate_resources JobId=3004 NodeList=virtual[120-159,180-239] usec=8574092
+[2015-05-07T17:32:55.799] Warning: Note very large processing time from _slurmctld_background: usec=8492230 began=17:32:47.307
+[2015-05-07T17:32:55.799] debug:  backfill: beginning
+[2015-05-07T17:32:55.799] debug:  backfill: no jobs to backfill
+[2015-05-07T17:33:00.614] Terminate signal (SIGINT or SIGTERM) received
+[2015-05-07T17:33:00.614] debug:  sched: slurmctld terminating
+[2015-05-07T17:33:00.704] Saving all slurm state
+
+
+Local Log File
+===============
+
+[2015-05-07T19:41:57.210] select_p_job_test return:0
+[2015-05-07T19:41:57.210] L-_add_job_l core_first_set:0 core_last_set:0 node_map:180 core_map:0 node_first_set:180 node_last_set:180 SizeOfNode:240&Core:16
+[2015-05-07T19:41:57.210]   Allocated Node-Size:1 Cor-size:1
+[2015-05-07T19:41:57.230] _add_job_l return:0
+[2015-05-07T19:41:57.230] sched: _slurm_rpc_allocate_resources JobId=3001 NodeList=virtual180 usec=312240
+[2015-05-07T19:41:57.230] error: Could not open job state file /tmp/1508-select-layouts/job_state: No such file or directory
+[2015-05-07T19:41:57.230] error: NOTE: Trying backup state save file. Jobs may be lost!
+[2015-05-07T19:41:57.230] No job state file (/tmp/1508-select-layouts/job_state.old) found
+[2015-05-07T19:42:03.297] job_complete: JobID=3001 State=0x1 NodeCnt=1 WIFEXITED 1 WEXITSTATUS 0
+[2015-05-07T19:42:03.298] L-_add_job_l core_first_set:0 core_last_set:0 node_map:180 core_map:0 node_first_set:180 node_last_set:180 SizeOfNode:240&Core:16
+[2015-05-07T19:42:03.298]   Allocated Node-Size:1 Cor-size:1
+[2015-05-07T19:42:03.336] _rm_job_l return:0
+[2015-05-07T19:42:03.336] job_complete: JobID=3001 State=0x8003 NodeCnt=1 done
+[2015-05-07T19:42:03.342] SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=4,partition_job_depth=0
+[2015-05-07T19:42:03.342] debug:  sched: Running job scheduler
+
+
+
+
+
+
+
+
+
+
+
+[2015-05-07T19:47:40.988] select_p_job_test return:0
+[2015-05-07T19:47:40.988] L-_add_job_l core_first_set:0 core_last_set:3808 node_map:0-58,60-239 core_map:0,16,32,48,64,80,96,112,128,144,160,176,192,208,224,240,256,272,288,304,320,336,352,368,384,400,416,432,448,464,480,496,512,528,544,560,576,592 node_first_set:0 node_last_set:239 SizeOfNode:240&Core:3824
+[2015-05-07T19:47:40.988]   Allocated Node-Size:239 Cor-size:239
+[2015-05-07T19:47:45.321] _add_job_l return:0
+[2015-05-07T19:47:45.321] Warning: Note very large processing time from _slurm_rpc_allocate_resources: usec=4729702 began=19:47:40.592
+[2015-05-07T19:47:45.321] sched: _slurm_rpc_allocate_resources JobId=3003 NodeList=virtual[0-58,60-239] usec=4729702
+[2015-05-07T19:47:45.321] Warning: Note very large processing time from _slurmctld_background: usec=4685511 began=19:47:40.636
+[2015-05-07T19:47:45.321] Warning: Note very large processing time from _slurm_rpc_dump_sicp: usec=3441048 began=19:47:41.880
+

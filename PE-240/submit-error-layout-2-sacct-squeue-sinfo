@@ -1,0 +1,561 @@
+[root@mo65 ~]# squeue 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+              3002     debug     bash     root CG       1:25     10 virtual[180-189]
+              3001     debug     bash     root CG       1:56    100 virtual[120-159,180-239]
+              3095     debug riplay_9     root CG       0:05      2 virtual[58-59]
+              3094     debug riplay_9     root CG       0:06      2 virtual[56-57]
+              3093     debug riplay_9     root CG       0:05      2 virtual[54-55]
+              3092     debug riplay_8     root CG       0:06      1 virtual53
+              3091     debug riplay_8     root CG       0:05      1 virtual52
+              3090     debug riplay_8     root CG       0:06      1 virtual52
+              3089     debug riplay_8     root CG       0:11      2 virtual[50-51]
+              3088     debug riplay_8     root CG       0:09      2 virtual[48-49]
+              3087     debug riplay_7     root CG       0:12      1 virtual48
+              3086     debug riplay_8     root CG       0:05      2 virtual[46-47]
+              3085     debug riplay_7     root CG       0:07      4 virtual[42-45]
+              3084     debug riplay_8     root CG       0:04      1 virtual41
+              3083     debug riplay_8     root CG       0:06      1 virtual41
+              3082     debug riplay_8     root CG       0:05      2 virtual[39-40]
+              3081     debug riplay_7     root CG       0:04      1 virtual38
+              3080     debug riplay_8     root CG       0:05      1 virtual38
+              3079     debug riplay_7     root CG       0:05      2 virtual[36-37]
+              3078     debug riplay_7     root CG       0:05      1 virtual35
+              3077     debug riplay_7     root CG       0:07      2 virtual[33-34]
+              3076     debug riplay_7     root CG       0:15      2 virtual[31-32]
+              3075     debug riplay_7     root CG       0:08      1 virtual30
+              3074     debug riplay_7     root CG       0:04      2 virtual[28-29]
+              3073     debug riplay_7     root CG       0:04      1 virtual27
+              3072     debug riplay_6     root CG       0:05      2 virtual[25-26]
+              3071     debug riplay_6     root CG       0:04      1 virtual24
+              3070     debug riplay_6     root CG       0:04      1 virtual23
+              3069     debug riplay_6     root CG       0:06      1 virtual23
+              3068     debug riplay_6     root CG       0:05      1 virtual22
+              3067     debug riplay_6     root CG       0:14      4 virtual[18-21]
+              3066     debug riplay_6     root CG       0:21      8 virtual[10-17]
+              3065     debug riplay_6     root CG       0:05      1 virtual9
+              3064     debug riplay_6     root CG       0:04      1 virtual8
+              3063     debug riplay_6     root CG       0:07      1 virtual7
+              3062     debug riplay_5     root CG       0:06      2 virtual[5-6]
+              3061     debug riplay_5     root CG       0:13      1 virtual4
+              3060     debug riplay_5     root CG       0:15      4 virtual[0-3]
+              3059     debug riplay_5     root CG       0:04      1 virtual119
+              3058     debug riplay_3     root CG       0:07      3 virtual[116-118]
+              3057     debug riplay_5     root CG       0:05      1 virtual115
+              3056     debug riplay_3     root CG       0:05      1 virtual114
+              3055     debug riplay_3     root CG       0:05      1 virtual113
+              3054     debug riplay_5     root CG       0:05      1 virtual112
+              3053     debug riplay_5     root CG       0:06      2 virtual[110-111]
+              3052     debug riplay_5     root CG       0:06      1 virtual109
+              3051     debug riplay_3     root CG       0:05      1 virtual108
+              3050     debug riplay_5     root CG       0:07      2 virtual[106-107]
+              3049     debug riplay_4     root CG       0:06      1 virtual105
+              3048     debug riplay_4     root CG       0:05      1 virtual104
+              3047     debug riplay_3     root CG       0:06      1 virtual103
+              3046     debug riplay_3     root CG       0:05      1 virtual102
+              3045     debug riplay_2     root CG       0:06      1 virtual101
+              3044     debug riplay_3     root CG       0:07      2 virtual[99-100]
+              3043     debug riplay_4     root CG       0:06      1 virtual98
+              3042     debug riplay_2     root CG       0:07      2 virtual[96-97]
+              3041     debug riplay_4     root CG       0:08      1 virtual95
+              3040     debug riplay_4     root CG       0:07      2 virtual[93-94]
+              3039     debug riplay_4     root CG       0:06      1 virtual92
+              3038     debug riplay_4     root CG       0:06      1 virtual91
+              3037     debug riplay_4     root CG       0:06      1 virtual90
+              3036     debug riplay_4     root CG       0:10      4 virtual[86-89]
+              3035     debug riplay_5     root CG       0:17      2 virtual[84-85]
+              3034     debug riplay_4     root CG       0:06      1 virtual83
+              3033     debug riplay_3     root CG       0:06      1 virtual82
+              3032     debug riplay_3     root CG       0:07      2 virtual[80-81]
+              3031     debug riplay_2     root CG       0:07      1 virtual79
+              3030     debug riplay_2     root CG       0:11      2 virtual[77-78]
+              3029     debug riplay_2     root CG       0:21      4 virtual[73-76]
+              3028     debug riplay_2     root CG       0:07      1 virtual72
+              3027     debug riplay_2     root CG       0:09      2 virtual[70-71]
+              3026     debug riplay_2     root CG       0:07      1 virtual69
+              3025     debug riplay_1     root CG       0:22      1 virtual69
+              3024     debug riplay_1     root CG       0:07      1 virtual68
+              3023     debug riplay_9     root CG       0:08      1 virtual67
+              3022     debug riplay_3     root CG       0:08      2 virtual[65-66]
+              3021     debug riplay_2     root CG       0:08      1 virtual64
+              3020     debug riplay_2     root CG       0:09      2 virtual[62-63]
+              3019     debug riplay_1     root CG       0:09      1 virtual61
+              3018     debug riplay_1     root CG       0:07      1 virtual60
+              3017     debug riplay_1     root CG       0:12      1 virtual60
+              3016     debug riplay_1     root CG       0:14      8 virtual[172-179]
+              3015     debug riplay_1     root CG       0:07      1 virtual171
+              3014     debug riplay_1     root CG       0:08      2 virtual[169-170]
+              3013     debug riplay_1     root CG       0:08      1 virtual168
+              3012     debug riplay_1     root CG       0:07      1 virtual167
+              3011     debug riplay_8     root CG       0:13      1 virtual166
+              3010     debug riplay_6     root CG       0:08      1 virtual165
+              3009     debug riplay_7     root CG       0:14      1 virtual164
+              3008     debug riplay_5     root CG       0:21      1 virtual164
+              3007     debug riplay_4     root CG       0:07      1 virtual163
+              3006     debug riplay_3     root CG       0:12      1 virtual162
+              3005     debug riplay_2     root CG       0:10      1 virtual161
+              3004     debug riplay_1     root CG       0:08      1 virtual160
+              3096     debug riplay_9     root PD       0:00      2 (Resources)
+              3097     debug riplay_9     root PD       0:00      1 (Priority)
+              3098     debug riplay_9     root PD       0:00      1 (Priority)
+              3099     debug riplay_9     root PD       0:00      3 (Priority)
+              3100     debug riplay_9     root PD       0:00      1 (Priority)
+              3101     debug riplay_9     root PD       0:00      1 (Priority)
+              3102     debug riplay_1     root PD       0:00      1 (Priority)
+              3103     debug riplay_9     root PD       0:00      8 (Priority)
+              3104     debug riplay_1     root PD       0:00      1 (Priority)
+              3105     debug riplay_1     root PD       0:00      2 (Priority)
+              3106     debug riplay_1     root PD       0:00      1 (Priority)
+              3107     debug riplay_1     root PD       0:00      2 (Priority)
+              3108     debug riplay_1     root PD       0:00      1 (Priority)
+              3109     debug riplay_1     root PD       0:00      1 (Priority)
+              3110     debug riplay_1     root PD       0:00      1 (Priority)
+              3111     debug riplay_1     root PD       0:00      1 (Priority)
+              3112     debug riplay_1     root PD       0:00      2 (Priority)
+              3113     debug riplay_1     root PD       0:00      2 (Priority)
+              3114     debug riplay_1     root PD       0:00      1 (Priority)
+              3115     debug riplay_1     root PD       0:00      1 (Priority)
+              3116     debug riplay_1     root PD       0:00      4 (Priority)
+              3117     debug riplay_1     root PD       0:00      2 (Priority)
+              3118     debug riplay_1     root PD       0:00      1 (Priority)
+              3119     debug riplay_1     root PD       0:00      2 (Priority)
+              3120     debug riplay_1     root PD       0:00      1 (Priority)
+              3121     debug riplay_1     root PD       0:00      2 (Priority)
+              3122     debug riplay_1     root PD       0:00      2 (Priority)
+              3123     debug riplay_1     root PD       0:00      1 (Priority)
+              3124     debug riplay_1     root PD       0:00      1 (Priority)
+              3125     debug riplay_1     root PD       0:00      2 (Priority)
+              3126     debug riplay_1     root PD       0:00      1 (Priority)
+              3127     debug riplay_1     root PD       0:00      1 (Priority)
+              3128     debug riplay_1     root PD       0:00      1 (Priority)
+              3129     debug riplay_1     root PD       0:00      4 (Priority)
+              3130     debug riplay_1     root PD       0:00      2 (Priority)
+              3131     debug riplay_1     root PD       0:00      1 (Priority)
+              3132     debug riplay_1     root PD       0:00      1 (Priority)
+              3133     debug riplay_1     root PD       0:00      1 (Priority)
+              3134     debug riplay_1     root PD       0:00      2 (Priority)
+              3135     debug riplay_1     root PD       0:00      1 (Priority)
+              3136     debug riplay_1     root PD       0:00      1 (Priority)
+              3137     debug riplay_1     root PD       0:00      1 (Priority)
+              3138     debug riplay_1     root PD       0:00      1 (Priority)
+              3139     debug riplay_1     root PD       0:00      1 (Priority)
+              3140     debug riplay_1     root PD       0:00      1 (Priority)
+              3141     debug riplay_1     root PD       0:00      1 (Priority)
+              3142     debug riplay_1     root PD       0:00      2 (Priority)
+              3143     debug riplay_1     root PD       0:00      1 (Priority)
+              3144     debug riplay_1     root PD       0:00      1 (Priority)
+              3145     debug riplay_1     root PD       0:00      2 (Priority)
+              3146     debug riplay_1     root PD       0:00      1 (Priority)
+              3147     debug riplay_1     root PD       0:00      1 (Priority)
+              3148     debug riplay_1     root PD       0:00      2 (Priority)
+              3149     debug riplay_1     root PD       0:00      1 (Priority)
+              3150     debug riplay_1     root PD       0:00      1 (Priority)
+              3151     debug riplay_1     root PD       0:00      1 (Priority)
+              3152     debug riplay_1     root PD       0:00      1 (Priority)
+              3153     debug riplay_1     root PD       0:00      2 (Priority)
+              3154     debug riplay_1     root PD       0:00      1 (Priority)
+              3155     debug riplay_1     root PD       0:00      1 (Priority)
+              3156     debug riplay_1     root PD       0:00      1 (Priority)
+              3157     debug riplay_1     root PD       0:00      1 (Priority)
+              3158     debug riplay_1     root PD       0:00      1 (Priority)
+              3159     debug riplay_1     root PD       0:00      4 (Priority)
+              3160     debug riplay_1     root PD       0:00      1 (Priority)
+              3161     debug riplay_1     root PD       0:00      2 (Priority)
+              3162     debug riplay_1     root PD       0:00      4 (Priority)
+              3163     debug riplay_1     root PD       0:00      1 (Priority)
+              3164     debug riplay_1     root PD       0:00      2 (Priority)
+              3165     debug riplay_1     root PD       0:00      2 (Priority)
+              3166     debug riplay_1     root PD       0:00      2 (Priority)
+              3167     debug riplay_1     root PD       0:00      8 (Priority)
+              3168     debug riplay_1     root PD       0:00      1 (Priority)
+              3169     debug riplay_1     root PD       0:00      2 (Priority)
+              3170     debug riplay_1     root PD       0:00      1 (Priority)
+              3171     debug riplay_1     root PD       0:00      1 (Priority)
+              3172     debug riplay_1     root PD       0:00      4 (Priority)
+              3173     debug riplay_1     root PD       0:00      1 (Priority)
+              3174     debug riplay_1     root PD       0:00      2 (Priority)
+              3175     debug riplay_1     root PD       0:00      1 (Priority)
+              3176     debug riplay_1     root PD       0:00      3 (Priority)
+              3177     debug riplay_1     root PD       0:00      1 (Priority)
+              3178     debug riplay_1     root PD       0:00      3 (Priority)
+              3179     debug riplay_1     root PD       0:00      1 (Priority)
+              3180     debug riplay_1     root PD       0:00      8 (Priority)
+              3181     debug riplay_1     root PD       0:00      1 (Priority)
+              3182     debug riplay_1     root PD       0:00      1 (Priority)
+              3183     debug riplay_1     root PD       0:00      3 (Priority)
+              3184     debug riplay_1     root PD       0:00      1 (Priority)
+              3185     debug riplay_1     root PD       0:00      1 (Priority)
+              3186     debug riplay_1     root PD       0:00      1 (Priority)
+              3187     debug riplay_1     root PD       0:00      4 (Priority)
+              3188     debug riplay_1     root PD       0:00      2 (Priority)
+              3189     debug riplay_1     root PD       0:00      1 (Priority)
+              3190     debug riplay_1     root PD       0:00      1 (Priority)
+              3191     debug riplay_1     root PD       0:00      1 (Priority)
+              3192     debug riplay_1     root PD       0:00      1 (Priority)
+              3193     debug riplay_1     root PD       0:00      4 (Priority)
+              3194     debug riplay_1     root PD       0:00      2 (Priority)
+              3195     debug riplay_1     root PD       0:00      1 (Priority)
+              3196     debug riplay_1     root PD       0:00      2 (Priority)
+              3197     debug riplay_1     root PD       0:00      2 (Priority)
+              3198     debug riplay_1     root PD       0:00      1 (Priority)
+              3199     debug riplay_1     root PD       0:00      1 (Priority)
+              3200     debug riplay_1     root PD       0:00      1 (Priority)
+              3201     debug riplay_1     root PD       0:00      1 (Priority)
+              3202     debug riplay_1     root PD       0:00      1 (Priority)
+              3203     debug riplay_2     root PD       0:00      4 (Priority)
+              3204     debug riplay_2     root PD       0:00      1 (Priority)
+              3205     debug riplay_2     root PD       0:00      2 (Priority)
+              3206     debug riplay_2     root PD       0:00      4 (Priority)
+              3207     debug riplay_2     root PD       0:00      1 (Priority)
+              3208     debug riplay_2     root PD       0:00      1 (Priority)
+              3209     debug riplay_2     root PD       0:00      1 (Priority)
+              3210     debug riplay_2     root PD       0:00      4 (Priority)
+              3211     debug riplay_2     root PD       0:00      1 (Priority)
+              3212     debug riplay_2     root PD       0:00      4 (Priority)
+              3213     debug riplay_2     root PD       0:00      8 (Priority)
+              3214     debug riplay_2     root PD       0:00      2 (Priority)
+              3215     debug riplay_2     root PD       0:00      2 (Priority)
+              3216     debug riplay_2     root PD       0:00      2 (Priority)
+              3217     debug riplay_2     root PD       0:00      1 (Priority)
+              3218     debug riplay_2     root PD       0:00      1 (Priority)
+              3219     debug riplay_2     root PD       0:00      1 (Priority)
+              3220     debug riplay_2     root PD       0:00      1 (Priority)
+              3221     debug riplay_2     root PD       0:00      1 (Priority)
+              3222     debug riplay_2     root PD       0:00      4 (Resources)
+              3223     debug riplay_2     root PD       0:00      1 (Resources)
+              3224     debug riplay_2     root PD       0:00      4 (Resources)
+              3225     debug riplay_2     root PD       0:00      1 (Resources)
+              3226     debug riplay_2     root PD       0:00      2 (Resources)
+              3227     debug riplay_2     root PD       0:00      3 (Resources)
+              3228     debug riplay_2     root PD       0:00      2 (Resources)
+              3229     debug riplay_2     root PD       0:00      1 (Resources)
+              3230     debug riplay_2     root PD       0:00      1 (Resources)
+              3231     debug riplay_2     root PD       0:00      1 (Resources)
+              3232     debug riplay_2     root PD       0:00     15 (Resources)
+              3233     debug riplay_2     root PD       0:00     15 (Resources)
+[root@mo65 ~]# sacct
+       JobID    JobName  Partition    Account  AllocCPUS      State ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- -------- 
+3001               bash      debug       root        100  COMPLETED      0:0 
+3002               bash      debug       root         10  COMPLETED      0:0 
+3003         riplay_9_+      debug       root         15     FAILED      1:0 
+3004         riplay_1_+      debug       root          8     FAILED      1:0 
+3005         riplay_2_+      debug       root          8     FAILED      1:0 
+3006         riplay_3_+      debug       root          8     FAILED      1:0 
+3007         riplay_4_+      debug       root          8     FAILED      1:0 
+3008         riplay_5_+      debug       root          8     FAILED      1:0 
+3009         riplay_7_+      debug       root          8     FAILED      1:0 
+3010         riplay_6_+      debug       root         15     FAILED      1:0 
+3011         riplay_8_+      debug       root         15     FAILED      1:0 
+3012         riplay_10+      debug       root         15     FAILED      1:0 
+3013         riplay_15+      debug       root          8     FAILED      1:0 
+3014         riplay_11+      debug       root         30     FAILED      1:0 
+3015         riplay_12+      debug       root          8     FAILED      1:0 
+3016         riplay_14+      debug       root        120     FAILED      1:0 
+3017         riplay_13+      debug       root          8     FAILED      1:0 
+3018         riplay_17+      debug       root          8     FAILED      1:0 
+3019         riplay_16+      debug       root          8     FAILED      1:0 
+3020         riplay_25+      debug       root         30     FAILED      1:0 
+3021         riplay_27+      debug       root         15     FAILED      1:0 
+3022         riplay_31+      debug       root         23     FAILED      1:0 
+3023         riplay_9_+      debug       root         15     FAILED      1:0 
+3024         riplay_18+      debug       root          8     FAILED      1:0 
+3025         riplay_19+      debug       root          8     FAILED      1:0 
+3026         riplay_29+      debug       root          8     FAILED      1:0 
+3027         riplay_22+      debug       root         30     FAILED      1:0 
+3028         riplay_23+      debug       root          8     FAILED      1:0 
+3029         riplay_26+      debug       root         60     FAILED      1:0 
+3030         riplay_21+      debug       root         30     FAILED      1:0 
+3031         riplay_24+      debug       root          8     FAILED      1:0 
+3032         riplay_33+      debug       root         23     FAILED      1:0 
+3033         riplay_39+      debug       root         15     FAILED      1:0 
+3034         riplay_45+      debug       root          8     FAILED      1:0 
+3035         riplay_50+      debug       root         23     FAILED      1:0 
+3036         riplay_40+      debug       root         60     FAILED      1:0 
+3037         riplay_42+      debug       root          8     FAILED      1:0 
+3038         riplay_43+      debug       root          8     FAILED      1:0 
+3039         riplay_47+      debug       root         15     FAILED      1:0 
+3040         riplay_41+      debug       root         30     FAILED      1:0 
+3041         riplay_44+      debug       root         15     FAILED      1:0 
+3042         riplay_20+      debug       root         23     FAILED      1:0 
+3043         riplay_46+      debug       root         15     FAILED      1:0 
+3044         riplay_35+      debug       root         30     FAILED      1:0 
+3045         riplay_28+      debug       root         15     FAILED      1:0 
+3046         riplay_32+      debug       root         15     FAILED      1:0 
+3047         riplay_30+      debug       root          8     FAILED      1:0 
+3048         riplay_48+      debug       root          8     FAILED      1:0 
+3049         riplay_49+      debug       root          8     FAILED      1:0 
+3050         riplay_52+      debug       root         30     FAILED      1:0 
+3051         riplay_37+      debug       root          8     FAILED      1:0 
+3052         riplay_54+      debug       root          8     FAILED      1:0 
+3053         riplay_53+      debug       root         23     FAILED      1:0 
+3054         riplay_55+      debug       root          8     FAILED      1:0 
+3055         riplay_34+      debug       root          8     FAILED      1:0 
+3056         riplay_38+      debug       root          8     FAILED      1:0 
+3057         riplay_51+      debug       root          8     FAILED      1:0 
+3058         riplay_36+      debug       root         38     FAILED      1:0 
+3059         riplay_56+      debug       root          8     FAILED      1:0 
+3060         riplay_57+      debug       root         60     FAILED      1:0 
+3061         riplay_59+      debug       root          8     FAILED      1:0 
+3062         riplay_58+      debug       root         30     FAILED      1:0 
+3063         riplay_60+      debug       root          8     FAILED      1:0 
+3064         riplay_61+      debug       root          8     FAILED      1:0 
+3065         riplay_62+      debug       root          8     FAILED      1:0 
+3066         riplay_64+      debug       root        120     FAILED      1:0 
+3067         riplay_63+      debug       root         60     FAILED      1:0 
+3068         riplay_65+      debug       root          8     FAILED      1:0 
+3069         riplay_66+      debug       root          8     FAILED      1:0 
+3070         riplay_67+      debug       root          8     FAILED      1:0 
+3071         riplay_69+      debug       root         15     FAILED      1:0 
+3072         riplay_68+      debug       root         30     FAILED      1:0 
+3073         riplay_72+      debug       root         15     FAILED      1:0 
+3074         riplay_70+      debug       root         30     FAILED      1:0 
+3075         riplay_74+      debug       root          8     FAILED      1:0 
+3076         riplay_76+      debug       root         30     FAILED      1:0 
+3077         riplay_75+      debug       root         30     FAILED      1:0 
+3078         riplay_71+      debug       root         15     FAILED      1:0 
+3079         riplay_73+      debug       root         30     FAILED      1:0 
+3080         riplay_80+      debug       root          8     FAILED      1:0 
+3081         riplay_77+      debug       root          8     FAILED      1:0 
+3082         riplay_82+      debug       root         30     FAILED      1:0 
+3083         riplay_83+      debug       root          8     FAILED      1:0 
+3084         riplay_84+      debug       root          8     FAILED      1:0 
+3085         riplay_79+      debug       root         60     FAILED      1:0 
+3086         riplay_81+      debug       root         30     FAILED      1:0 
+3087         riplay_78+      debug       root          8     FAILED      1:0 
+3088         riplay_88+      debug       root         23     FAILED      1:0 
+3089         riplay_85+      debug       root         30     FAILED      1:0 
+3090         riplay_86+      debug       root          8     FAILED      1:0 
+3091         riplay_87+      debug       root          8     FAILED      1:0 
+3092         riplay_89+      debug       root          8     FAILED      1:0 
+3093         riplay_90+      debug       root         30     FAILED      1:0 
+3094         riplay_91+      debug       root         30     FAILED      1:0 
+3095         riplay_93+      debug       root         30     FAILED      1:0 
+3096         riplay_94+      debug       root          0    PENDING      0:0 
+3097         riplay_95+      debug       root          0    PENDING      0:0 
+3098         riplay_98+      debug       root          0    PENDING      0:0 
+3099         riplay_92+      debug       root          0    PENDING      0:0 
+3100         riplay_96+      debug       root          0    PENDING      0:0 
+3101         riplay_97+      debug       root          0    PENDING      0:0 
+3102         riplay_10+      debug       root          0    PENDING      0:0 
+3103         riplay_99+      debug       root          0    PENDING      0:0 
+3104         riplay_10+      debug       root          0    PENDING      0:0 
+3105         riplay_10+      debug       root          0    PENDING      0:0 
+3106         riplay_10+      debug       root          0    PENDING      0:0 
+3107         riplay_10+      debug       root          0    PENDING      0:0 
+3108         riplay_10+      debug       root          0    PENDING      0:0 
+3109         riplay_10+      debug       root          0    PENDING      0:0 
+3110         riplay_10+      debug       root          0    PENDING      0:0 
+3111         riplay_10+      debug       root          0    PENDING      0:0 
+3112         riplay_11+      debug       root          0    PENDING      0:0 
+3113         riplay_10+      debug       root          0    PENDING      0:0 
+3114         riplay_11+      debug       root          0    PENDING      0:0 
+3115         riplay_11+      debug       root          0    PENDING      0:0 
+3116         riplay_11+      debug       root          0    PENDING      0:0 
+3117         riplay_11+      debug       root          0    PENDING      0:0 
+3118         riplay_11+      debug       root          0    PENDING      0:0 
+3119         riplay_11+      debug       root          0    PENDING      0:0 
+3120         riplay_11+      debug       root          0    PENDING      0:0 
+3121         riplay_11+      debug       root          0    PENDING      0:0 
+3122         riplay_12+      debug       root          0    PENDING      0:0 
+3123         riplay_12+      debug       root          0    PENDING      0:0 
+3124         riplay_11+      debug       root          0    PENDING      0:0 
+3125         riplay_12+      debug       root          0    PENDING      0:0 
+3126         riplay_12+      debug       root          0    PENDING      0:0 
+3127         riplay_12+      debug       root          0    PENDING      0:0 
+3128         riplay_12+      debug       root          0    PENDING      0:0 
+3129         riplay_13+      debug       root          0    PENDING      0:0 
+3130         riplay_13+      debug       root          0    PENDING      0:0 
+3131         riplay_12+      debug       root          0    PENDING      0:0 
+3132         riplay_13+      debug       root          0    PENDING      0:0 
+3133         riplay_12+      debug       root          0    PENDING      0:0 
+3134         riplay_13+      debug       root          0    PENDING      0:0 
+3135         riplay_12+      debug       root          0    PENDING      0:0 
+3136         riplay_12+      debug       root          0    PENDING      0:0 
+3137         riplay_13+      debug       root          0    PENDING      0:0 
+3138         riplay_13+      debug       root          0    PENDING      0:0 
+3139         riplay_13+      debug       root          0    PENDING      0:0 
+3140         riplay_13+      debug       root          0    PENDING      0:0 
+3141         riplay_14+      debug       root          0    PENDING      0:0 
+3142         riplay_13+      debug       root          0    PENDING      0:0 
+3143         riplay_13+      debug       root          0    PENDING      0:0 
+3144         riplay_14+      debug       root          0    PENDING      0:0 
+3145         riplay_14+      debug       root          0    PENDING      0:0 
+3146         riplay_14+      debug       root          0    PENDING      0:0 
+3147         riplay_14+      debug       root          0    PENDING      0:0 
+3148         riplay_14+      debug       root          0    PENDING      0:0 
+3149         riplay_14+      debug       root          0    PENDING      0:0 
+3150         riplay_14+      debug       root          0    PENDING      0:0 
+3151         riplay_14+      debug       root          0    PENDING      0:0 
+3152         riplay_14+      debug       root          0    PENDING      0:0 
+3153         riplay_15+      debug       root          0    PENDING      0:0 
+3154         riplay_15+      debug       root          0    PENDING      0:0 
+3155         riplay_15+      debug       root          0    PENDING      0:0 
+3156         riplay_15+      debug       root          0    PENDING      0:0 
+3157         riplay_15+      debug       root          0    PENDING      0:0 
+3158         riplay_15+      debug       root          0    PENDING      0:0 
+3159         riplay_15+      debug       root          0    PENDING      0:0 
+3160         riplay_15+      debug       root          0    PENDING      0:0 
+3161         riplay_15+      debug       root          0    PENDING      0:0 
+3162         riplay_16+      debug       root          0    PENDING      0:0 
+3163         riplay_15+      debug       root          0    PENDING      0:0 
+3164         riplay_16+      debug       root          0    PENDING      0:0 
+3165         riplay_16+      debug       root          0    PENDING      0:0 
+3166         riplay_16+      debug       root          0    PENDING      0:0 
+3167         riplay_16+      debug       root          0    PENDING      0:0 
+3168         riplay_16+      debug       root          0    PENDING      0:0 
+3169         riplay_16+      debug       root          0    PENDING      0:0 
+3170         riplay_17+      debug       root          0    PENDING      0:0 
+3171         riplay_16+      debug       root          0    PENDING      0:0 
+3172         riplay_17+      debug       root          0    PENDING      0:0 
+3173         riplay_17+      debug       root          0    PENDING      0:0 
+3174         riplay_16+      debug       root          0    PENDING      0:0 
+3175         riplay_16+      debug       root          0    PENDING      0:0 
+3176         riplay_17+      debug       root          0    PENDING      0:0 
+3177         riplay_17+      debug       root          0    PENDING      0:0 
+3178         riplay_17+      debug       root          0    PENDING      0:0 
+3179         riplay_17+      debug       root          0    PENDING      0:0 
+3180         riplay_17+      debug       root          0    PENDING      0:0 
+3181         riplay_17+      debug       root          0    PENDING      0:0 
+3182         riplay_18+      debug       root          0    PENDING      0:0 
+3183         riplay_18+      debug       root          0    PENDING      0:0 
+3184         riplay_17+      debug       root          0    PENDING      0:0 
+3185         riplay_18+      debug       root          0    PENDING      0:0 
+3186         riplay_18+      debug       root          0    PENDING      0:0 
+3187         riplay_18+      debug       root          0    PENDING      0:0 
+3188         riplay_18+      debug       root          0    PENDING      0:0 
+3189         riplay_18+      debug       root          0    PENDING      0:0 
+3190         riplay_18+      debug       root          0    PENDING      0:0 
+3191         riplay_18+      debug       root          0    PENDING      0:0 
+3192         riplay_18+      debug       root          0    PENDING      0:0 
+3193         riplay_19+      debug       root          0    PENDING      0:0 
+3194         riplay_19+      debug       root          0    PENDING      0:0 
+3195         riplay_19+      debug       root          0    PENDING      0:0 
+3196         riplay_19+      debug       root          0    PENDING      0:0 
+3197         riplay_19+      debug       root          0    PENDING      0:0 
+3198         riplay_19+      debug       root          0    PENDING      0:0 
+3199         riplay_19+      debug       root          0    PENDING      0:0 
+3200         riplay_19+      debug       root          0    PENDING      0:0 
+3201         riplay_19+      debug       root          0    PENDING      0:0 
+3202         riplay_19+      debug       root          0    PENDING      0:0 
+3203         riplay_20+      debug       root          0    PENDING      0:0 
+3204         riplay_20+      debug       root          0    PENDING      0:0 
+3205         riplay_20+      debug       root          0    PENDING      0:0 
+3206         riplay_20+      debug       root          0    PENDING      0:0 
+3207         riplay_20+      debug       root          0    PENDING      0:0 
+3208         riplay_20+      debug       root          0    PENDING      0:0 
+3209         riplay_20+      debug       root          0    PENDING      0:0 
+3210         riplay_20+      debug       root          0    PENDING      0:0 
+3211         riplay_20+      debug       root          0    PENDING      0:0 
+3212         riplay_21+      debug       root          0    PENDING      0:0 
+3213         riplay_21+      debug       root          0    PENDING      0:0 
+3214         riplay_20+      debug       root          0    PENDING      0:0 
+3215         riplay_21+      debug       root          0    PENDING      0:0 
+3216         riplay_21+      debug       root          0    PENDING      0:0 
+3217         riplay_22+      debug       root          0    PENDING      0:0 
+3218         riplay_21+      debug       root          0    PENDING      0:0 
+3219         riplay_21+      debug       root          0    PENDING      0:0 
+3220         riplay_21+      debug       root          0    PENDING      0:0 
+3221         riplay_21+      debug       root          0    PENDING      0:0 
+3222         riplay_21+      debug       root          0    PENDING      0:0 
+3223         riplay_22+      debug       root          0    PENDING      0:0 
+3224         riplay_21+      debug       root          0    PENDING      0:0 
+3225         riplay_22+      debug       root          0    PENDING      0:0 
+3226         riplay_22+      debug       root          0    PENDING      0:0 
+3227         riplay_22+      debug       root          0    PENDING      0:0 
+3228         riplay_22+      debug       root          0    PENDING      0:0 
+3229         riplay_22+      debug       root          0    PENDING      0:0 
+3230         riplay_22+      debug       root          0    PENDING      0:0 
+3231         riplay_22+      debug       root          0    PENDING      0:0 
+3232         riplay_22+      debug       root          0    PENDING      0:0 
+3233         riplay_23+      debug       root          0    PENDING      0:0 
+3234               bash      debug       root          0 CANCELLED+      0:0 
+[root@mo65 ~]# 
+
+[root@mo65 ~]# sinfo 
+PARTITION AVAIL  TIMELIMIT  NODES  STATE NODELIST
+debug*       up   infinite    240   comp virtual[0-239]
+[root@mo65 ~]# 
+
+
+
+slurmctld: error: Node virtual192 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual45 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual233 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual47 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual34 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual133 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual23 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual140 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual144 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual105 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual141 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual137 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual150 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual43 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual114 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual46 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual178 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual113 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual21 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual142 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual102 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual19 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual175 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual181 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual27 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual116 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual188 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual182 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual119 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual172 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual33 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual121 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual123 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual164 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual195 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual200 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual38 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual15 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual201 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual39 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual208 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual3 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual40 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual42 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual136 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual153 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual149 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual139 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual186 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual161 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual155 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual29 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual120 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual197 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual163 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual98 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual202 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual20 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual129 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual138 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual151 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual159 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual156 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual127 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual41 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual132 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual50 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual130 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual131 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual49 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual48 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual147 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual146 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual134 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual26 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual135 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual28 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual0 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual145 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+slurmctld: error: Node virtual148 appears to have a different slurm.conf than the slurmctld.  This could cause issues with communication and functionality.  Please review both files and make sure they are the same.  If this is expected ignore, and set DebugFlags=NO_CONF_HASH in your slurm.conf.
+

@@ -1,0 +1,456 @@
+ salloc -n100 -N10 --ntasks-per-node=10			
+cons_res_layout allocate usec	cons_res_layout deallocate micro
+
+
+	
+[2015-05-11T17:10:51.208] select_p_job_test for job 3242
+[2015-05-11T17:10:51.273] L-_verify_node_state-Before node availability check node_map:0-239
+[2015-05-11T17:10:51.273] L-_verify_node_state-After node availability check node_map:0-239
+[2015-05-11T17:10:51.273] L-_get_res_usage before
+[2015-05-11T17:10:51.299] L-_get_res_usage after
+[2015-05-11T17:10:51.299] L-Entered inside the eval_nodes
+[2015-05-11T17:10:51.302] L-Before eval_nodes topo
+[2015-05-11T17:10:51.303] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:10:51.304] L-Best_fit_inx:6 selected
+[2015-05-11T17:10:51.347] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:10:51.347] L-_get_res_usage before
+[2015-05-11T17:10:51.374] L-_get_res_usage after
+[2015-05-11T17:10:51.374] L-Entered inside the eval_nodes
+[2015-05-11T17:10:51.377] L-Before eval_nodes topo
+[2015-05-11T17:10:51.378] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:10:51.379] L-Best_fit_inx:6 selected
+[2015-05-11T17:10:51.422] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:10:51.422] select_p_job_test return:0
+[2015-05-11T17:10:51.422] Before Add_job
+[2015-05-11T17:10:51.485] L-Job_res Cluster level allocated_sum_cores:200 allocated_sum_sockets:40 allocated_sum_nodes:20
+[2015-05-11T17:10:51.485] After Add_job
+[2015-05-11T17:10:51.485] sched: _slurm_rpc_allocate_resources JobId=3242 NodeList=virtual[190-199] usec=277739
+
+
+
+[2015-05-11T17:10:47.123] job_complete: JobID=3240 State=0x1 NodeCnt=10 WIFEXITED 1 WEXITSTATUS 0
+[2015-05-11T17:10:47.124] Before rm_job_l
+[2015-05-11T17:10:47.173] After rm_job_l
+[2015-05-11T17:10:47.174] job_complete: JobID=3240 State=0x8003 NodeCnt=10 done
+
+
+
+[2015-05-11T17:14:02.502] job_complete: JobID=3242 State=0x1 NodeCnt=10 WIFEXITED 1 WEXITSTATUS 0
+[2015-05-11T17:14:02.503] Before rm_job_l
+[2015-05-11T17:14:02.553] After rm_job_l
+[2015-05-11T17:14:02.553] job_complete: JobID=3242 State=0x8003 NodeCnt=10 done
+[2015-05-11T17:14:02.558] SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=4,partition_job_depth=0
+[2015-05-11T17:14:04.554] select_p_job_test for job 3244
+[2015-05-11T17:14:04.618] L-_verify_node_state-Before node availability check node_map:0-239
+[2015-05-11T17:14:04.618] L-_verify_node_state-After node availability check node_map:0-239
+[2015-05-11T17:14:04.618] L-_get_res_usage before
+[2015-05-11T17:14:04.645] L-_get_res_usage after
+[2015-05-11T17:14:04.645] L-Entered inside the eval_nodes
+[2015-05-11T17:14:04.648] L-Before eval_nodes topo
+[2015-05-11T17:14:04.648] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:14:04.650] L-Best_fit_inx:6 selected
+[2015-05-11T17:14:04.692] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:14:04.692] L-_get_res_usage before
+[2015-05-11T17:14:04.720] L-_get_res_usage after
+[2015-05-11T17:14:04.720] L-Entered inside the eval_nodes
+[2015-05-11T17:14:04.722] L-Before eval_nodes topo
+[2015-05-11T17:14:04.723] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:14:04.725] L-Best_fit_inx:6 selected
+[2015-05-11T17:14:04.768] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:14:04.768] select_p_job_test return:0
+[2015-05-11T17:14:04.768] Before Add_job
+[2015-05-11T17:14:04.832] L-Job_res Cluster level allocated_sum_cores:200 allocated_sum_sockets:40 allocated_sum_nodes:20
+[2015-05-11T17:14:04.832] After Add_job
+[2015-05-11T17:14:04.832] sched: _slurm_rpc_allocate_resources JobId=3244 NodeList=virtual[190-199] usec=278366
+
+
+
+[2015-05-11T17:17:51.801] job_complete: JobID=3244 State=0x1 NodeCnt=10 WIFEXITED 1 WEXITSTATUS 0
+[2015-05-11T17:17:51.802] Before rm_job_l
+[2015-05-11T17:17:51.852] After rm_job_l
+[2015-05-11T17:17:51.852] job_complete: JobID=3244 State=0x8003 NodeCnt=10 done
+[2015-05-11T17:17:51.857] SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=4,partition_job_depth=0
+[2015-05-11T17:17:54.822] select_p_job_test for job 3246
+[2015-05-11T17:17:54.888] L-_verify_node_state-Before node availability check node_map:0-239
+[2015-05-11T17:17:54.888] L-_verify_node_state-After node availability check node_map:0-239
+[2015-05-11T17:17:54.888] L-_get_res_usage before
+[2015-05-11T17:17:54.915] L-_get_res_usage after
+[2015-05-11T17:17:54.915] L-Entered inside the eval_nodes
+[2015-05-11T17:17:54.918] L-Before eval_nodes topo
+[2015-05-11T17:17:54.919] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:17:54.920] L-Best_fit_inx:6 selected
+[2015-05-11T17:17:54.963] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:17:54.963] L-_get_res_usage before
+[2015-05-11T17:17:54.990] L-_get_res_usage after
+[2015-05-11T17:17:54.990] L-Entered inside the eval_nodes
+[2015-05-11T17:17:54.993] L-Before eval_nodes topo
+[2015-05-11T17:17:54.994] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:17:54.995] L-Best_fit_inx:6 selected
+[2015-05-11T17:17:55.038] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:17:55.038] select_p_job_test return:0
+[2015-05-11T17:17:55.038] Before Add_job
+[2015-05-11T17:17:55.102] L-Job_res Cluster level allocated_sum_cores:200 allocated_sum_sockets:40 allocated_sum_nodes:20
+[2015-05-11T17:17:55.102] After Add_job
+[2015-05-11T17:17:55.102] sched: _slurm_rpc_allocate_resources JobId=3246 NodeList=virtual[190-199] usec=280105
+
+
+
+[2015-05-11T17:18:45.285] job_complete: JobID=3246 State=0x1 NodeCnt=10 WIFEXITED 1 WEXITSTATUS 0
+[2015-05-11T17:18:45.286] Before rm_job_l
+[2015-05-11T17:18:45.335] After rm_job_l
+[2015-05-11T17:18:45.335] job_complete: JobID=3246 State=0x8003 NodeCnt=10 done
+[2015-05-11T17:18:45.340] SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=4,partition_job_depth=0
+[2015-05-11T17:18:46.468] select_p_job_test for job 3248
+[2015-05-11T17:18:46.531] L-_verify_node_state-Before node availability check node_map:0-239
+[2015-05-11T17:18:46.531] L-_verify_node_state-After node availability check node_map:0-239
+[2015-05-11T17:18:46.532] L-_get_res_usage before
+[2015-05-11T17:18:46.558] L-_get_res_usage after
+[2015-05-11T17:18:46.558] L-Entered inside the eval_nodes
+[2015-05-11T17:18:46.561] L-Before eval_nodes topo
+[2015-05-11T17:18:46.561] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:18:46.563] L-Best_fit_inx:6 selected
+[2015-05-11T17:18:46.605] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:18:46.606] L-_get_res_usage before
+[2015-05-11T17:18:46.633] L-_get_res_usage after
+[2015-05-11T17:18:46.633] L-Entered inside the eval_nodes
+[2015-05-11T17:18:46.636] L-Before eval_nodes topo
+[2015-05-11T17:18:46.636] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:18:46.638] L-Best_fit_inx:6 selected
+[2015-05-11T17:18:46.681] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:18:46.681] select_p_job_test return:0
+[2015-05-11T17:18:46.681] Before Add_job
+[2015-05-11T17:18:46.744] L-Job_res Cluster level allocated_sum_cores:200 allocated_sum_sockets:40 allocated_sum_nodes:20
+[2015-05-11T17:18:46.744] After Add_job
+[2015-05-11T17:18:46.744] sched: _slurm_rpc_allocate_resources JobId=3248 NodeList=virtual[190-199] usec=277184
+
+
+
+[2015-05-11T17:19:32.028] job_complete: JobID=3248 State=0x1 NodeCnt=10 WIFEXITED 1 WEXITSTATUS 0
+[2015-05-11T17:19:32.028] Before rm_job_l
+[2015-05-11T17:19:32.078] After rm_job_l
+[2015-05-11T17:19:32.078] job_complete: JobID=3248 State=0x8003 NodeCnt=10 done
+[2015-05-11T17:19:32.083] SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=4,partition_job_depth=0
+[2015-05-11T17:19:33.173] select_p_job_test for job 3250
+[2015-05-11T17:19:33.237] L-_verify_node_state-Before node availability check node_map:0-239
+[2015-05-11T17:19:33.237] L-_verify_node_state-After node availability check node_map:0-239
+[2015-05-11T17:19:33.237] L-_get_res_usage before
+[2015-05-11T17:19:33.263] L-_get_res_usage after
+[2015-05-11T17:19:33.264] L-Entered inside the eval_nodes
+[2015-05-11T17:19:33.266] L-Before eval_nodes topo
+[2015-05-11T17:19:33.267] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:19:33.269] L-Best_fit_inx:6 selected
+[2015-05-11T17:19:33.311] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:19:33.311] L-_get_res_usage before
+[2015-05-11T17:19:33.338] L-_get_res_usage after
+[2015-05-11T17:19:33.338] L-Entered inside the eval_nodes
+[2015-05-11T17:19:33.341] L-Before eval_nodes topo
+[2015-05-11T17:19:33.342] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:19:33.343] L-Best_fit_inx:6 selected
+[2015-05-11T17:19:33.386] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:19:33.386] select_p_job_test return:0
+[2015-05-11T17:19:33.386] Before Add_job
+[2015-05-11T17:19:33.449] L-Job_res Cluster level allocated_sum_cores:200 allocated_sum_sockets:40 allocated_sum_nodes:20
+[2015-05-11T17:19:33.449] After Add_job
+[2015-05-11T17:19:33.449] sched: _slurm_rpc_allocate_resources JobId=3250 NodeList=virtual[190-199] usec=277069
+
+
+
+[2015-05-11T17:20:00.510] job_complete: JobID=3250 State=0x1 NodeCnt=10 WIFEXITED 1 WEXITSTATUS 0
+[2015-05-11T17:20:00.510] Before rm_job_l
+[2015-05-11T17:20:00.560] After rm_job_l
+[2015-05-11T17:20:00.560] job_complete: JobID=3250 State=0x8003 NodeCnt=10 done
+[2015-05-11T17:20:00.566] SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=4,partition_job_depth=0
+[2015-05-11T17:20:01.837] select_p_job_test for job 3252
+[2015-05-11T17:20:01.900] L-_verify_node_state-Before node availability check node_map:0-239
+[2015-05-11T17:20:01.900] L-_verify_node_state-After node availability check node_map:0-239
+[2015-05-11T17:20:01.901] L-_get_res_usage before
+[2015-05-11T17:20:01.927] L-_get_res_usage after
+[2015-05-11T17:20:01.927] L-Entered inside the eval_nodes
+[2015-05-11T17:20:01.930] L-Before eval_nodes topo
+[2015-05-11T17:20:01.930] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:20:01.932] L-Best_fit_inx:6 selected
+[2015-05-11T17:20:01.975] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:20:01.975] L-_get_res_usage before
+[2015-05-11T17:20:02.002] L-_get_res_usage after
+[2015-05-11T17:20:02.002] L-Entered inside the eval_nodes
+[2015-05-11T17:20:02.005] L-Before eval_nodes topo
+[2015-05-11T17:20:02.005] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:20:02.007] L-Best_fit_inx:6 selected
+[2015-05-11T17:20:02.049] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:20:02.050] select_p_job_test return:0
+[2015-05-11T17:20:02.050] Before Add_job
+[2015-05-11T17:20:02.112] L-Job_res Cluster level allocated_sum_cores:200 allocated_sum_sockets:40 allocated_sum_nodes:20
+[2015-05-11T17:20:02.112] After Add_job
+[2015-05-11T17:20:02.112] sched: _slurm_rpc_allocate_resources JobId=3252 NodeList=virtual[190-199] usec=276241
+
+
+
+[2015-05-11T17:20:30.793] job_complete: JobID=3252 State=0x1 NodeCnt=10 WIFEXITED 1 WEXITSTATUS 0
+[2015-05-11T17:20:30.794] Before rm_job_l
+[2015-05-11T17:20:30.843] After rm_job_l
+[2015-05-11T17:20:30.843] job_complete: JobID=3252 State=0x8003 NodeCnt=10 done
+[2015-05-11T17:20:30.849] SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=4,partition_job_depth=0
+[2015-05-11T17:20:33.735] select_p_job_test for job 3254
+[2015-05-11T17:20:33.798] L-_verify_node_state-Before node availability check node_map:0-239
+[2015-05-11T17:20:33.798] L-_verify_node_state-After node availability check node_map:0-239
+[2015-05-11T17:20:33.798] L-_get_res_usage before
+[2015-05-11T17:20:33.825] L-_get_res_usage after
+[2015-05-11T17:20:33.825] L-Entered inside the eval_nodes
+[2015-05-11T17:20:33.828] L-Before eval_nodes topo
+[2015-05-11T17:20:33.828] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:20:33.830] L-Best_fit_inx:6 selected
+[2015-05-11T17:20:33.872] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:20:33.873] L-_get_res_usage before
+[2015-05-11T17:20:33.900] L-_get_res_usage after
+[2015-05-11T17:20:33.900] L-Entered inside the eval_nodes
+[2015-05-11T17:20:33.903] L-Before eval_nodes topo
+[2015-05-11T17:20:33.903] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:20:33.905] L-Best_fit_inx:6 selected
+[2015-05-11T17:20:33.948] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:20:33.948] select_p_job_test return:0
+[2015-05-11T17:20:33.948] Before Add_job
+[2015-05-11T17:20:34.011] L-Job_res Cluster level allocated_sum_cores:200 allocated_sum_sockets:40 allocated_sum_nodes:20
+[2015-05-11T17:20:34.011] After Add_job
+[2015-05-11T17:20:34.011] sched: _slurm_rpc_allocate_resources JobId=3254 NodeList=virtual[190-199] usec=276644
+
+
+
+[2015-05-11T17:21:08.822] job_complete: JobID=3254 State=0x1 NodeCnt=10 WIFEXITED 1 WEXITSTATUS 0
+[2015-05-11T17:21:08.823] Before rm_job_l
+[2015-05-11T17:21:08.873] After rm_job_l
+[2015-05-11T17:21:08.873] job_complete: JobID=3254 State=0x8003 NodeCnt=10 done
+[2015-05-11T17:21:08.889] SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=4,partition_job_depth=0
+[2015-05-11T17:21:10.307] select_p_job_test for job 3256
+[2015-05-11T17:21:10.371] L-_verify_node_state-Before node availability check node_map:0-239
+[2015-05-11T17:21:10.371] L-_verify_node_state-After node availability check node_map:0-239
+[2015-05-11T17:21:10.371] L-_get_res_usage before
+[2015-05-11T17:21:10.397] L-_get_res_usage after
+[2015-05-11T17:21:10.397] L-Entered inside the eval_nodes
+[2015-05-11T17:21:10.400] L-Before eval_nodes topo
+[2015-05-11T17:21:10.401] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:21:10.402] L-Best_fit_inx:6 selected
+[2015-05-11T17:21:10.445] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:21:10.445] L-_get_res_usage before
+[2015-05-11T17:21:10.472] L-_get_res_usage after
+[2015-05-11T17:21:10.472] L-Entered inside the eval_nodes
+[2015-05-11T17:21:10.475] L-Before eval_nodes topo
+[2015-05-11T17:21:10.476] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:21:10.477] L-Best_fit_inx:6 selected
+[2015-05-11T17:21:10.520] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:21:10.520] select_p_job_test return:0
+[2015-05-11T17:21:10.520] Before Add_job
+[2015-05-11T17:21:10.584] L-Job_res Cluster level allocated_sum_cores:200 allocated_sum_sockets:40 allocated_sum_nodes:20
+[2015-05-11T17:21:10.584] After Add_job
+[2015-05-11T17:21:10.584] sched: _slurm_rpc_allocate_resources JobId=3256 NodeList=virtual[190-199] usec=276805
+
+
+[2015-05-11T17:21:38.236] job_complete: JobID=3256 State=0x1 NodeCnt=10 WIFEXITED 1 WEXITSTATUS 0
+[2015-05-11T17:21:38.236] Before rm_job_l
+[2015-05-11T17:21:38.286] After rm_job_l
+[2015-05-11T17:21:38.286] job_complete: JobID=3256 State=0x8003 NodeCnt=10 done
+[2015-05-11T17:21:38.291] SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=4,partition_job_depth=0
+[2015-05-11T17:21:40.301] select_p_job_test for job 3258
+[2015-05-11T17:21:40.364] L-_verify_node_state-Before node availability check node_map:0-239
+[2015-05-11T17:21:40.364] L-_verify_node_state-After node availability check node_map:0-239
+[2015-05-11T17:21:40.364] L-_get_res_usage before
+[2015-05-11T17:21:40.390] L-_get_res_usage after
+[2015-05-11T17:21:40.390] L-Entered inside the eval_nodes
+[2015-05-11T17:21:40.393] L-Before eval_nodes topo
+[2015-05-11T17:21:40.394] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:21:40.395] L-Best_fit_inx:6 selected
+[2015-05-11T17:21:40.438] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:21:40.438] L-_get_res_usage before
+[2015-05-11T17:21:40.465] L-_get_res_usage after
+[2015-05-11T17:21:40.465] L-Entered inside the eval_nodes
+[2015-05-11T17:21:40.468] L-Before eval_nodes topo
+[2015-05-11T17:21:40.469] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:21:40.470] L-Best_fit_inx:6 selected
+[2015-05-11T17:21:40.513] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:21:40.513] select_p_job_test return:0
+[2015-05-11T17:21:40.513] Before Add_job
+[2015-05-11T17:21:40.576] L-Job_res Cluster level allocated_sum_cores:200 allocated_sum_sockets:40 allocated_sum_nodes:20
+[2015-05-11T17:21:40.576] After Add_job
+[2015-05-11T17:21:40.576] sched: _slurm_rpc_allocate_resources JobId=3258 NodeList=virtual[190-199] usec=275705
+
+
+[2015-05-11T17:22:37.652] job_complete: JobID=3258 State=0x1 NodeCnt=10 WIFEXITED 1 WEXITSTATUS 0
+[2015-05-11T17:22:37.653] Before rm_job_l
+[2015-05-11T17:22:37.702] After rm_job_l
+[2015-05-11T17:22:37.702] job_complete: JobID=3258 State=0x8003 NodeCnt=10 done
+[2015-05-11T17:22:37.707] SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=4,partition_job_depth=0
+[2015-05-11T17:22:38.892] select_p_job_test for job 3260
+[2015-05-11T17:22:38.955] L-_verify_node_state-Before node availability check node_map:0-239
+[2015-05-11T17:22:38.955] L-_verify_node_state-After node availability check node_map:0-239
+[2015-05-11T17:22:38.955] L-_get_res_usage before
+[2015-05-11T17:22:38.981] L-_get_res_usage after
+[2015-05-11T17:22:38.981] L-Entered inside the eval_nodes
+[2015-05-11T17:22:38.984] L-Before eval_nodes topo
+[2015-05-11T17:22:38.985] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:22:38.986] L-Best_fit_inx:6 selected
+[2015-05-11T17:22:39.029] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:22:39.029] L-_get_res_usage before
+[2015-05-11T17:22:39.056] L-_get_res_usage after
+[2015-05-11T17:22:39.056] L-Entered inside the eval_nodes
+[2015-05-11T17:22:39.059] L-Before eval_nodes topo
+[2015-05-11T17:22:39.060] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:22:39.061] L-Best_fit_inx:6 selected
+[2015-05-11T17:22:39.104] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:22:39.104] select_p_job_test return:0
+[2015-05-11T17:22:39.104] Before Add_job
+[2015-05-11T17:22:39.167] L-Job_res Cluster level allocated_sum_cores:200 allocated_sum_sockets:40 allocated_sum_nodes:20
+[2015-05-11T17:22:39.167] After Add_job
+[2015-05-11T17:22:39.167] sched: _slurm_rpc_allocate_resources JobId=3260 NodeList=virtual[190-199] usec=275842
+
+
+
+[2015-05-11T17:23:02.314] job_complete: JobID=3260 State=0x1 NodeCnt=10 WIFEXITED 1 WEXITSTATUS 0
+[2015-05-11T17:23:02.315] Before rm_job_l
+[2015-05-11T17:23:02.363] After rm_job_l
+[2015-05-11T17:23:02.363] job_complete: JobID=3260 State=0x8003 NodeCnt=10 done
+[2015-05-11T17:23:02.368] SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=4,partition_job_depth=0
+[2015-05-11T17:23:04.276] select_p_job_test for job 3262
+[2015-05-11T17:23:04.339] L-_verify_node_state-Before node availability check node_map:0-239
+[2015-05-11T17:23:04.339] L-_verify_node_state-After node availability check node_map:0-239
+[2015-05-11T17:23:04.339] L-_get_res_usage before
+[2015-05-11T17:23:04.366] L-_get_res_usage after
+[2015-05-11T17:23:04.366] L-Entered inside the eval_nodes
+[2015-05-11T17:23:04.369] L-Before eval_nodes topo
+[2015-05-11T17:23:04.370] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:23:04.371] L-Best_fit_inx:6 selected
+[2015-05-11T17:23:04.414] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:23:04.414] L-_get_res_usage before
+[2015-05-11T17:23:04.441] L-_get_res_usage after
+[2015-05-11T17:23:04.441] L-Entered inside the eval_nodes
+[2015-05-11T17:23:04.444] L-Before eval_nodes topo
+[2015-05-11T17:23:04.445] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:23:04.446] L-Best_fit_inx:6 selected
+[2015-05-11T17:23:04.489] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:23:04.489] select_p_job_test return:0
+[2015-05-11T17:23:04.489] Before Add_job
+[2015-05-11T17:23:04.553] L-Job_res Cluster level allocated_sum_cores:200 allocated_sum_sockets:40 allocated_sum_nodes:20
+[2015-05-11T17:23:04.553] After Add_job
+[2015-05-11T17:23:04.553] sched: _slurm_rpc_allocate_resources JobId=3262 NodeList=virtual[190-199] usec=277879
+
+
+[2015-05-11T17:23:39.183] job_complete: JobID=3262 State=0x1 NodeCnt=10 WIFEXITED 1 WEXITSTATUS 0
+[2015-05-11T17:23:39.183] Before rm_job_l
+[2015-05-11T17:23:39.233] After rm_job_l
+[2015-05-11T17:23:39.234] job_complete: JobID=3262 State=0x8003 NodeCnt=10 done
+[2015-05-11T17:23:39.239] SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=4,partition_job_depth=0
+[2015-05-11T17:23:40.505] select_p_job_test for job 3264
+[2015-05-11T17:23:40.569] L-_verify_node_state-Before node availability check node_map:0-239
+[2015-05-11T17:23:40.570] L-_verify_node_state-After node availability check node_map:0-239
+[2015-05-11T17:23:40.570] L-_get_res_usage before
+[2015-05-11T17:23:40.596] L-_get_res_usage after
+[2015-05-11T17:23:40.596] L-Entered inside the eval_nodes
+[2015-05-11T17:23:40.599] L-Before eval_nodes topo
+[2015-05-11T17:23:40.600] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:23:40.601] L-Best_fit_inx:6 selected
+[2015-05-11T17:23:40.644] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:23:40.644] L-_get_res_usage before
+[2015-05-11T17:23:40.671] L-_get_res_usage after
+[2015-05-11T17:23:40.672] L-Entered inside the eval_nodes
+[2015-05-11T17:23:40.674] L-Before eval_nodes topo
+[2015-05-11T17:23:40.675] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:23:40.677] L-Best_fit_inx:6 selected
+[2015-05-11T17:23:40.719] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:23:40.720] select_p_job_test return:0
+[2015-05-11T17:23:40.720] Before Add_job
+[2015-05-11T17:23:40.783] L-Job_res Cluster level allocated_sum_cores:200 allocated_sum_sockets:40 allocated_sum_nodes:20
+[2015-05-11T17:23:40.783] After Add_job
+[2015-05-11T17:23:40.784] sched: _slurm_rpc_allocate_resources JobId=3264 NodeList=virtual[190-199] usec=278690
+
+
+[2015-05-11T17:24:06.786] job_complete: JobID=3264 State=0x1 NodeCnt=10 WIFEXITED 1 WEXITSTATUS 0
+[2015-05-11T17:24:06.787] Before rm_job_l
+[2015-05-11T17:24:06.837] After rm_job_l
+[2015-05-11T17:24:06.837] job_complete: JobID=3264 State=0x8003 NodeCnt=10 done
+[2015-05-11T17:24:06.842] SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=4,partition_job_depth=0
+[2015-05-11T17:24:07.985] select_p_job_test for job 3266
+[2015-05-11T17:24:08.048] L-_verify_node_state-Before node availability check node_map:0-239
+[2015-05-11T17:24:08.049] L-_verify_node_state-After node availability check node_map:0-239
+[2015-05-11T17:24:08.049] L-_get_res_usage before
+[2015-05-11T17:24:08.075] L-_get_res_usage after
+[2015-05-11T17:24:08.075] L-Entered inside the eval_nodes
+[2015-05-11T17:24:08.078] L-Before eval_nodes topo
+[2015-05-11T17:24:08.078] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:24:08.080] L-Best_fit_inx:6 selected
+[2015-05-11T17:24:08.122] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:24:08.123] L-_get_res_usage before
+[2015-05-11T17:24:08.150] L-_get_res_usage after
+[2015-05-11T17:24:08.150] L-Entered inside the eval_nodes
+[2015-05-11T17:24:08.153] L-Before eval_nodes topo
+[2015-05-11T17:24:08.153] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:24:08.155] L-Best_fit_inx:6 selected
+[2015-05-11T17:24:08.197] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:24:08.198] select_p_job_test return:0
+[2015-05-11T17:24:08.198] Before Add_job
+[2015-05-11T17:24:08.261] L-Job_res Cluster level allocated_sum_cores:200 allocated_sum_sockets:40 allocated_sum_nodes:20
+[2015-05-11T17:24:08.261] After Add_job
+[2015-05-11T17:24:08.261] sched: _slurm_rpc_allocate_resources JobId=3266 NodeList=virtual[190-199] usec=276973
+
+
+[2015-05-11T17:24:35.966] job_complete: JobID=3266 State=0x1 NodeCnt=10 WIFEXITED 1 WEXITSTATUS 0
+[2015-05-11T17:24:35.966] Before rm_job_l
+[2015-05-11T17:24:36.015] After rm_job_l
+[2015-05-11T17:24:36.016] job_complete: JobID=3266 State=0x8003 NodeCnt=10 done
+[2015-05-11T17:24:36.021] SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=4,partition_job_depth=0
+[2015-05-11T17:24:37.256] select_p_job_test for job 3268
+[2015-05-11T17:24:37.320] L-_verify_node_state-Before node availability check node_map:0-239
+[2015-05-11T17:24:37.320] L-_verify_node_state-After node availability check node_map:0-239
+[2015-05-11T17:24:37.321] L-_get_res_usage before
+[2015-05-11T17:24:37.347] L-_get_res_usage after
+[2015-05-11T17:24:37.347] L-Entered inside the eval_nodes
+[2015-05-11T17:24:37.350] L-Before eval_nodes topo
+[2015-05-11T17:24:37.350] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:24:37.352] L-Best_fit_inx:6 selected
+[2015-05-11T17:24:37.394] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:24:37.394] L-_get_res_usage before
+[2015-05-11T17:24:37.421] L-_get_res_usage after
+[2015-05-11T17:24:37.422] L-Entered inside the eval_nodes
+[2015-05-11T17:24:37.424] L-Before eval_nodes topo
+[2015-05-11T17:24:37.425] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:24:37.427] L-Best_fit_inx:6 selected
+[2015-05-11T17:24:37.470] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:24:37.470] select_p_job_test return:0
+[2015-05-11T17:24:37.470] Before Add_job
+[2015-05-11T17:24:37.534] L-Job_res Cluster level allocated_sum_cores:200 allocated_sum_sockets:40 allocated_sum_nodes:20
+[2015-05-11T17:24:37.534] After Add_job
+[2015-05-11T17:24:37.534] sched: _slurm_rpc_allocate_resources JobId=3268 NodeList=virtual[190-199] usec=278458
+
+
+[2015-05-11T17:25:04.177] job_complete: JobID=3268 State=0x1 NodeCnt=10 WIFEXITED 1 WEXITSTATUS 0
+[2015-05-11T17:25:04.178] Before rm_job_l
+[2015-05-11T17:25:04.228] After rm_job_l
+[2015-05-11T17:25:04.228] job_complete: JobID=3268 State=0x8003 NodeCnt=10 done
+[2015-05-11T17:25:04.233] SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=4,partition_job_depth=0
+[2015-05-11T17:25:05.579] select_p_job_test for job 3270
+[2015-05-11T17:25:05.643] L-_verify_node_state-Before node availability check node_map:0-239
+[2015-05-11T17:25:05.643] L-_verify_node_state-After node availability check node_map:0-239
+[2015-05-11T17:25:05.643] L-_get_res_usage before
+[2015-05-11T17:25:05.669] L-_get_res_usage after
+[2015-05-11T17:25:05.669] L-Entered inside the eval_nodes
+[2015-05-11T17:25:05.672] L-Before eval_nodes topo
+[2015-05-11T17:25:05.673] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:25:05.674] L-Best_fit_inx:6 selected
+[2015-05-11T17:25:05.717] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:25:05.717] L-_get_res_usage before
+[2015-05-11T17:25:05.744] L-_get_res_usage after
+[2015-05-11T17:25:05.744] L-Entered inside the eval_nodes
+[2015-05-11T17:25:05.747] L-Before eval_nodes topo
+[2015-05-11T17:25:05.748] Root_Switch:0 Available_node_count:230
+[2015-05-11T17:25:05.749] L-Best_fit_inx:6 selected
+[2015-05-11T17:25:05.792] L-End value of rc:0 bitmap:190-199
+[2015-05-11T17:25:05.792] select_p_job_test return:0
+[2015-05-11T17:25:05.792] Before Add_job
+[2015-05-11T17:25:05.855] L-Job_res Cluster level allocated_sum_cores:200 allocated_sum_sockets:40 allocated_sum_nodes:20
+[2015-05-11T17:25:05.855] After Add_job
+[2015-05-11T17:25:05.855] sched: _slurm_rpc_allocate_resources JobId=3270 NodeList=virtual[190-199] usec=276719
+
+
+
+
+
+
+
+

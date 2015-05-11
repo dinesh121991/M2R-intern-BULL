@@ -1,0 +1,5 @@
+srun: error: Could not find executable export
+srun: error: Could not find executable export
+slurmstepd: execve(): export: No such file or directory
+slurmstepd: execve(): export: No such file or directory
+srun: error: mo104: tasks 0-1: Exited with exit code 2

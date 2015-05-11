@@ -1,0 +1,3 @@
+srun: error: unrecognized --cpu-freq argument ""
+srun: error: Invalid --cpu-freq argument: . Ignored
+srun: error: Unable to create job step: Job/step already completing or completed
