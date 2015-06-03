@@ -1,0 +1,5 @@
+When Job wait in the queue, When there is enough resiurces 
+=============================================================
+
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=3002 NodeList=(null) usec=4749
+
