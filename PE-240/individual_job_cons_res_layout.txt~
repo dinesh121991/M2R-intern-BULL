@@ -460,6 +460,20 @@ salloc -N240 --exclusive
 slurmctld: sched: _slurm_rpc_allocate_resources JobId=3001 NodeList=virtual[0-39,180-239] usec=68367
 
 
+slurmctld: _add_job_serial_parallel return:0
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=3005 NodeList=virtual[0-239] usec=16069
+slurmctld: _add_job_serial_parallel return:0
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=3011 NodeList=virtual[0-239] usec=15770
+slurmctld: _add_job_serial_parallel return:0
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=3012 NodeList=virtual[0-239] usec=18051
+slurmctld: _add_job_serial_parallel return:0
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=3013 NodeList=virtual[0-239] usec=17364
+
+After Pull_specific_key:
+========================
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=3012 NodeList=virtual[0-239] usec=13598
+slurmctld: sched: _slurm_rpc_allocate_resources JobId=3027 NodeList=virtual[0-239] usec=12746
+
 
 
 

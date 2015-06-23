@@ -1,0 +1,25 @@
+H1 {
+	color: #330099;
+	font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+}
+
+H2 {
+	color: #3300FF;
+	font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+}
+
+H3 {
+	color: #3300CC;
+	font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+}
+
+H4 {
+	color: #6666CC;
+	font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+}
+
+body {
+	font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+	font-size: 14pt;
+	color: #000000;
+}
