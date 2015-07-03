@@ -1,0 +1,135 @@
+From af5e84c1ad2a1f86eebf27da36f2782556f81c0f Mon Sep 17 00:00:00 2001
+From: Dineshkumar Rajagopal <dineshkumar.rajagopal@atos.net>
+Date: Wed, 1 Jul 2015 17:21:39 +0200
+Subject: [PATCH] enablebed --enable-developer option to check working fine or
+ not, return string name should be constant, .h and .c should have same
+ signature
+
+---
+ src/common/layouts_mgr.c | 46 +++++++++++++++++++---------------------------
+ src/common/layouts_mgr.h |  4 +++-
+ 2 files changed, 22 insertions(+), 28 deletions(-)
+
+diff --git a/src/common/layouts_mgr.c b/src/common/layouts_mgr.c
+index 958ea25..7c85de8 100644
+--- a/src/common/layouts_mgr.c
++++ b/src/common/layouts_mgr.c
+@@ -2820,6 +2820,12 @@ int layouts_entity_pullget_kv_ref(char* l, char* e, char* key, void** value,
+ 	_layouts_entity_wrapper(_layouts_entity_pullget_kv_ref, l, e,
+ 				key, value, key_type);
+ }
++
++int layouts_entity_get_kv_size(char* l, char* e, char* key, size_t *size)
++{
++        _layouts_entity_wrapper(_layouts_entity_get_kv_size, l, e, key, size)
++}
++
+ int layouts_multi_entity_set_sk_mv(char* l, char *entities, char* key, 
+                 void* value,size_t length,layouts_keydef_types_t key_type)
+ {	
+@@ -2831,17 +2837,12 @@ int layouts_multi_entity_set_sk_mv(char* l, char *entities, char* key,
+ 	bool first = true;
+ 	
+ 	el = hostlist_create(entities);
+-	while ((entity = hostlist_shift(el))) 
+-	{			
+-		if( first == true )
+-		{
++	while ((entity = hostlist_shift(el))) 	{			
++		if( first == true ) {
+ 			if(layouts_entity_get_kv_size(l, entity, key, &elt_size)
+-							 == SLURM_SUCCESS )
+-			{
++					 == SLURM_SUCCESS ) {
+ 				first = false ;
+-			}
+-			else
+-			{
++			}else {
+ 				rc ++ ;
+ 				continue;
+ 			}
+@@ -2852,8 +2853,7 @@ int layouts_multi_entity_set_sk_mv(char* l, char *entities, char* key,
+ 		}				
+ 		if ((processed + elt_size) > length ||
+ 		    (layouts_entity_set_kv(l,entity, key, value, key_type)
+-							 == SLURM_ERROR)) 
+-		{
++					 == SLURM_ERROR)) {
+ 			rc++;
+ 			processed = length;
+ 			continue;
+@@ -2876,17 +2876,12 @@ int layouts_multi_entity_get_sk_mv(char* l, char *entities, char* key,
+ 	bool first = true;
+ 	
+ 	el = hostlist_create(entities);
+-	while ((entity = hostlist_shift(el))) 
+-	{			
+-		if( first == true )
+-		{
++	while ((entity = hostlist_shift(el))) 	{			
++		if( first == true ) {
+ 			if(layouts_entity_get_kv_size(l, entity, key, &elt_size)
+-							 == SLURM_SUCCESS )
+-			{
++			 		 == SLURM_SUCCESS ) {
+ 				first = false ;
+-			}
+-			else
+-			{
++			}else {
+                                 rc ++ ;
+                                 continue;
+ 			}
+@@ -2897,8 +2892,7 @@ int layouts_multi_entity_get_sk_mv(char* l, char *entities, char* key,
+ 		}				
+ 		if ((processed + elt_size) > length ||
+ 		    (layouts_entity_get_kv(l,entity, key, value, key_type)
+-							 == SLURM_ERROR)) 
+-		{
++					 == SLURM_ERROR)) {
+ 			rc++;
+ 			processed = length;
+ 			continue;
+@@ -2909,13 +2903,12 @@ int layouts_multi_entity_get_sk_mv(char* l, char *entities, char* key,
+ 	hostlist_destroy(el);
+ 	return rc;
+ }
+-char* layouts_entity_get_parent_name(char* l, char* e)
++const char* layouts_entity_get_parent_name(char* l, char* e)
+ {
+ 	layout_t *layout_1 = layouts_get_layout (l);
+ 	entity_t *entity_1 = layouts_get_entity (e);
+ // There is no entity or layout in the LAYOUTS manager chek
+-	if(layout_1 == NULL || entity_1 == NULL )
+-	{
++	if(layout_1 == NULL || entity_1 == NULL ) {
+ 		return NULL;	
+ 	}
+ 	xtree_t *tree_1 = layout_get_tree(layout_1);
+@@ -2923,8 +2916,7 @@ char* layouts_entity_get_parent_name(char* l, char* e)
+ 	xtree_node_t *node_2 = 
+ 		xtree_get_parent (tree_1,(xtree_node_t *)(node_1->node));
+ //If the node has parent or not check
+-	if( node_2 == NULL )
+-	{
++	if( node_2 == NULL ) {
+ 		return NULL;
+ 	}
+ 	entity_node_t *enode = (entity_node_t*) xtree_node_get_data(node_2);
+diff --git a/src/common/layouts_mgr.h b/src/common/layouts_mgr.h
+index c96c8d1..9848519 100644
+--- a/src/common/layouts_mgr.h
++++ b/src/common/layouts_mgr.h
+@@ -573,5 +573,7 @@ int layouts_multi_entity_set_sk_mv(char* l, char *entities, char* key,
+ 
+ /* Return the Parent name of the given entity(name) in the corresponding
+  * layout */
+-char* layouts_entity_get_parent_name(char* layout, char* entity);
++const char* layouts_entity_get_parent_name(char* layout, char* entity);
++/* Get the size of the key's corresponding entity and LAYOUT */
++int layouts_entity_get_kv_size(char* l, char* e, char* key, size_t *size);
+ #endif /* end of include guard: __LAYOUTS_MGR_1NRINRSD__INC__ */
+-- 
+1.9.1
+

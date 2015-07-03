@@ -1,0 +1,15 @@
+
+# cluster level keys
+
+NumSumNodesInCluster=0 NumSumCoresInCluster=0 NumSumSocketsInCluster=0 SelectedSumNodesInCluster=0 SelectedSumCoresInCluster=0 SelectedSumSocketsInCluster=0 AllocatedSumNodesInCluster=0 AllocatedSumCoresInCluster=0 AllocatedSumSocketsInCluster=0 AllocatedSumThreadsInCluster=0 SelectedSumThreadsInCluster=0 NumSumThreadsInCluster=0
+
+# Node level Keys
+nodecount=1 SelectedNodeCount=0 AllocatedNodeCount=0 NumSumSocketsInNode=0 NumSumCoresInNode=0 SelectedSumSocketsInNode=0 SelectedSumCoresInNode=0 AllocatedSumSocketsInNode=0 AllocatedSumCoresInNode=0 BitmapPosition=0 SelectedNodeCount=0 AllocatedSumThreadsInNode=0 SelectedSumThreadsInNode=0 NumSumThreadsInNode=0
+
+# Socket Level Keys
+
+socketcount=1 NumSumCoresInSocket=0 SelectedSumCoresInSocket=0 AllocatedSumCoresInSocket=0  BitmapPosition=0 SelectedSocketCount=0 AllocatedSocketCount=0 AllocatedSumThreadsInSocket=0 SelectedSumThreadsInSocket=0 NumSumThreadsInSocket=0
+
+# Core Level Keys
+
+threadcount=4 SelectedThreadCount=0 AllocatedThreadCount=0  BitmapPosition=0 SelectedCoreCount=0 AllocatedCoreCount=0 corecount=1
