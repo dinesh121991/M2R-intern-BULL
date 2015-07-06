@@ -1,0 +1,6 @@
+sacct --format=alloccpus,AveCPU,AvePages,AveRSS,AveVMSize,reqcpus,cputime,cputimeraw,elapsed,eligible,start,end,layout,MaxPages,ncpus,nodelist,nnodes,NTasks,
+
+
+sacct --format=alloccpus,AveCPU,AvePages,AveRSS,AveVMSize,reqcpus,cputime,cputimeraw,elapsed,eligible,start,end,layout,MaxPages,ncpus,nodelist,nnodes,NTasks,
+
+sacct --format=alloccpus,cputime,submit,start,eligible,elapsed,end,reserved,ncpus,nodelist,nnodes,NTasks
