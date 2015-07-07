@@ -9,15 +9,3 @@ sacct --format=alloccpus,cputime,submit,start,eligible,elapsed,end,reserved,ncpu
 sacct --format=JobID,alloccpus,cputime,cputimeraw,submit,start,eligible,elapsed,end,ncpus,nodelist,nnodes,NTasks > sacct6.txt
 
 sacct --format=JobID,alloccpus,AveCPU,AvePages,AveRSS,AveVMSize,reqcpus > sacct4.txt
-
-
-
-
-slurmdb2swf.rb
-==============
-
-showSlurmId=true slurmDbPrefix = "hdf"
-
-
-
-clush -bw cuzco[5-11,13-14,16,18-21,23,34-36] --copy /etc/sysconfig/slurm --dest /etc/sysconfig/

@@ -1,0 +1,16 @@
+for i in {0..314}; do /usr/local/15-08-crl/sbin/slurmd -N virtual$i; done 
+for i in {315..629}; do /usr/local/15-08-crl/sbin/slurmd -N virtual$i; done 
+for i in {630..944}; do /usr/local/15-08-crl/sbin/slurmd -N virtual$i; done 
+for i in {945..1259}; do /usr/local/15-08-crl/sbin/slurmd -N virtual$i; done 
+for i in {1260..1574}; do /usr/local/15-08-crl/sbin/slurmd -N virtual$i; done 
+for i in {1575..1889}; do /usr/local/15-08-crl/sbin/slurmd -N virtual$i; done 
+for i in {1890..2204}; do /usr/local/15-08-crl/sbin/slurmd -N virtual$i; done 
+for i in {2205..2519}; do /usr/local/15-08-crl/sbin/slurmd -N virtual$i; done 
+for i in {2520..2834}; do /usr/local/15-08-crl/sbin/slurmd -N virtual$i; done 
+for i in {2835..3149}; do /usr/local/15-08-crl/sbin/slurmd -N virtual$i; done 
+for i in {3150..3464}; do /usr/local/15-08-crl/sbin/slurmd -N virtual$i; done 
+for i in {3465..3779}; do /usr/local/15-08-crl/sbin/slurmd -N virtual$i; done 
+for i in {3780..4094}; do /usr/local/15-08-crl/sbin/slurmd -N virtual$i; done 
+for i in {4095..4409}; do /usr/local/15-08-crl/sbin/slurmd -N virtual$i; done 
+for i in {4410..4724}; do /usr/local/15-08-crl/sbin/slurmd -N virtual$i; done 
+for i in {4725..5039}; do /usr/local/15-08-crl/sbin/slurmd -N virtual$i; done 

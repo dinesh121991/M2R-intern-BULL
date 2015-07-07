@@ -1,0 +1,7 @@
+Going to test 5040 nodes on 13 nodes in cuzco
+
+5044 /13 = 388 virtual nodes per node
+
+ idle cuzco[5,7-11,13-14,16,18-21]
+
+if 5040 % 16  = 315 posiible
