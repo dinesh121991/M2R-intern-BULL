@@ -1,0 +1,14 @@
+#!/bin/sh
+#SBATCH -J riplay_98_sleep
+#SBATCH -n 8
+#SBATCH -t 0:2:58
+#SBATCH -o ./riplay_slurm_sleep_98.out
+source /opt/intel/composer_xe_2013.0.079/bin/compilervars.sh intel64
+source /opt/intel/impi/4.0.3.008/bin64/mpivars.sh intel64
+export I_MPI_PMI_LIBRARY=/usr/local/slurm1508cf/lib/libpmi.so
+cd HPL_I12
+
+srun --acctg-freq=energy=1 --exclusive --cpu-freq= sleep 119
+sleep 1
+exit 0
+

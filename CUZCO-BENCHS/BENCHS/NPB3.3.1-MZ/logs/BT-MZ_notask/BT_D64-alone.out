@@ -1,0 +1,18 @@
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - BT-MZ MPI+OpenMP Benchmark
+
+ Number of zones:  32 x  32
+ Iterations: 250    dt:   0.000020
+ Number of active processes:    64
+
+ Use the default load factors with threads
+ Total number of threads:    128  (  2.0 threads/process)
+
+ Calculated speedup =    127.76
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+slurmd[cuzco144]: *** JOB 262 CANCELLED AT 2012-03-31T14:20:55 ***

@@ -132,7 +132,7 @@ start_virtual_per_node = upto_virtual_per_node;
 upto_virtual_per_node = k* virtual_per_node;
         for(i= start_virtual_per_node ,j=0 ; i< upto_virtual_per_node  ; i++,j++)
         {
-                printf("NodeName=virtual%d NodeHostName=cuzco36 NodeAddr=cuzco36 Port=%d\n",i,(port+j));
+                printf("NodeName=virtual%d NodeHostName=cuzco26 NodeAddr=cuzco26 Port=%d\n",i,(port+j));
         }
         return 0;
 }

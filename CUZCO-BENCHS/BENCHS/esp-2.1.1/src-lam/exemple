@@ -1,0 +1,3 @@
+lamboot -d bhost 
+lamnodes
+mpirun.lam -np 4 ./pchksum -t 5 -v

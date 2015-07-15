@@ -1,0 +1,17 @@
+ Number of tasks: 8
+ Initial digest
+ 68a5bda0b969ad6877ec16d22d9f4815033bbc82
+ Forward merge complete
+ Elapsed time: 715202.00 msecs
+ Outbound data volume: 45.81 MB
+ Iteration count: 143
+ Reverse merge complete
+ Elapsed time: 715095.00 msecs
+ Final digest
+ 68a5bda0b969ad6877ec16d22d9f4815033bbc82
+ Max stagger delta: 15001806 usecs
+ Makeup nap: 7581.00 mSec
+ Total elapsed time: 1437.90 secs
+ Status: OK
+rm: missing operand
+Try `rm --help' for more information.

@@ -1,0 +1,18 @@
+#!/bin/sh
+#SBATCH -J E_0128_000
+#SBATCH -n 128
+#SBATCH -t 7:48
+#SBATCH -o /home_nfs/georgioy/BENCHS/esp-2.2.1-cuzco/logs/E_0128_000.out
+
+#HOSTFILE="/tmp/nodes.$SLURM_JOB_ID"
+ESP=/home_nfs/georgioy/BENCHS/esp-2.2.1-cuzco/
+#srun -l /bin/hostname | sort -n | awk '{print $2}' > /tmp/nodes.$SLURM_JOB_ID
+
+echo `$ESP/bin/epoch` " START  E_0128_000 on $SLURM_JOB_NODELIST  Seq_${SEQNUM}" >> $ESP/LOG
+ mpirun -np 128 $ESP/bin/pchksum -v -u 5000 -t 312
+echo `$ESP/bin/epoch` " FINISH E_0128_000   Seq_${SEQNUM}" >> $ESP/LOG
+
+
+rm $HOSTFILE
+
+exit

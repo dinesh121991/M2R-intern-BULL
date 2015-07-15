@@ -1,0 +1,11 @@
+3
+--------------------------------------------------------------------------
+Open MPI tried to bind a new process, but something went wrong.  The
+process was killed without launching the target application.  Your job
+will now abort.
+
+  Local host:        cuzco84
+  Application name:  /home_nfs/georgioy/BENCHS/esp-2.2.1//bin/pchksum
+  Error message:     opal_paffinity_base_get_physical_processor_id(2) returned "Not found"
+  Location:          odls_default_module.c:751
+--------------------------------------------------------------------------

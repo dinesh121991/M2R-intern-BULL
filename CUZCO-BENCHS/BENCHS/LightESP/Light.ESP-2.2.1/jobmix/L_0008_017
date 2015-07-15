@@ -1,0 +1,17 @@
+#!/bin/sh
+#SBATCH -J L_0008_017
+#SBATCH -n 8
+#SBATCH -t 0:45
+#SBATCH -p SUSlow
+#SBATCH -o /home_nfs/georgioy/BENCHS/Light.ESP-2.2.1/logs/L_0008_017.out
+
+ESP=/home_nfs/georgioy/BENCHS/Light.ESP-2.2.1
+
+echo `$ESP/bin/epoch` " START  L_0008_017   Seq_${SEQNUM}" >> $ESP/LOG
+ mpirun -np 8 $ESP/bin/pchksum -v -u 5000 -t 30
+#sleep $(( 45 * 2 / 3 ))
+echo `$ESP/bin/epoch` " FINISH L_0008_017   Seq_${SEQNUM}" >> $ESP/LOG
+
+
+
+exit

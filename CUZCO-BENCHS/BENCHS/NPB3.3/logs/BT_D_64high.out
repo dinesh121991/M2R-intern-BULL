@@ -1,0 +1,27 @@
+
+
+ NAS Parallel Benchmarks 3.3 -- BT Benchmark 
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  408x 408x 408
+ Iterations:  250    dt:   0.0000200
+ Number of active processes:    64
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+--------------------------------------------------------------------------
+The system has lost communication with the following daemon:
+
+Daemon: 5
+Node:   cuzco40
+
+The reason for the lost communication channel is unknown. Possible
+reasons include failure of the daemon itself, failure of the
+connecting fabric/switch, and loss of the host node. Please
+check with your system administrator to try and determine the
+source of the problem.
+
+Your job is being terminated as a result.
+--------------------------------------------------------------------------

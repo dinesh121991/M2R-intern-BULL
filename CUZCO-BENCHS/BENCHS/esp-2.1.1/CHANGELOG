@@ -1,0 +1,16 @@
+2.0
+---
+
+2.1 - released Aug 2006
+-----------------------
+
+support for 64 bit platforms , fixed "unsigned long" problems in 64
+added xchksum and reference output to test sha1 outside batch
+better support for various batch systems by abstracted perl interface
+
+2.1.1 
+-----
+
+replaced cpp define for chkpt to PE_CHKPT
+allowed MPI_Wtime as timer in cases where -DUSE_* is not given
+

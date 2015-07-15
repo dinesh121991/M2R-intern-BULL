@@ -31,7 +31,7 @@ printf("#Socket Level layout configuration following\n");
 
 printf("#Core level Layout configuration following\n");
 
-	printf("Entity=core[0-%d] type=Core ThreadsPerCore=1 AllocatedThreadsPerCore=0  BitmapPosition=0 AllocatedCoreCount=0 corecount=1",nb_of_cores-1);
+	printf("Entity=core[0-%d] type=Core ThreadsPerCore=1 AllocatedThreadsPerCore=0  BitmapPosition=0 AllocatedCoreCount=0 corecount=1 Job=0",nb_of_cores-1);
 
 	return 0;
 }

@@ -1,0 +1,7 @@
+#define PACKAGE_NAME "ESP"
+#define PACKAGE_TARNAME "esp"
+#define PACKAGE_VERSION "2.2.1"
+#define PACKAGE_STRING "ESP 2.2.1"
+#define PACKAGE_BUGREPORT "rkowen_at_nersc.gov"
+#define PACKAGE "esp"
+#define VERSION "2.2.1"

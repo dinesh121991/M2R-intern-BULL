@@ -1,0 +1,3 @@
+/tmp/1508-select-layouts/slurm-virtual13/job03322/slurm_script: line 9: cd: HPL_B24: No such file or directory
+srun: error: unrecognized --cpu-freq argument ""
+srun: error: Invalid --cpu-freq argument: . Ignored

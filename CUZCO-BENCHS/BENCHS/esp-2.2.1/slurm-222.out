@@ -1,0 +1,26 @@
+3
+--------------------------------------------------------------------------
+Open MPI tried to bind a new process to a specific set of processors,
+but ended up binding it to *all* processors.  This means that the new
+process is effectively unbound.
+
+This is only a warning -- your job will continue.  You can suppress
+this warning in the future by setting the odls_warn_if_not_bound MCA
+parameter to 0.
+
+  Local host:        cuzco84
+  Application name:  /home_nfs/georgioy/BENCHS/esp-2.2.1//bin/pchksum
+  Location:          odls_default_module.c:792
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Open MPI tried to bind a new process, but something went wrong.  The
+process was killed without launching the target application.  Your job
+will now abort.
+
+  Local host:        cuzco84
+  Application name:  /home_nfs/georgioy/BENCHS/esp-2.2.1//bin/pchksum
+  Error message:     opal_paffinity_base_get_physical_processor_id(1) returned "Not found"
+  Location:          odls_default_module.c:751
+--------------------------------------------------------------------------
+[cuzco84:11249] 1 more process has sent help message help-orte-odls-default.txt / binding generic error
+[cuzco84:11249] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages

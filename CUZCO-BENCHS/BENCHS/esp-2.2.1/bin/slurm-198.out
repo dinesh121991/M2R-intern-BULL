@@ -1,0 +1,21 @@
+/var/log/slurm/log_slurmd//job00198/slurm_script: line 6: np: command not found
+1
+--------------------------------------------------------------------------
+Open MPI tried to bind a new process to a specific set of processors,
+but ended up binding it to *all* processors.  This means that the new
+process is effectively unbound.
+
+This is only a warning -- your job will continue.  You can suppress
+this warning in the future by setting the odls_warn_if_not_bound MCA
+parameter to 0.
+
+  Local host:        cuzco84
+  Application name:  ./pchksum
+  Location:          odls_default_module.c:792
+--------------------------------------------------------------------------
+ Number of tasks: 1
+ Initial digest
+ 68a5bda0b969ad6877ec16d22d9f4815033bbc82
+slurmd[cuzco84]: *** JOB 198 CANCELLED AT 2011-02-28T11:23:26 ***
+mpirun: killing job...
+

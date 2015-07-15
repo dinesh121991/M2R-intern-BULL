@@ -1,0 +1,13 @@
+srun: error: unrecognized --cpu-freq argument ""
+srun: error: Invalid --cpu-freq argument: . Ignored
+slurmstepd-virtual15: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual15: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual15: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual15: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual15: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual15: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual15: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual15: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual15: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual15: slurm_receive_msg: Socket timed out on send/recv operation
+slurmstepd-virtual15: slurm_receive_msg: Socket timed out on send/recv operation

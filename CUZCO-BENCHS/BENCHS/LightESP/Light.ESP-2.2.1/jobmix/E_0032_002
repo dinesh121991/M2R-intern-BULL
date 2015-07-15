@@ -1,0 +1,17 @@
+#!/bin/sh
+#SBATCH -J E_0032_002
+#SBATCH -n 32
+#SBATCH -t 0:39
+#SBATCH -p SUSlow
+#SBATCH -o /home_nfs/georgioy/BENCHS/Light.ESP-2.2.1/logs/E_0032_002.out
+
+ESP=/home_nfs/georgioy/BENCHS/Light.ESP-2.2.1
+
+echo `$ESP/bin/epoch` " START  E_0032_002   Seq_${SEQNUM}" >> $ESP/LOG
+ mpirun -np 32 $ESP/bin/pchksum -v -u 5000 -t 26
+#sleep $(( 39 * 2 / 3 ))
+echo `$ESP/bin/epoch` " FINISH E_0032_002   Seq_${SEQNUM}" >> $ESP/LOG
+
+
+
+exit

@@ -1,0 +1,18 @@
+#!/bin/sh
+#SBATCH -J A_0002_030
+#SBATCH -n 2
+#SBATCH -t 6:25
+#SBATCH -o /home_nfs/georgioy/BENCHS/esp-2.2.1/logs/A_0002_030.out
+
+HOSTFILE="/tmp/nodes.$SLURM_JOB_ID"
+ESP=/home_nfs/georgioy/BENCHS/esp-2.2.1/
+srun -l /bin/hostname | sort -n | awk '{print $2}' > /tmp/nodes.$SLURM_JOB_ID
+
+echo `$ESP/bin/epoch` " START  A_0002_030   Seq_${SEQNUM}" >> $ESP/LOG
+ mpirun -np 3 --hostfile $HOSTFILE $ESP/bin/pchksum -v -u 5000 -t 257
+echo `$ESP/bin/epoch` " FINISH A_0002_030   Seq_${SEQNUM}" >> $ESP/LOG
+
+
+rm $HOSTFILE
+
+exit

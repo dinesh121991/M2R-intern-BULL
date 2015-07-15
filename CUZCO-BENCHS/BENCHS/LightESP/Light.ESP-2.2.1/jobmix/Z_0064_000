@@ -1,0 +1,16 @@
+#!/bin/sh
+#SBATCH -J Z_0064_000
+#SBATCH -n 64
+#SBATCH -t 1:15
+#SBATCH -p SUShigh
+#SBATCH -o /home_nfs/georgioy/BENCHS/Light.ESP-2.2.1/logs/Z_0064_000.out
+
+ESP=/home_nfs/georgioy/BENCHS/Light.ESP-2.2.1
+
+echo `$ESP/bin/epoch` " START  Z_0064_000   Seq_${SEQNUM}" >> $ESP/LOG
+ mpirun -np 64 $ESP/bin/pchksum -v -u 5000 -t 40
+echo `$ESP/bin/epoch` " FINISH Z_0064_000   Seq_${SEQNUM}" >> $ESP/LOG
+
+
+
+exit

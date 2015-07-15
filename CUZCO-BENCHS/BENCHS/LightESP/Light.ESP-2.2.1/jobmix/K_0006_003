@@ -1,0 +1,17 @@
+#!/bin/sh
+#SBATCH -J K_0006_003
+#SBATCH -n 6
+#SBATCH -t 1:1
+#SBATCH -p SUSlow
+#SBATCH -o /home_nfs/georgioy/BENCHS/Light.ESP-2.2.1/logs/K_0006_003.out
+
+ESP=/home_nfs/georgioy/BENCHS/Light.ESP-2.2.1
+
+echo `$ESP/bin/epoch` " START  K_0006_003   Seq_${SEQNUM}" >> $ESP/LOG
+ mpirun -np 6 $ESP/bin/pchksum -v -u 5000 -t 41
+#sleep $(( 61 * 2 / 3 ))
+echo `$ESP/bin/epoch` " FINISH K_0006_003   Seq_${SEQNUM}" >> $ESP/LOG
+
+
+
+exit

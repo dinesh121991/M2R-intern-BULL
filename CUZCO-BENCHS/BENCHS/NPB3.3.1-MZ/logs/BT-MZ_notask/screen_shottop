@@ -1,0 +1,25 @@
+top - 13:32:36 up  1:21,  1 user,  load average: 7.05, 5.18, 6.79
+Tasks: 256 total,   9 running, 247 sleeping,   0 stopped,   0 zombie
+Cpu0  :100.0%us,  0.0%sy,  0.0%ni,  0.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Cpu1  :100.0%us,  0.0%sy,  0.0%ni,  0.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Cpu2  :100.0%us,  0.0%sy,  0.0%ni,  0.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Cpu3  :100.0%us,  0.0%sy,  0.0%ni,  0.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Cpu4  :  0.0%us,  0.0%sy,  0.0%ni,100.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Cpu5  :  0.0%us,  0.0%sy,  0.0%ni,100.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Cpu6  :  0.0%us,  0.0%sy,  0.0%ni,100.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Cpu7  :  0.0%us,  0.0%sy,  0.0%ni,100.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  18395656k total,  3346396k used, 15049260k free,    15764k buffers
+Swap:  1022752k total,        0k used,  1022752k free,   114104k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  P COMMAND                                                                                       
+ 3582 georgioy  20   0  920m 713m 3956 R 54.8  4.0   0:45.34 3 bt-mz.D.16                                                                                    
+ 3581 georgioy  20   0  921m 717m 4192 R 52.5  4.0   0:45.47 1 bt-mz.D.16                                                                                    
+ 3592 georgioy  20   0  921m 713m 3924 R 51.2  4.0   0:43.02 2 bt-mz.D.16                                                                                    
+ 3577 georgioy  20   0  920m 717m 3940 R 50.8  4.0   0:44.81 0 bt-mz.D.16                                                                                    
+ 3578 georgioy  20   0  921m 713m 3924 R 50.2  4.0   0:45.37 3 bt-mz.D.16                                                                                    
+ 3594 georgioy  20   0  920m 717m 3940 R 48.5  4.0   0:43.48 0 bt-mz.D.16                                                                                    
+ 3598 georgioy  20   0  921m 717m 4192 R 48.2  4.0   0:43.14 1 bt-mz.D.16                                                                                    
+ 3597 georgioy  20   0  920m 713m 3956 R 43.9  4.0   0:43.18 2 bt-mz.D.16                                                                                    
+    1 root      20   0 21336 1548 1280 S  0.0  0.0   0:03.60 5 init                                                                                          
+    2 root      20   0     0    0    0 S  0.0  0.0   0:00.00 5 kthreadd                                                                                      
+    3 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 0 migration/0                           

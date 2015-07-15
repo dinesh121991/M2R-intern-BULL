@@ -1,0 +1,24 @@
+#!/usr/bin/gnuplot
+set terminal postscript enhanced color
+#set border 3 front linetype -1 linewidth 1.000
+#set boxwidth 1 absolute
+#set style fill pattern 3.0 border -1
+set style fill solid 1.0 noborder
+set style histogram rowstacked title  offset character 0, 0, 0
+set datafile missing '-'
+set style data histograms
+
+set grid nopolar
+set grid noxtics nomxtics ytics nomytics noztics nomztics nox2tics nomx2tics noy2tics nomy2tics nocbtics nomcbtics
+set grid layerdefault   linetype 0 linewidth 1.000,  linetype 0 linewidth 1.000
+set title "System utilization for Light ESP synthetic workload of 230jobs \n and SLURM upon 5040 nodes (16cpu/node) cluster (emulation upon 16 physical nodes)"
+set xlabel "Time (sec)"
+set ylabel "Number of Cores"
+set key at 2000,85000
+set xr [0:2500]
+set xtics 200
+set yr [0:85000]
+set output "cons_res_lay_system_util.eps"
+plot    "util_system.log" using ($1-21333):($2) title "System Utilization" with boxes lt 9, \
+"impulses-util_system.log" using ($1-21333):2  title "Job Start Time Impulse" with impulses
+

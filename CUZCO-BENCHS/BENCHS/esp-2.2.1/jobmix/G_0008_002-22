@@ -1,0 +1,28 @@
+#!/bin/sh
+#SBATCH -J G_0008_002
+#SBATCH -n 4
+#SBATCH -t 33:1
+#SBATCH -o /home_nfs/georgioy/BENCHS/esp-2.2.1/logs/G_0008_002-22.out
+
+env |grep SLURM
+#HOSTFILE="/tmp/nodes.$SLURM_JOB_ID"
+ESP=/home_nfs/georgioy/BENCHS/esp-2.2.1/
+#ls /tmp/nodes*
+#srun-24 -l /bin/hostname | sort -n | awk '{print $2}' > /tmp/nodes.$SLURM_JOB_ID
+#srun -l /bin/hostname | sort -n | awk '{print $2}'
+#srun-24 sleep 100
+#srun-24 env |grep LD_LIBRARY_PATH
+#srun-24 env |grep PATH
+#ech`$ESP/bin/epoch` " START  G_0008_002   Seq_${SEQNUM}" >> $ESP/LOG
+srun-24 sleep 30
+#mpirun hostname
+ mpirun $ESP/bin/pchksum -v -u 5000 -t 100
+#srun sleep 20
+#sleep 20
+#mpirun hostname
+#echo `$ESP/bin/epoch` " FINISH G_0008_002   Seq_${SEQNUM}" >> $ESP/LOG
+
+
+#rm $HOSTFILE
+
+#exit

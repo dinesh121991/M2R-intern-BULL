@@ -1,0 +1,21 @@
+# @ job_type         = parallel
+# @ output           = junk
+# @ error            = junk
+# @ notification     = never
+# @ environment      = COPY_ALL
+# @ node_usage       = not_shared
+# @ network.MPI      = css0,shared,US
+# @ tasks_per_node   = 16
+# @ node             = 4
+# @ wall_clock_limit = 00:30:00
+# @ checkpoint       = yes
+# @ class            = special1
+#
+# @ queue
+#
+export MP_EUILIBPATH=${HOME}/lib
+/bin/time ./pchksum -t 1000 -v 
+STATUS=$?
+echo "Exit status: $STATUS"
+
+

@@ -1,0 +1,16 @@
+3
+ Number of tasks: 3
+ Initial digest
+ 68a5bda0b969ad6877ec16d22d9f4815033bbc82
+ Forward merge complete
+ Elapsed time: 11251.00 msecs
+ Outbound data volume: 2660.43 MB
+ Iteration count: 7492
+ Reverse merge complete
+ Elapsed time: 11277.00 msecs
+ Final digest
+ 68a5bda0b969ad6877ec16d22d9f4815033bbc82
+ Max stagger delta: 1245 usecs
+ Makeup nap: 0.00 mSec
+ Total elapsed time: 22.53 secs
+ Status: OK

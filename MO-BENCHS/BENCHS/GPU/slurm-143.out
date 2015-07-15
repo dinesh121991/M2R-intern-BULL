@@ -1,0 +1,5 @@
+- mo104:0 - sleep 300 s
+- mo104:1 - sleep 300 s
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+slurmstepd: *** STEP 143.0 CANCELLED AT 2014-02-05T10:47:41 ***
+slurmstepd: *** JOB 143 CANCELLED AT 2014-02-05T10:47:41 ***

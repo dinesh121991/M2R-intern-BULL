@@ -21,3 +21,8 @@ showSlurmId=true slurmDbPrefix = "hdf"
 
 
 clush -bw cuzco[5-11,13-14,16,18-21,23,34-36] --copy /etc/sysconfig/slurm --dest /etc/sysconfig/
+
+
+clush -bw cuzco[5-11,13-14,16,18-23,34-36] --copy /home_nfs/rajagopald/Etc-init-config-restart-automatically/*  --dest /usr/local/15-08-crl/etc/
+
+

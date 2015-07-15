@@ -1,0 +1,69 @@
+#!/usr/bin/perl
+#
+#  Most likely does not require modification, except to insert
+#  a new module "use" statement.
+#
+#
+
+use Env qw(ESPHOME);
+use lib "$ESPHOME/pm";
+use FileHandle;
+use Getopt::Std;
+
+use LSF;
+use PBS;
+use SGE;
+use MAUIME;
+use LOADL;
+
+#
+#  Directory pathnames
+#
+$espout   = "$ESPHOME/logs";
+#
+#
+#  Job mix description
+#
+%jobdesc = (
+#
+#  Job            Size     Count      Run-time
+# ------------------------------------------------
+#
+    A       =>  [ 0.03125,   75,         257 ],
+    B       =>  [ 0.06250,    9,         341 ],
+    C       =>  [ 0.50000,    3,         536 ],
+    D       =>  [ 0.25000,    3,         601 ],
+    E       =>  [ 0.50000,    3,         312 ],
+    F       =>  [ 0.06250,    9,        1846 ],
+    G       =>  [ 0.12500,    6,        1321 ],
+    H       =>  [ 0.15820,    6,        1078 ],
+    I       =>  [ 0.03125,   24,        1438 ],
+    J       =>  [ 0.06250,   24,         715 ],
+    K       =>  [ 0.09570,   15,         495 ],
+    L       =>  [ 0.12500,   36,         369 ],
+    M       =>  [ 0.25000,   15,         192 ],
+    Z       =>  [ 1.00000,    2,         100 ],
+);
+
+#
+# Parse args
+#
+$syssize   = 0;
+$batchtype = "";
+getopts("ps:b:");
+if ($opt_s) {
+    $syssize = $opt_s;
+}
+if ($opt_b) {
+    $batchtype = uc $opt_b;
+}
+if ($opt_p) {
+    $packed = "1";
+}
+die "usage: mkjobmix -s system_size -b batchtype" if (($syssize==0)||(length($batchtype)==0));
+#
+#
+#
+$batchsys = new $batchtype;
+$batchsys->create_jobs();
+

@@ -1,0 +1,4 @@
+/tmp/1508-select-layouts/slurm-virtual130/job03427/slurm_script: line 9: cd: HPL_A12: No such file or directory
+srun: error: unrecognized --cpu-freq argument ""
+srun: error: Invalid --cpu-freq argument: . Ignored
+srun: error: Unable to create job step: Job/step already completing or completed

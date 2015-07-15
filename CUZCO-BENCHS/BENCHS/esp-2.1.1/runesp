@@ -1,0 +1,159 @@
+#!/usr/bin/perl
+#
+#
+#    ESP master script
+#
+     $usage="runesp [-t] [-d]";
+#         -t  :  throughput run
+#         -d  :  debug mode - do not submit jobs, echo commands 
+#
+#    Fixed parameters
+#       $z1time               : first Z job submit time
+#       $z2time               : second Z job submit time
+#
+#    Run time variables
+#       $nrunpe               : number of processors busy
+#       $nque                 : number of jobs queued
+#       $nrun                 : number of jobs running
+#
+#
+use Env qw(ESPHOME);
+use FileHandle;
+use Getopt::Std;
+use lib "$ESPHOME/pm";
+#
+#
+#
+#use PBS;
+#use SGE;
+#use LSF;
+#use MAUIME;
+#
+#  Site specific parameters
+#
+use PBS;
+$batchtype = "PBS";
+#
+#
+#  Random number generator (modified for overflow)
+#
+sub myrandom
+{
+    my $prefix = 3476221;
+    my $random_interval = 1000000;
+    my $tmp1, $tmp2, $tmp0;
+    $tmp0 = $save_random * $prefix + 1;
+    $tmp1 = int ($tmp0/$random_interval);
+    $tmp2 = $tmp1 * $random_interval;
+    $save_random = $tmp0 - $tmp2;
+    return $save_random;
+}
+#
+#  Fixed parameters
+#
+$z1time     = 40*60;
+$z2time     = 2*3600;
+$randseed   = 142;
+#
+#  Runtime variables
+#
+$deltasleep = 0;
+$thruput    = 0;
+$debug      = 0;
+$espdone    = 0;
+#
+#  Argument parsing
+#
+getopts("dt");
+if ($opt_t) {
+    $thruput = $opt_t;
+}
+if ($opt_d) {
+    $debug = $opt_d;
+}
+printf("\n============\nRunning in debug mode (no job submission)\n============\n") if ($debug);
+$save_random  = $randseed;
+$jobdir       = "jobmix";
+@zscripts     = <$jobdir/Z*>;
+@z = split "/", $zscripts[0];
+$Z1 = $z[$#Z];
+@z = split "/", $zscripts[1];
+$Z2 = $z[$#Z];
+#
+#  Scan jobmix directory 
+#
+@jscripts = <$jobdir/[A-M]*[0-9]>;
+@scripts = ();
+foreach (@jscripts) {
+    push @scripts, $_;
+}
+#
+#  Sort into fixed random order
+#
+while ( scalar(@scripts) ) {
+    $r = myrandom() % @scripts;
+    $s = $scripts[$r];
+    push @oscripts, $s;
+    @t2 = splice @scripts, $r;
+    push @scripts, splice @t2, 1;
+}
+printf(" Total Regular scripts = %d\n", scalar(@oscripts) );
+autoflush STDOUT 1;
+$q = new $batchtype;
+#
+#
+#  Submit jobs
+#
+print "Start job submissions @ ", time(), "\n";
+$jobtot=0;
+$T0=time();
+open(LOG, ">> LOG");
+autoflush LOG 1;
+printf LOG "%d  %s  RandomSeed:%d\n", time(), "Y", $randseed; 
+printf LOG "%d  %s  Thruput:%d\n", time(), "Y", $thruput; 
+printf LOG "%d  %s  ---- Start ESP ----\n", $T0, "E"; 
+
+foreach $j (@oscripts) {
+    ++$jobtot;
+    @jobpath = split "/", $j;
+    $jobname = $jobpath[$#jobpath];
+    printf LOG "%d  %s  %s   Seq_%d\n", time(), "Q", $jobname, $jobtot;
+    printf     "%d  %s  %s   Seq_%d\n", time(), "Q", $jobname, $jobtot if ($debug);
+    $ENV{SEQNUM} = $jobtot;
+    $doit = ($debug) ? ($jobtot < 4) : 1;
+    $q->submit( $j, $doit );
+    $q->monitor_queues( 1 );
+}
+
+#
+#  Submit first Z job
+#
+if ($thruput == 0) {
+    while ((time()-$T0)< $z1time ) {
+	$q->monitor_queues(30);
+    }
+    ++$jobtot;
+    printf     "%d  %s  %s   Seq_%d\n", time(), "Q", $Z1, $jobtot if ($debug);
+    printf LOG "%d  %s  %s   Seq_%d\n", time(), "Q", $Z1, $jobtot;
+    $q->submit( $Z1, !$debug );
+}
+#
+#  Submit second Z job
+#
+if ($thruput == 0) {
+    while ((time()-$T0)< $z2time ) {
+	$q->monitor_queues(30);
+    }
+    ++$jobtot;
+    printf     "%d  %s  %s   Seq_%d\n", time(), "Q", $Z2, $jobtot if ($debug);
+    printf LOG "%d  %s  %s   Seq_%d\n", time(), "Q", $Z2, $jobtot;
+    $q->submit( $Z2, !$debug);
+}
+#
+#  Wait for jobs to finish
+#  
+while (!$espdone && (time()-$T0)<28800) {
+    $espdone = $q->monitor_queues(30);
+}
+printf LOG "%d  %s  ---- Finish ESP ----\n", time(), "E"; 
+close(LOG);

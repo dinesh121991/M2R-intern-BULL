@@ -1,0 +1,14 @@
+- mo104:0 - sleep 3 s
+- mo104:1 - sleep 3 s
+ MPI RANK - 0 - , runs on - mo104 - 
+ NUMBER OF CUDA DEVICES visible by the MPI RANK 0, --- 2
+- mo104:0 - GPU - 0 - bus ID : 2 
+- mo104:0 - GPU - 1 - bus ID : 132 
+- mo104:0 - Send data to GPU - 0 -
+- mo104:0 - Send data to GPU - 1 -
+ MPI RANK - 1 - , runs on - mo104 - 
+ NUMBER OF CUDA DEVICES visible by the MPI RANK 1, --- 2
+- mo104:1 - GPU - 0 - bus ID : 2 
+- mo104:1 - GPU - 1 - bus ID : 132 
+- mo104:1 - Send data to GPU - 0 -
+- mo104:1 - Send data to GPU - 1 -

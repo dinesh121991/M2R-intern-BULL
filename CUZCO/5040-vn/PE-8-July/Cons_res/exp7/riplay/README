@@ -1,0 +1,4 @@
+- dependences ruby pour installer
+
+- command pour executer
+./riplay -f lightESP_8000_new.swf -b SLURM -j sleep -d

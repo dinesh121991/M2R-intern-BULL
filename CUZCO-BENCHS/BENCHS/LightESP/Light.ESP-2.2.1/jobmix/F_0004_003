@@ -1,0 +1,17 @@
+#!/bin/sh
+#SBATCH -J F_0004_003
+#SBATCH -n 4
+#SBATCH -t 3:51
+#SBATCH -p SUSlow
+#SBATCH -o /home_nfs/georgioy/BENCHS/Light.ESP-2.2.1/logs/F_0004_003.out
+
+ESP=/home_nfs/georgioy/BENCHS/Light.ESP-2.2.1
+
+echo `$ESP/bin/epoch` " START  F_0004_003   Seq_${SEQNUM}" >> $ESP/LOG
+ mpirun -np 4 $ESP/bin/pchksum -v -u 5000 -t 154
+#sleep $(( 231 * 2 / 3 ))
+echo `$ESP/bin/epoch` " FINISH F_0004_003   Seq_${SEQNUM}" >> $ESP/LOG
+
+
+
+exit
