@@ -25,11 +25,34 @@ printf("#switch or tree topolgy configuration\n");
 
 printf("# Compute node layout configuration \n");
 
-        for( i=0 ; i< 240  ; i++ )
-        {
-//                j= 2*i;
-                printf("Entity=virtual%d type=Node IdleWatts=0 MaxWatts=0\n",i);
-        }
+		for( i= 0 ; i < 60; i++ )
+		{
+			node_record_table_ptr[i].idle_power = 120 ;
+			node_record_table_ptr[i].max_power = 170;
+		}
 
+		else if( i>= 60 && i < 120 )
+		for( i= 0 ; i < 60; i++ )
+		{
+			node_record_table_ptr[i].idle_power = 110;
+			node_record_table_ptr[i].max_power = 160;
+		}
+		else if( i>= 120 && i < 180 )
+		for( i= 0 ; i < 60; i++ )
+		{
+			node_record_table_ptr[i].idle_power = 130;
+			node_record_table_ptr[i].max_power = 180;
+		}
+		else if( i>= 180 && i < 240 )
+		for( i= 0 ; i < 60; i++ )
+		{
+			node_record_table_ptr[i].idle_power = 50;
+			node_record_table_ptr[i].max_power = 100;
+		}
+		else
+		for( i= 0 ; i < 60; i++ )
+		{
+			fatal("select_p idle and max power is not assigned perfectly");
+		}
 	return 0;
 }

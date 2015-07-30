@@ -1,0 +1,137 @@
+\documentclass[12pt, a4paper]{memoir} % for a short document
+\usepackage[english]{babel}
+
+\usepackage [vscale=0.76,includehead]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+%\geometry{a4paper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\OnehalfSpacing
+% \setSingleSpace{1.05}
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{mathptmx} % font = times
+\usepackage{helvet} % font sf = helvetica
+\usepackage[latin1]{inputenc}
+\usepackage{relsize}
+
+%Style des têtes de section, headings, chapitre
+\headstyles{komalike}
+\nouppercaseheads
+\chapterstyle{dash}
+\makeevenhead{headings}{\sffamily\thepage}{}{\sffamily\leftmark} 
+\makeoddhead{headings}{\sffamily\rightmark}{}{\sffamily\thepage}
+\makeoddfoot{plain}{}{}{} % Pages chapitre. 
+\makeheadrule{headings}{\textwidth}{\normalrulethickness}
+%\renewcommand{\leftmark}{\thechapter ---}
+\renewcommand{\chaptername}{\relax}
+\renewcommand{\chaptitlefont}{ \sffamily\bfseries \LARGE}
+\renewcommand{\chapnumfont}{ \sffamily\bfseries \LARGE}
+\setsecnumdepth{subsection}
+
+
+% Title page formatting -- do not change!
+\pretitle{\HUGE\sffamily \bfseries\begin{center}} 
+\posttitle{\end{center}}
+\preauthor{\LARGE  \sffamily \bfseries\begin{center}}
+\postauthor{\par\end{center}}
+
+\newcommand{\jury}[1]{% 
+\gdef\juryB{#1}} 
+\newcommand{\juryB}{} 
+\newcommand{\session}[1]{% 
+\gdef\sessionB{#1}} 
+\newcommand{\sessionB}{} 
+\newcommand{\option}[1]{% 
+\gdef\optionB{#1}} 
+\newcommand{\optionB}{} 
+
+\renewcommand{\maketitlehookd}{% 
+\vfill{}  \large\par\noindent  
+\begin{center}\juryB \bigskip\sessionB\end{center}
+\vspace{-1.5cm}}
+\renewcommand{\maketitlehooka}{% 
+\vspace{-1.5cm}\noindent\includegraphics[height=14ex]{logoINP.png}\hfill\raisebox{2ex}{\includegraphics[height=7ex]{logoUJF.jpg}}\\
+\bigskip
+\begin{center} \large
+Master of Science in Informatics at Grenoble \\ 
+\optionB \end{center}\vfill}
+% End of title page formatting
+
+\option{\textit{Parallel,Distributed and Embedded System(PDES)}}
+\title{ Multiparameter resource selection for next
+generation HPC platforms }%\\\vspace{-1ex}\rule{10ex}{0.5pt} \\sub-title} 
+\author{Dineshkumar RAJAGOPAL}
+\date{1st September 2015} % Delete this line to display the current date
+\jury{
+Research project performed at BULL-SAS \\\medskip
+Under the supervision of:\\
+Dr. Yiannis GEORGIOU \\
+BULL-SAS, Echirolles\\\medskip
+Defended before a jury composed of:\\
+Prof. Arnaud LEGRAND \\
+Prof. Martin HEUSSE \\
+Prof. Noel DEPALMA \\
+Prof. Olivier GRUBBER \\
+Prof. Olivier RICHARD \\
+}
+\session{September\hfill 2015}
+
+
+%%% BEGIN DOCUMENT
+\begin{document}
+\selectlanguage{english} % french si rapport en français
+\frontmatter
+\begin{titlingpage}
+\maketitle
+\end{titlingpage}
+
+%\small
+\setlength{\parskip}{-1pt plus 1pt}
+
+\renewcommand{\abstracttextfont}{\normalfont}
+\abstractintoc
+\begin{abstract} 
+SLURM(Simple Linux Utility for Resource Management) is a RJMS(Resource and Job Management System) in the supercomputer system software stack. RJMS manages resources and selects the best resources to schedule the user$ ' $s job request. Resource selection is an internal operation of scheduling, but improper resource selection operation leads to improper resource management(Increases the cost of resource maintenance in HPC cluster). Slurm resource selection policies(select/cons\_res or select/linear) are specific implementations in C, rather than using Databases and SQL query to select the resources like Maui, OAR, XtremWeb, etc. Even though specific implementation of select plugin raises performance, evolution of cluster architecture and resource selection criterias loses maintenance of code. Current cons\_res plugin consume internal resources(core, memory, disk) of nodes, manage resource information(Resource management) and support topology aware best-fit resource selection policy. Resource management is getting complicated and Resource selection policies are independent from the resource management(cluster topology,resources,resource types and selection criteria), so separating resource management from policy will improve maintenance of the code. To resolve the dynamic nature of resource management by using generic resource management framework called LAYOUTS, to keep all the resources and relationships in global area and giving resource management related specific APIs. In this paper we cover LAYOUTS framework, new consumable resource(cons\_res\_layout) plugin based on LAYOUTS, performance comparison of cons\_res\_layout and cons\_res plugins, energy based resource selection policy was supported in cons\_res\_layout and compared energy efficiency of cons\_res and cons\_res\_layout. Using this framework to develop a new select plugin maintain data separately from code(policy), so changes of cluster topology or criterias require changes in data(layouts) only. The new cons\_res\_layout follows the cons\_res operations to support different criterias(power, temperature) and flexibility, with considerable performance overhead. From the experience of  developing cons\_res\_layout, suggested some guidelines about LAYOUTS APIs and internal architectures to SLURM plugin developers. \\
+\textbf{key words:} RJMS, Batch scheduler, Workload manager, SLURM, HPC resource management, Resource selection, Resource allocation, LAYOUTS Framework, Resource allocation policy(RAP) 
+\end{abstract}
+\abstractintoc
+\renewcommand
+\selectlanguage{english}% french si rapport en français
+
+\cleardoublepage   % create an empty papge
+
+\tableofcontents* % the asterisk means that the table of contents itself isn't put into the ToC
+\normalsize
+
+\mainmatter
+\SingleSpace
+
+
+
+
+
+%=====================
+\chapter{State of the art\dots}
+Some text\dots
+
+\backmatter
+%\appendix
+
+\bibliographystyle{plain} % plain-fr si rapport en français
+\bibliography{bibfile}
+
+%En français, il peut être une bonne idée de mettre le résumé en 4e de couverture... (à ce moment là, commenter les abstracts avan la ToC !)
+%% 4e de couverture
+%\cleardoublepage % Goes to an odd page
+%\pagestyle{empty} % no page number
+%~\newpage % goes to a new even page
+%
+%\section*{Abstract} \selectlanguage{english}
+%Abstract text
+%\medskip
+%\selectlanguage{french}
+%\section*{Résumé}
+%texte de résumé
+
+\end{document}
