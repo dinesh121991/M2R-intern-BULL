@@ -1,0 +1,14 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Motivation}{2}{0}{1}
+\beamer@subsectionintoc {1}{2}{Outline}{19}{0}{1}
+\beamer@sectionintoc {2}{Overview}{20}{0}{2}
+\beamer@subsectionintoc {2}{1}{Introduction to Quantum Mechancis}{28}{0}{2}
+\beamer@sectionintoc {3}{Computational Quantum Mechanics}{46}{0}{3}
+\beamer@subsectionintoc {3}{1}{Space Discretization}{50}{0}{3}
+\beamer@subsectionintoc {3}{2}{Time Discretization}{61}{0}{3}
+\beamer@subsectionintoc {3}{3}{Making a Flexible Solver}{66}{0}{3}
+\beamer@sectionintoc {4}{PyProp}{70}{0}{4}
+\beamer@subsectionintoc {4}{1}{Applications}{81}{0}{4}
+\beamer@subsectionintoc {4}{2}{Laser Ionization of Helium}{84}{0}{4}
+\beamer@sectionintoc {5}{Outlook and summary}{98}{0}{5}

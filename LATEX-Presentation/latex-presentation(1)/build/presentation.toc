@@ -1,0 +1,16 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {2}{RJMS}{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{Basic concepts of RJMS}{3}{0}{1}
+\beamer@sectionintoc {3}{SLURM}{5}{0}{2}
+\beamer@subsectionintoc {3}{1}{SLURM architecture and entities}{5}{0}{2}
+\beamer@subsectionintoc {3}{2}{Consumable resource selection}{7}{0}{2}
+\beamer@sectionintoc {4}{LAYOUTS Framework}{9}{0}{3}
+\beamer@subsectionintoc {4}{1}{Internal architecture}{9}{0}{3}
+\beamer@subsectionintoc {4}{2}{LAYOUTS APIs}{14}{0}{3}
+\beamer@sectionintoc {5}{Resource Selector and Improvements}{16}{0}{4}
+\beamer@subsectionintoc {5}{1}{LAYOUTS based consumable resource selection}{16}{0}{4}
+\beamer@subsectionintoc {5}{2}{Energy efficient consumable resource selection}{18}{0}{4}
+\beamer@sectionintoc {6}{Performance Evaluation}{20}{0}{5}
+\beamer@subsectionintoc {6}{1}{Experiment environment}{20}{0}{5}
+\beamer@subsectionintoc {6}{2}{Performance analysis}{21}{0}{5}
+\beamer@sectionintoc {7}{Conclusion and Future Work}{23}{0}{6}
